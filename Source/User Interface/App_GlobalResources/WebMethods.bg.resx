@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="by" xml:space="preserve">
+    <value>от :</value>
+  </data>
+  <data name="OpinionMarkedSpam" xml:space="preserve">
+    <value>Мнението е маркирано като нарушаващо! Оставащ брой :</value>
+  </data>
+  <data name="CommentRated" xml:space="preserve">
+    <value>Мнението/коментара е оценен!</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Мнения :</value>
+  </data>
+  <data name="CommentToSuggestionWritten" xml:space="preserve">
+    <value>Коментарът е добавен!</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание :</value>
+  </data>
+  <data name="errAlreadyRated" xml:space="preserve">
+    <value>Вече сте оценили това мнение!</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errCantMarkAdminForSPam" xml:space="preserve">
+    <value>Не може да маркирате администраторски мнения!</value>
+  </data>
+  <data name="errCantMarkAdminSuggForSpam" xml:space="preserve">
+    <value>Не може да маркирате администраторски предложения!</value>
+  </data>
+  <data name="errCantMarkCommSpam" xml:space="preserve">
+    <value>Не може да маркирате мнения.</value>
+  </data>
+  <data name="errCantMarkSuggAsSpam" xml:space="preserve">
+    <value>Не може да маркирате предложения.</value>
+  </data>
+  <data name="errCantRate" xml:space="preserve">
+    <value>Не може да оценявате мнения/коментари.</value>
+  </data>
+  <data name="errCantRateAdminComms" xml:space="preserve">
+    <value>Не може да оценявате администраторски мнения/коментари!</value>
+  </data>
+  <data name="errCantRateMyComms" xml:space="preserve">
+    <value>Не може да оценявате вашите мнения/коментари!</value>
+  </data>
+  <data name="errCantSendMsg" xml:space="preserve">
+    <value>Не може да изпращате съобщения.</value>
+  </data>
+  <data name="errCantSendMsgToAdmin" xml:space="preserve">
+    <value>Не може да пращате съобщения към администратори!</value>
+  </data>
+  <data name="errCantSendMsgToGuest" xml:space="preserve">
+    <value>Не може да пращате съобщения към гости!</value>
+  </data>
+  <data name="errCantSendMsgToUrself" xml:space="preserve">
+    <value>Не може да пращате съобщения към себе си!</value>
+  </data>
+  <data name="errCantSendMsgToUser" xml:space="preserve">
+    <value>Не може да пратите съобщение към този потребител!</value>
+  </data>
+  <data name="errCantSendReport" xml:space="preserve">
+    <value>Не може да пишете доклади!</value>
+  </data>
+  <data name="errCantWrite" xml:space="preserve">
+    <value>Не може да пишете мнения!</value>
+  </data>
+  <data name="errLogInSendMsg" xml:space="preserve">
+    <value>Впишете се, за да изпращате съобщения.</value>
+  </data>
+  <data name="errLogInToMarkSuggAsSpam" xml:space="preserve">
+    <value>Впишете се, за да може да маркирате предложения.</value>
+  </data>
+  <data name="errLogInToRate" xml:space="preserve">
+    <value>Впишете се, за да оценявате мнения.</value>
+  </data>
+  <data name="errLogInToReply" xml:space="preserve">
+    <value>Впишете се, за да отговаряте на мнения.</value>
+  </data>
+  <data name="errLogInToSpam" xml:space="preserve">
+    <value>Впишете се, за да може да маркирате мнения.</value>
+  </data>
+  <data name="errMaxNumCommReached" xml:space="preserve">
+    <value>Максималният брой мнения за продукта е достигнат!</value>
+  </data>
+  <data name="errMaxRepLimitReached" xml:space="preserve">
+    <value>Достигнат е максимален брой неприключени доклади!</value>
+  </data>
+  <data name="errMaxReplyLvl" xml:space="preserve">
+    <value>Достигнато е максимално ниво на подмненията!</value>
+  </data>
+  <data name="errMaxSpamReached" xml:space="preserve">
+    <value>Достигнат е максимален брой активни доклади за нарушение. Изчакайте, докато броят им бъде намален, за да маркирате отново.</value>
+  </data>
+  <data name="errMaxSpamReachedSugg" xml:space="preserve">
+    <value>Достигнат е максимален брой от активни доклади за нарушение. Изчакайте, докато броят им бъде намален, за да може да маркирате отново.</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm" xml:space="preserve">
+    <value>Минимално време за писане на следващо мнение</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm2" xml:space="preserve">
+    <value>мин.. Може да пишете след</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm3" xml:space="preserve">
+    <value>мин.</value>
+  </data>
+  <data name="errNotifLimit" xml:space="preserve">
+    <value>Максимален брой записи за известия</value>
+  </data>
+  <data name="errNotifLimit2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="errNoUser" xml:space="preserve">
+    <value>Няма такъв потребител.</value>
+  </data>
+  <data name="errTypeReport" xml:space="preserve">
+    <value>Напишете доклад.</value>
+  </data>
+  <data name="errWriteOpinion" xml:space="preserve">
+    <value>Напишете мнение!</value>
+  </data>
+  <data name="errWriteMessage" xml:space="preserve">
+    <value>Напишете съобщение!</value>
+  </data>
+  <data name="for1" xml:space="preserve">
+    <value>за :</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>От :</value>
+  </data>
+  <data name="InvalidSubjectLength" xml:space="preserve">
+    <value>Невалидна дължина на темата!</value>
+  </data>
+  <data name="maker" xml:space="preserve">
+    <value>компания</value>
+  </data>
+  <data name="MakersWithSimNames" xml:space="preserve">
+    <value>Компании с подобни имена</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Съобщението е изпратено!</value>
+  </data>
+  <data name="NoSubject" xml:space="preserve">
+    <value>Без тема.</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>продукт</value>
+  </data>
+  <data name="ProductsWithSimNames" xml:space="preserve">
+    <value>Продукти с подобни имена</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Оценка :</value>
+  </data>
+  <data name="ReplySent" xml:space="preserve">
+    <value>Отговорът е изпратен!</value>
+  </data>
+  <data name="ReplyToReportSent" xml:space="preserve">
+    <value>Отговорът е изпратен!</value>
+  </data>
+  <data name="ReportSent" xml:space="preserve">
+    <value>Докладът е изпратен! Оставащ брой доклади :</value>
+  </data>
+  <data name="SignNotifOnMaker" xml:space="preserve">
+    <value>Ще бъдете информирани за нови продукти, добавени към тази компания.</value>
+  </data>
+  <data name="SignNotifOnProduct" xml:space="preserve">
+    <value>Ще бъдете информирани за нови мнения, написани за този продукт.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус :</value>
+  </data>
+  <data name="SuggestionMarkedAsSpam" xml:space="preserve">
+    <value>Предложението е маркирано като нарушаващо! Оставащ брой :</value>
+  </data>
+  <data name="TransferCreated" xml:space="preserve">
+    <value>Прехвърлянето на право е започнало!</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип :</value>
+  </data>
+  <data name="TypeSuggestionSent" xml:space="preserve">
+    <value>Предложение за</value>
+  </data>
+  <data name="TypeSuggestionSent2" xml:space="preserve">
+    <value>изпратено към</value>
+  </data>
+  <data name="errExceptionMsg" xml:space="preserve">
+    <value>Възникна грешка! Заявката не може да се изпълни.</value>
+  </data>
+  <data name="errMaxTypeSuggNumberReached" xml:space="preserve">
+    <value>Достигнали сте максимален брой активни предложения.</value>
+  </data>
+  <data name="DescrNotEntered" xml:space="preserve">
+    <value>Не е въведено.</value>
+  </data>
+  <data name="errTimeAddTopic" xml:space="preserve">
+    <value>Може да започнете нова тема след</value>
+    <comment>мин</comment>
+  </data>
+  <data name="errTimeAddTopic2" xml:space="preserve">
+    <value>минути.</value>
+  </data>
+  <data name="errTopicSubjectFormat" xml:space="preserve">
+    <value>Невалиден формат на името.</value>
+  </data>
+  <data name="topicCreated" xml:space="preserve">
+    <value>Темата е създадена!</value>
+  </data>
+  <data name="SignNotifOnProductForum" xml:space="preserve">
+    <value>Ще бъдете информирани за нови теми, започнати в този форум.</value>
+  </data>
+  <data name="SignNotifOnProductTopic" xml:space="preserve">
+    <value>Ще бъдете информирани за нови коментари написани в тази тема.</value>
+  </data>
+  <data name="CommToTopicAdded" xml:space="preserve">
+    <value>Коментарът е добавен!</value>
+  </data>
+  <data name="CommentMarkedSpam" xml:space="preserve">
+    <value>Коментарът е маркиран като нарушаващ! Оставащ брой :</value>
+  </data>
+  <data name="errMinTimeBetwPostingTopicComm" xml:space="preserve">
+    <value>Минимално време за писане на следващ коментар</value>
+  </data>
+  <data name="errWriteComment" xml:space="preserve">
+    <value>Напишете коментар!</value>
+  </data>
+  <data name="errAdmCantModifTopicComm" xml:space="preserve">
+    <value>Не може да промените този коментар!</value>
+  </data>
+  <data name="errCantDelTopicComm" xml:space="preserve">
+    <value>Не може да изтриете коментара!</value>
+  </data>
+  <data name="errChangeTopicComm" xml:space="preserve">
+    <value>Променете описанието на коментара!</value>
+  </data>
+  <data name="TopicCommUpdated" xml:space="preserve">
+    <value>Коментарът е променен!</value>
+  </data>
+  <data name="errAdmCantModifTopic" xml:space="preserve">
+    <value>Не може да променяте тази тема.</value>
+  </data>
+  <data name="errUpdateTopic" xml:space="preserve">
+    <value>Променете името или описанието на темата.</value>
+  </data>
+  <data name="TopicUpdated" xml:space="preserve">
+    <value>Темата е обновена!</value>
+  </data>
+  <data name="errProdLinkDuplicating" xml:space="preserve">
+    <value>Вече има добавена такава връзка!</value>
+  </data>
+  <data name="errProductLinkFormat" xml:space="preserve">
+    <value>Невалиден формат на връзката.</value>
+  </data>
+  <data name="ProductLinkAdded" xml:space="preserve">
+    <value>Връзката за продукта е добавена!</value>
+  </data>
+  <data name="ProductLinkMarkedAsSpam" xml:space="preserve">
+    <value>Връзката е маркирана като нарушаваща! Оставащ брой :</value>
+  </data>
+  <data name="errUpdateDescription" xml:space="preserve">
+    <value>Обновете описанието!</value>
+  </data>
+  <data name="ProductLinkDeleted" xml:space="preserve">
+    <value>Връзката е изтрита!</value>
+  </data>
+  <data name="ProductLinkDescriptionChanged" xml:space="preserve">
+    <value>Описанието на връзката е обновено!</value>
+  </data>
+</root>

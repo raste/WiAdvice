@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addSucc" xml:space="preserve">
+    <value>Adding product successful!</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Category : </value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>symbols</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description : </value>
+  </data>
+  <data name="descrRules" xml:space="preserve">
+    <value>Description length must be between</value>
+  </data>
+  <data name="descrRules2" xml:space="preserve">
+    <value>symbols.&lt;br /&gt; If the maximum length isn`t enough, please add the rest as characteristic.</value>
+  </data>
+  <data name="errCantAdd" xml:space="preserve">
+    <value>You cannot add products.</value>
+  </data>
+  <data name="errIncParameters" xml:space="preserve">
+    <value>Incorrect parameters for add product page.</value>
+  </data>
+  <data name="errLogIn" xml:space="preserve">
+    <value>Log in, in order to add product.</value>
+  </data>
+  <data name="goTo" xml:space="preserve">
+    <value>Go to</value>
+    <comment>product</comment>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name :</value>
+  </data>
+  <data name="nameRules" xml:space="preserve">
+    <value>Name length must be between</value>
+  </data>
+  <data name="orAddProdFor" xml:space="preserve">
+    <value>Add another product for</value>
+  </data>
+  <data name="productData" xml:space="preserve">
+    <value>Product data</value>
+  </data>
+  <data name="site" xml:space="preserve">
+    <value>Web site : </value>
+  </data>
+  <data name="siteRules" xml:space="preserve">
+    <value>The official product web site. If you don't know it leave the field empty.</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Add product to wiadvice.com</value>
+  </data>
+  <data name="orAddProdForCategory" xml:space="preserve">
+    <value>Add another product in category</value>
+  </data>
+  <data name="errCantAddInThisCategory" xml:space="preserve">
+    <value>You cannot add products in this category.</value>
+  </data>
+  <data name="addToUnspecifiedCatInfo" xml:space="preserve">
+    <value>Choose wanted category</value>
+  </data>
+  <data name="choose" xml:space="preserve">
+    <value>... choose</value>
+  </data>
+  <data name="errChooseCategory" xml:space="preserve">
+    <value>Choose category!</value>
+  </data>
+  <data name="errChooseCompany" xml:space="preserve">
+    <value>Choose company!</value>
+  </data>
+  <data name="errMinTimeAfterAddingProductDidntPass" xml:space="preserve">
+    <value>Minimum time between adding products has not passed yet. You can add after</value>
+  </data>
+  <data name="errMinTimeAfterAddingProductDidntPass2" xml:space="preserve">
+    <value>minutes.</value>
+  </data>
+  <data name="chooseCatOrComp" xml:space="preserve">
+    <value>Choose the company or category the product will belong to.</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Company :</value>
+  </data>
+  <data name="errCantAddForThatCompany" xml:space="preserve">
+    <value>If you want to add product to this company, you must also choose a category.</value>
+  </data>
+  <data name="errNoSuchCompany" xml:space="preserve">
+    <value>No such company.</value>
+  </data>
+  <data name="errTypeCompanyName" xml:space="preserve">
+    <value>Type a company name.</value>
+  </data>
+  <data name="errCompCanAddProdInWantCat" xml:space="preserve">
+    <value>The selected company can add products in the wanted category. Select that category from the drop down list.</value>
+  </data>
+  <data name="errCompCantHaveProdInCategory" xml:space="preserve">
+    <value>The selected company can't have products in the selected category!</value>
+  </data>
+  <data name="errEditorShouldAddCatToCompanyFirst" xml:space="preserve">
+    <value>You need to add categories to the company in order to add products!</value>
+  </data>
+  <data name="errInvWantedCat" xml:space="preserve">
+    <value>Invalid wanted category!</value>
+  </data>
+  <data name="errSelectWantedCat" xml:space="preserve">
+    <value>Select wanted category for the product!</value>
+  </data>
+  <data name="errWrongCategory" xml:space="preserve">
+    <value>Invalid selected category!</value>
+  </data>
+  <data name="errWrongCompany" xml:space="preserve">
+    <value>Invalid selected company!</value>
+  </data>
+  <data name="goTo2" xml:space="preserve">
+    <value>page to :</value>
+    <comment>.</comment>
+  </data>
+  <data name="textLength" xml:space="preserve">
+    <value>Description length :</value>
+  </data>
+  <data name="blAddAltNames" xml:space="preserve">
+    <value>Add alternative product names.</value>
+  </data>
+  <data name="blAddCharacteristics" xml:space="preserve">
+    <value>Add characteristics.</value>
+  </data>
+  <data name="blAddVariants" xml:space="preserve">
+    <value>Add variants and subvariants.</value>
+  </data>
+  <data name="blFillGallery" xml:space="preserve">
+    <value>Add images to product`s gallery.</value>
+  </data>
+  <data name="blModifDescription" xml:space="preserve">
+    <value>Modify product`s description.</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="hlAddProdGuide" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="hlAddProdRules" xml:space="preserve">
+    <value>Rules</value>
+  </data>
+  <data name="lblAddProdGuide" xml:space="preserve">
+    <value>about adding product.</value>
+  </data>
+  <data name="lblAddProdRules" xml:space="preserve">
+    <value>about adding product.</value>
+  </data>
+  <data name="pageIntro" xml:space="preserve">
+    <value>Product adding</value>
+  </data>
+  <data name="CatHint1" xml:space="preserve">
+    <value>If you want to add product to a company, but the company doesn`t have the necessary category for the product, you can:</value>
+  </data>
+  <data name="CatHint2" xml:space="preserve">
+    <value>1. Send suggestion to company`s editor to add the category.</value>
+  </data>
+  <data name="CatHint3" xml:space="preserve">
+    <value>2. Choose the “Others -&gt; Unspecified” category from the dropdown menu and select appropriate product`s category from the “Categories” menu which will appear below.</value>
+  </data>
+  <data name="CompHint1" xml:space="preserve">
+    <value>If the company from which is the product is not listed, then there are two ways of proceeding :</value>
+  </data>
+  <data name="CompHint2" xml:space="preserve">
+    <value>1. First add the company and then the product. - Recommended</value>
+  </data>
+  <data name="CompHint3" xml:space="preserve">
+    <value>2. Add the product underneath ‘other’ company.</value>
+  </data>
+  <data name="CompHint4" xml:space="preserve">
+    <value>If the company is added but isn`t listed here you will have to contact his editor and tell him to add this category. You can read more information about that</value>
+  </data>
+  <data name="HlCompHint4" xml:space="preserve">
+    <value>here</value>
+  </data>
+</root>

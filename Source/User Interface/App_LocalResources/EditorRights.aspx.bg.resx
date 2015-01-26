@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="allMakerProducts" xml:space="preserve">
+    <value>всички продукти на</value>
+  </data>
+  <data name="currCanTakRole" xml:space="preserve">
+    <value>Можете да вземете редакторски права на </value>
+  </data>
+  <data name="currCanTakRole2" xml:space="preserve">
+    <value>, защото не се е вписвал повече от </value>
+  </data>
+  <data name="currTransfRoles" xml:space="preserve">
+    <value>В момента прехвърляни права :</value>
+  </data>
+  <data name="currUserInfo" xml:space="preserve">
+    <value>Виж за кои продукти/компании имаш редакторски права.</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>дни.</value>
+  </data>
+  <data name="editRoles" xml:space="preserve">
+    <value>Редакторски права :</value>
+  </data>
+  <data name="errorCantSeePage" xml:space="preserve">
+    <value>Не може да видите редакторските права на потребителя.</value>
+  </data>
+  <data name="errorIncParameters" xml:space="preserve">
+    <value>Неправилни параметри на страницата за редакторски права.</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>от :</value>
+  </data>
+  <data name="LogInInfo" xml:space="preserve">
+    <value>Ако не се впишеш повече от</value>
+  </data>
+  <data name="LogInInfo2" xml:space="preserve">
+    <value>дни, редакторските ти права могат да бъдат отнети!</value>
+  </data>
+  <data name="noRoles" xml:space="preserve">
+    <value>Нямате редакторски права</value>
+  </data>
+  <data name="roleRemoved" xml:space="preserve">
+    <value>Отказахте се от редакторското право!</value>
+  </data>
+  <data name="rolesTransfToYou" xml:space="preserve">
+    <value>Права, прехвърлящи се към</value>
+  </data>
+  <data name="roleTaken" xml:space="preserve">
+    <value>Получихте редакторско право!</value>
+  </data>
+  <data name="Take" xml:space="preserve">
+    <value>Вземи</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Редакторски права на</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>към :</value>
+  </data>
+  <data name="transfer" xml:space="preserve">
+    <value>прехвърли</value>
+  </data>
+  <data name="transferAccepted" xml:space="preserve">
+    <value>Прехвърлянето на право прието!</value>
+  </data>
+  <data name="transferDeclined" xml:space="preserve">
+    <value>Прехвърлянето на право отказано!</value>
+  </data>
+  <data name="transferTimeToAccept" xml:space="preserve">
+    <value>Неприети права - може да спрете прехвърлянето до</value>
+  </data>
+  <data name="transferTimeToAccept2" xml:space="preserve">
+    <value>дни.</value>
+  </data>
+  <data name="TransferTo" xml:space="preserve">
+    <value>Прехвърли на : </value>
+  </data>
+  <data name="transferToMeAccept" xml:space="preserve">
+    <value>Имате</value>
+  </data>
+  <data name="transferToMeAccept2" xml:space="preserve">
+    <value>дни от обявената дата, за да приемете или откажете правата.</value>
+  </data>
+  <data name="visitedInfo" xml:space="preserve">
+    <value>Редакторски права на</value>
+  </data>
+  <data name="YouHaveRole" xml:space="preserve">
+    <value>Вие вече имате това право.</value>
+  </data>
+  <data name="noRolesVisited" xml:space="preserve">
+    <value>Няма редакторски права</value>
+  </data>
+  <data name="title2" xml:space="preserve">
+    <value>в wiadvice</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Кликни тук</value>
+  </data>
+  <data name="ClickHereS" xml:space="preserve">
+    <value>кликни тук</value>
+  </data>
+  <data name="howToHaveRights" xml:space="preserve">
+    <value>Основният начин, по който можеш да придобиеш редакторски права е като добавяш продукти и компании.</value>
+  </data>
+  <data name="toAddCompany" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="toAddProduct" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="toReadHowToAddCompany" xml:space="preserve">
+    <value>как.</value>
+  </data>
+  <data name="toReadHowToAddProduct" xml:space="preserve">
+    <value>как.</value>
+  </data>
+  <data name="ClickHereToAddComp" xml:space="preserve">
+    <value>Добави компания</value>
+  </data>
+  <data name="ClickHereToAddProd" xml:space="preserve">
+    <value>Добави продукт</value>
+  </data>
+  <data name="ClickHereToReadAddComp" xml:space="preserve">
+    <value>прочети</value>
+  </data>
+  <data name="ClickHereToReadAddProd" xml:space="preserve">
+    <value>прочети</value>
+  </data>
+</root>

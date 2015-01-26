@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>За сайта</value>
+  </data>
+  <data name="CommentsWritten" xml:space="preserve">
+    <value>Мнения :</value>
+  </data>
+  <data name="LastProducts" xml:space="preserve">
+    <value>Последни</value>
+  </data>
+  <data name="LastProducts2" xml:space="preserve">
+    <value>добавени продукти</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Съобщения от сайта</value>
+  </data>
+  <data name="ProductsAdded" xml:space="preserve">
+    <value>Добавени продукти :</value>
+  </data>
+  <data name="StatisticsForToday" xml:space="preserve">
+    <value>Статистики за деня</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Добре дошли в wiadvice.com</value>
+  </data>
+  <data name="UsersOnline" xml:space="preserve">
+    <value>Потребители на линия :</value>
+  </data>
+  <data name="UsersRegistered" xml:space="preserve">
+    <value>Регистрации :</value>
+  </data>
+  <data name="NoSiteMessages" xml:space="preserve">
+    <value>Няма нови съобщения от сайта</value>
+  </data>
+  <data name="hlNcOthersFour" xml:space="preserve">
+    <value>предложения</value>
+  </data>
+  <data name="hlNcOthersTwo" xml:space="preserve">
+    <value>редактиране</value>
+  </data>
+  <data name="lblForNewcomers" xml:space="preserve">
+    <value>Какво ви очаква ...</value>
+  </data>
+  <data name="lblForNewcomers2" xml:space="preserve">
+    <value>Вашата бърза обиколка в сайта - показваме ви образно най-важните елементи, с които ще работите и чието съдържание зависи изцяло от вас ... Възползвайте се!</value>
+  </data>
+  <data name="lblNcCategories" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="lblNcCategoriesText" xml:space="preserve">
+    <value>Определят някои от основните области на материалното ни битие, в които може да добавяте продукти.</value>
+  </data>
+  <data name="lblNcCompanies" xml:space="preserve">
+    <value>Компании</value>
+  </data>
+  <data name="lblNcCompaniesText" xml:space="preserve">
+    <value>Идеята е да създадем каталог и да разберем какво се крие зад рекламите на компаниите чрез вашата оценка на продуктите им.</value>
+  </data>
+  <data name="lblNcOpinions" xml:space="preserve">
+    <value>Мнения</value>
+  </data>
+  <data name="lblNcOpinionsText" xml:space="preserve">
+    <value>Всъщност вашите мнения са истинската реклама - без "грим, промоции и фалшиви гаранции". Всички се нуждаем от това.</value>
+  </data>
+  <data name="lblNcOthers" xml:space="preserve">
+    <value>Други възможности</value>
+  </data>
+  <data name="lblNcOthersFive" xml:space="preserve">
+    <value>и много други ...</value>
+  </data>
+  <data name="lblNcOthersFour" xml:space="preserve">
+    <value>Опция за</value>
+  </data>
+  <data name="lblNcOthersFour2" xml:space="preserve">
+    <value>към редакторите на продукти и компании.</value>
+  </data>
+  <data name="lblNcOthersOne" xml:space="preserve">
+    <value>Получаване на известия за нова информация относно продукти, компании, форуми и теми.</value>
+  </data>
+  <data name="lblNcOthersThree" xml:space="preserve">
+    <value>Обмяна на лични съобщения между потребителите.</value>
+  </data>
+  <data name="lblNcOthersTwo" xml:space="preserve">
+    <value>Управление на правата за</value>
+  </data>
+  <data name="lblNcOthersTwo2" xml:space="preserve">
+    <value>на компании и продукти.</value>
+  </data>
+  <data name="lblNcProducts" xml:space="preserve">
+    <value>Продукти</value>
+  </data>
+  <data name="lblNcProductsText" xml:space="preserve">
+    <value>Напук на кризата ги ползваме всеки ден - затова качеството им е вашият фокус. Добавяйте на воля ...</value>
+  </data>
+  <data name="LastCompanies" xml:space="preserve">
+    <value>Последни</value>
+  </data>
+  <data name="LastCompanies2" xml:space="preserve">
+    <value>добавени компании</value>
+  </data>
+  <data name="LastCommentedProducts" xml:space="preserve">
+    <value>Последни мнения в "Продукти"</value>
+  </data>
+  <data name="CompaniesAdded" xml:space="preserve">
+    <value>Добавени компании :</value>
+  </data>
+  <data name="Visits" xml:space="preserve">
+    <value>Посещения :</value>
+  </data>
+  <data name="lblNcOthersZero" xml:space="preserve">
+    <value>Обсъждане на всичко за всеки продукт в неговият форум.</value>
+  </data>
+</root>

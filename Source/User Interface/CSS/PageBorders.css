@@ -1,0 +1,127 @@
+﻿/* Wi Advice (https://github.com/raste/WiAdvice)(http://www.wiadvice.com/)
+   Copyright (c) 2015 Georgi Kolev. 
+   Licensed under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0). */
+
+/* -------------------- SIDE ELEMENTS DIVS CLASSES -------------  */
+
+div.tlb {
+    background: transparent url('../images/SiteImages/topLeft.png') no-repeat top left;
+}
+
+div.trb {
+    background: transparent url('../images/SiteImages/topRight.png') no-repeat top right;
+}
+
+div.blb {
+    background: transparent url('../images/SiteImages/bottomLeftS.png') no-repeat bottom left;
+}
+
+div.brb {
+    background: transparent url('../images/SiteImages/bottomRightS.png') no-repeat bottom right;
+}
+
+/*----------------------------*/
+div.tlhr {
+    margin: 0px 20px 0px 20px;
+    background: transparent url('../images/SiteImages/hrLineT.png') repeat-x top left;
+}
+
+div.tlb2 {
+    background: transparent url('../images/SiteImages/upLeftEl.png') no-repeat top left;
+}
+
+div.trb2 {
+    background: transparent url('../images/SiteImages/upRightEl.png') no-repeat top right;
+}
+
+
+div.blhr2 {
+    padding-bottom: 4px;
+    background: transparent url('../images/SiteImages/hrLineB.png') repeat-x bottom left;
+}
+
+/*----------------------------*/
+
+div.blhr {
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 4px;
+    background: transparent url('../images/SiteImages/hrLineB.png') repeat-x bottom left;
+}
+
+div.blhrgreen {
+    padding-bottom: 4px;
+    margin: 0px 18px 0px 18px;
+    background: transparent url('../images/SiteImages/hrLineGreen.png') repeat-x left bottom;
+}
+
+div.blb2 {
+    background: transparent url('../images/SiteImages/downLeftEl.png') no-repeat bottom left;
+}
+
+div.brb2 {
+    background: transparent url('../images/SiteImages/downRightEl.png') no-repeat bottom right;
+}
+
+div.contentBoxBottomHr {
+    padding-bottom: 10px;
+    min-height: 140px;
+    min-width: 390px;
+}
+
+div.contentBoxTopBottomHr {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    min-height: 300px;
+    min-width: 390px;
+}
+
+/*----------------------------*/
+
+div.contentBoxAllAround {
+    min-height: 300px;
+    min-width: 390px;
+    padding: 14px 20px 12px 20px;
+}
+
+div.contentBoxBottom {
+    padding: 0px 20px 15px 20px;
+    min-height: 140px;
+    min-width: 390px;
+}
+
+
+/* --------------------------------------------- */
+
+
+/*  SUPPORT CLASSES USED WITH SIDE ELEMENTS*/
+
+.panelNearSideElements {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.divBottomHr {
+    vertical-align: bottom;
+    height: 4px;
+    margin: 5px 0px 5px 0px;
+    background-image: url('../images/SiteImages/hrLineM.png');
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+
+.divDoubleSideEl {
+    vertical-align: bottom;
+    height: 39px;
+    margin: 5px 0px 5px 0px;
+}
+
+.divBottomHrNoMargin {
+    vertical-align: bottom;
+    height: 4px;
+    margin: 0px;
+    background-image: url('../images/SiteImages/hrLineM.png');
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}

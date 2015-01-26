@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="answerRules" xml:space="preserve">
+    <value>Отговорът не може да започва или свършва с ' '. Ако оставите полето празно, старият отговор ще се запази.</value>
+  </data>
+  <data name="answerUpdated" xml:space="preserve">
+    <value>Отговорът към тайния въпрос е сменен!</value>
+  </data>
+  <data name="cantSeePage" xml:space="preserve">
+    <value>Не може да посетите страницата на този потребител.</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Мнения и коментари :</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Актуална парола :</value>
+  </data>
+  <data name="DateRegistered" xml:space="preserve">
+    <value>Регистриран :</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Промени</value>
+  </data>
+  <data name="EditRoles" xml:space="preserve">
+    <value>Редакторски права</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Ел.поща :</value>
+  </data>
+  <data name="emailSmall" xml:space="preserve">
+    <value>ел.поща</value>
+  </data>
+  <data name="EmailUpdated" xml:space="preserve">
+    <value>Ел.пощата сменена!</value>
+  </data>
+  <data name="errIncParams" xml:space="preserve">
+    <value>Неправилни параметри за страница на потребител.</value>
+  </data>
+  <data name="errInvFormAnswer" xml:space="preserve">
+    <value>Неправилен формат за отговор на тайния въпрос.</value>
+  </data>
+  <data name="errInvFormQuestion" xml:space="preserve">
+    <value>Неправилен формат за таен въпрос.</value>
+  </data>
+  <data name="errOtherUserPages" xml:space="preserve">
+    <value>Трябва да сте вписан, за да посещавате страниците на други потребители.</value>
+  </data>
+  <data name="errQNA" xml:space="preserve">
+    <value>Въведете нов таен въпрос или отговор.</value>
+  </data>
+  <data name="LastLogIn" xml:space="preserve">
+    <value>Последно вписване :</value>
+  </data>
+  <data name="mailRules" xml:space="preserve">
+    <value>Ще се използва в случай, че забравите паролата.</value>
+  </data>
+  <data name="NewAnswer" xml:space="preserve">
+    <value>Нов отговор :</value>
+  </data>
+  <data name="newMail" xml:space="preserve">
+    <value>Нова ел.поща :</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Нова парола :</value>
+  </data>
+  <data name="NewSecretQuestion" xml:space="preserve">
+    <value>Нов таен въпрос :</value>
+  </data>
+  <data name="NoSuchUser" xml:space="preserve">
+    <value>Няма такъв потребител.</value>
+  </data>
+  <data name="NoSuggestions" xml:space="preserve">
+    <value>Няма предложения</value>
+  </data>
+  <data name="NoSystemMessages" xml:space="preserve">
+    <value>Няма системни съобщения</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>парола</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Паролата е сменена!</value>
+  </data>
+  <data name="passwordRules" xml:space="preserve">
+    <value>Паролата може да съдържа букви от латиница A-Z и числа 0-9.</value>
+  </data>
+  <data name="passwordRules2" xml:space="preserve">
+    <value>Дължината на паролата трябва да е между</value>
+  </data>
+  <data name="questionRules" xml:space="preserve">
+    <value>Ако не искате да сменяте въпроса, не променяйте полето.</value>
+  </data>
+  <data name="questionUpdated" xml:space="preserve">
+    <value>Тайният въпрос е сменен!</value>
+  </data>
+  <data name="RepeatNewPassword" xml:space="preserve">
+    <value>Повторете новата парола :</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>Сигнатура :</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="SignatureNone" xml:space="preserve">
+    <value>Сигнатура :  не е написана </value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="signatureRules" xml:space="preserve">
+    <value>Текста на сигнатурата ще се показва след всеки ваш коментар.</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="signatureRules2" xml:space="preserve">
+    <value>Дължината на сигнатурата може да е между</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="signatureSmall" xml:space="preserve">
+    <value>сигнатура</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="SignatureUpdated" xml:space="preserve">
+    <value>Сигнатурата е сменена!</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="SMdeleted" xml:space="preserve">
+    <value>Системното съобщение е изтрито!</value>
+  </data>
+  <data name="SQNA" xml:space="preserve">
+    <value>таен въпрос и отговор</value>
+  </data>
+  <data name="Suggestions" xml:space="preserve">
+    <value>Предложения</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>символа</value>
+  </data>
+  <data name="SystemMessages" xml:space="preserve">
+    <value>Системни съобщения</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>в wiadvice</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Потребител :</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Докладвай</value>
+  </data>
+  <data name="Warnings" xml:space="preserve">
+    <value>Предупреждения</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>За</value>
+  </data>
+  <data name="currMail" xml:space="preserve">
+    <value>Актуална ел.поща</value>
+  </data>
+  <data name="errNewPassIsEqualToOld" xml:space="preserve">
+    <value>Въведете нова парола.</value>
+  </data>
+  <data name="errPassNeedToBeDiffFromName" xml:space="preserve">
+    <value>Паролата не трябва да съдържа в себе си потребителското име.</value>
+  </data>
+  <data name="UserDeleted" xml:space="preserve">
+    <value>Този потребител е изтрит.</value>
+  </data>
+  <data name="errTypeNewMail" xml:space="preserve">
+    <value>Въведете нова ел.поща.</value>
+  </data>
+  <data name="errEmailRegsReached" xml:space="preserve">
+    <value>Вече има</value>
+    <comment>number</comment>
+  </data>
+  <data name="errEmailRegsReached2" xml:space="preserve">
+    <value>или повече потребители, регистрирани с тази ел.поща.</value>
+  </data>
+  <data name="deleteNoWarning" xml:space="preserve">
+    <value>ИзтрийБезПред</value>
+  </data>
+  <data name="deleteNoWarningTooltip" xml:space="preserve">
+    <value>Изтрий без да се праща предупреждение.</value>
+  </data>
+  <data name="WarningDeleted" xml:space="preserve">
+    <value>Предупреждението е изтрито!</value>
+  </data>
+</root>

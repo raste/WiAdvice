@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accRegistered" xml:space="preserve">
+    <value>Congratilations, your account is now registered! You will receive an mail soon (usually no more than 1 hour).</value>
+  </data>
+  <data name="accRegistered2" xml:space="preserve">
+    <value>It will contain an activation link. Visit that link in order to activate and be able to sign in with the account.</value>
+  </data>
+  <data name="accRegistered3" xml:space="preserve">
+    <value>If you do not activate your account in 24 hours it will be deleted automatically.</value>
+  </data>
+  <data name="AgreeTerms" xml:space="preserve">
+    <value>I agree with the</value>
+  </data>
+  <data name="AgreeTerms2" xml:space="preserve">
+    <value>to use this site.</value>
+  </data>
+  <data name="answer" xml:space="preserve">
+    <value>Answer :</value>
+  </data>
+  <data name="captchaInfo" xml:space="preserve">
+    <value>Fill in the letters</value>
+  </data>
+  <data name="captchaInfo2" xml:space="preserve">
+    <value>you see on the image.</value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>characters</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email :</value>
+  </data>
+  <data name="emailRules" xml:space="preserve">
+    <value>An activation link will be sent to it. You have to visit the link in order to activate the account.</value>
+  </data>
+  <data name="errEmailRegsReached" xml:space="preserve">
+    <value>There are already</value>
+  </data>
+  <data name="errEmailRegsReached2" xml:space="preserve">
+    <value>or more users registered with that email.</value>
+  </data>
+  <data name="errIncAnswer" xml:space="preserve">
+    <value>Incorrect format for answer of secret question.</value>
+  </data>
+  <data name="errIncQuest" xml:space="preserve">
+    <value>Incorrect format for secret question.</value>
+  </data>
+  <data name="errIpBan" xml:space="preserve">
+    <value>You cannot register because the IP adress from which you are trying to access the site is blocked. This happens when users continuosly break site rules.</value>
+  </data>
+  <data name="errLoggedIn" xml:space="preserve">
+    <value>You are already registered and logged in.</value>
+  </data>
+  <data name="errRegsReached" xml:space="preserve">
+    <value>You cannot register because the maximum number of registrations from your IP adress is reached.</value>
+  </data>
+  <data name="errTerms" xml:space="preserve">
+    <value>You must agree with the terms to use this site in order to register.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password :</value>
+  </data>
+  <data name="passwordRules" xml:space="preserve">
+    <value>Password can only contain letters a-z, A-Z or numbers 0-9.</value>
+  </data>
+  <data name="passwordRules2" xml:space="preserve">
+    <value>Password length must be between</value>
+  </data>
+  <data name="qnaRules" xml:space="preserve">
+    <value>The allowed lenghts for secret question and answer are 1-100 symbols.</value>
+  </data>
+  <data name="qnaRules2" xml:space="preserve">
+    <value>Both fields text cannot start or end with ' '.</value>
+  </data>
+  <data name="questionInfo" xml:space="preserve">
+    <value>This is needed in case you forgot your password.</value>
+  </data>
+  <data name="regForm" xml:space="preserve">
+    <value>Registration form</value>
+  </data>
+  <data name="regSuccessful" xml:space="preserve">
+    <value>Registration succesful , you are now logged in.</value>
+  </data>
+  <data name="repPassword" xml:space="preserve">
+    <value>Repeat password :</value>
+  </data>
+  <data name="secQuestion" xml:space="preserve">
+    <value>Secret question :</value>
+  </data>
+  <data name="terms" xml:space="preserve">
+    <value>terms</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Registration in wiadvice.com</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>Username :</value>
+  </data>
+  <data name="usernameRules" xml:space="preserve">
+    <value>Username can only contain letters a-z, A-Z or numbers 0-9 and up to 4 words</value>
+  </data>
+  <data name="usernameRules2" xml:space="preserve">
+    <value>(1 space between words). Username length must be between</value>
+  </data>
+  <data name="PassStrengthLvl1" xml:space="preserve">
+    <value>Non existent</value>
+  </data>
+  <data name="PassStrengthLvl10" xml:space="preserve">
+    <value>Unbreakable !</value>
+  </data>
+  <data name="PassStrengthLvl2" xml:space="preserve">
+    <value>Very weak</value>
+  </data>
+  <data name="PassStrengthLvl3" xml:space="preserve">
+    <value>Weak</value>
+  </data>
+  <data name="PassStrengthLvl4" xml:space="preserve">
+    <value>Poor</value>
+  </data>
+  <data name="PassStrengthLvl5" xml:space="preserve">
+    <value>Almost ok</value>
+  </data>
+  <data name="PassStrengthLvl6" xml:space="preserve">
+    <value>Barely acceptable</value>
+  </data>
+  <data name="PassStrengthLvl7" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="PassStrengthLvl8" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="PassStrengthLvl9" xml:space="preserve">
+    <value>Strong</value>
+  </data>
+  <data name="Strength" xml:space="preserve">
+    <value>Stength :</value>
+  </data>
+  <data name="errPassNeedToBeDiffFromName" xml:space="preserve">
+    <value>Password cannot contain the username.</value>
+  </data>
+</root>

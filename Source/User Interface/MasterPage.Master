@@ -1,0 +1,510 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="UserInterface.MasterPage" %>
+
+<%@ Register Assembly="CustomServerControls" Namespace="CustomServerControls" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/PageBorders.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/GlobalAndHeaders.css" />
+
+    <script type="text/javascript" src="Javascript/JScriptFunctions.js"></script>
+    <script type="text/javascript" src="Javascript/Global.js"></script>
+    <script type="text/javascript" src="Javascript/Product.js"></script>
+    <script type="text/javascript" src="Javascript/Forum.js"></script>
+</head>
+<body style="text-align: center;">
+
+    <form id="form1" runat="server" autocomplete="off">
+
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+            <Services>
+                <asp:ServiceReference Path="WebServices.asmx" />
+            </Services>
+        </asp:ScriptManager>
+
+
+
+        <div id="pageDiv" runat="server" class="page" style="">
+
+            <div class="header">
+                <div class="left">
+                    <asp:HyperLink ID="hlLogoToHome" runat="server">
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/images/SiteImages/WiAdvice_s.PNG"
+                            Height="100px" Style="margin-top: 3px;" />
+                    </asp:HyperLink>
+                </div>
+
+                <div class="content">
+
+
+
+                    <asp:Label ID="lblSiteMotto0" runat="server" Font-Names="Arial"
+                        Font-Overline="False" Font-Size="X-Large" Style="margin-left: 9px;"
+                        Text="The place where you can find opinions for various products" ForeColor="White"></asp:Label>
+
+
+
+                    <div class="floatRightNoMrg">
+                        <asp:Label ID="lblUser" runat="server" Font-Size="17px" ForeColor="White"
+                            Text="Hi: username" Visible="False" Font-Bold="False"
+                            Font-Names="&quot;Trebuchet MS&quot;,Verdana,&quot;Times New Roman&quot;">
+                        </asp:Label><br />
+                        <div style="margin-bottom: 3px;">
+                            <asp:HyperLink CssClass="optionsLbl" Style="font-family: 'Trebuchet MS'; font-size: 15px;" ID="hlLogIn" runat="server">log in</asp:HyperLink>
+                            <asp:Label ID="lblComa" Style="color: White;" runat="server" Text=" , "></asp:Label>
+                            <asp:HyperLink CssClass="optionsLbl" Style="font-family: 'Trebuchet MS'; font-size: 15px;" ID="hlRegister" runat="server">register</asp:HyperLink>
+                            <asp:LinkButton CssClass="optionsLbl" Style="font-family: 'Trebuchet MS'; font-size: 15px;" ID="lbLogOut" runat="server" OnClick="LogOutBtn_Click">log out</asp:LinkButton>
+                        </div>
+                        <div style="">
+                            <span class="optionsLbl" id="optionsLbl" onclick="ShowOptionsDiv()">
+                                <asp:Label ID="lblOptions" runat="server" Text="options"></asp:Label></span>
+                            &nbsp;&nbsp;&nbsp;
+                               <asp:HyperLink ID="hlEnglish" runat="server">
+                                   <asp:Image ID="imgEngFlag" runat="server" Height="12px" ImageUrl="~/images/SiteImages/British.bmp" />
+                               </asp:HyperLink>
+
+                            <asp:HyperLink ID="hlBulgarian" runat="server">
+                                <asp:Image ID="imgBulgFlag" runat="server" Height="12px" ImageUrl="~/images/SiteImages/Bulgaria.jpg" />
+                            </asp:HyperLink>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="search" style="padding-left: 80px;">
+
+                        <asp:Panel ID="pnlSearch" runat="server" DefaultButton="btnSearch">
+
+
+                            <asp:TextBox ID="tbSearch" runat="server" Columns="30" SkinID="SearchBox" autocomplete="off"
+                                Font-Names="Arial"></asp:TextBox><ajaxToolkit:AutoCompleteExtender ID="tbSearch_AutoCompleteExtender"
+                                    runat="server" TargetControlID="tbSearch"
+                                    ServicePath=""
+                                    ServiceMethod="GetCompletionList"
+                                    CompletionSetCount="12"
+                                    MinimumPrefixLength="1"
+                                    CompletionListCssClass="completionListElement"
+                                    CompletionListItemCssClass="completionListItem"
+                                    CompletionListHighlightedItemCssClass="completionListHighlightedItem"
+                                    CompletionInterval="10">
+                                </ajaxToolkit:AutoCompleteExtender>
+                            <table class="dcrBtnTblStyle" cellpadding="0" cellspacing="0" style="cursor: pointer;">
+                                <tr>
+                                    <td>
+                                        <asp:Image ID="imgAdvSearch" runat="server" Style="margin: 0px 6px 0px 6px;"
+                                            ImageUrl="~/images/SiteImages/advSearch.png" Height="18px" ImageAlign="Top" BorderStyle="Solid" BorderWidth="1px" BorderColor="White" /></td>
+                                    <td style="vertical-align: bottom;">
+                                        <asp:Button ID="btnSearch" runat="server" Text="Search"
+                                            OnClick="btnSearch_Click" EnableTheming="True" SkinID="headerBtn" /></td>
+                                </tr>
+                            </table>
+
+
+
+
+                            <div runat="server" id="loadTimeDiv" style="display: inline">
+                                &nbsp;
+&nbsp;<asp:Label ID="lblPageCreatedInCaption" runat="server"
+    Text="Page created in (s)" ForeColor="White"></asp:Label>
+                                <asp:Label ID="lblPageCreatedIn" runat="server" ForeColor="White"></asp:Label>
+                                &nbsp;<asp:Label ID="lblCatTime" runat="server" ForeColor="White"
+                                    Text="Cat time"></asp:Label>
+                                &nbsp;<asp:Label ID="lblComms" runat="server" ForeColor="White"></asp:Label>
+                            </div>
+                            <asp:Label ID="lblTimeZone" ForeColor="White" runat="server" Text="GMT"
+                                Visible="False"></asp:Label>
+                        </asp:Panel>
+
+                    </div>
+
+                    <div runat="server" id="headerMenuDiv" style="padding-left: 5px;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width: 20px; white-space: nowrap">
+                                    <asp:Menu ID="navMenu" runat="server" EnableViewState="false"
+                                        Style="font-size: 18px;"
+                                        MaximumDynamicDisplayLevels="50"
+                                        Font-Names="arial,georgia,&quot;Trebuchet MS&quot;,&quot;Times New Roman&quot;"
+                                        StaticSubMenuIndent="" Font-Size="16px"
+                                        CssClass="inlineTable"
+                                        StaticPopOutImageUrl="~/images/SiteImages/navMenusImg.png"
+                                        DynamicPopOutImageUrl="~/images/SiteImages/catMenuImgS.png"
+                                        DisappearAfter="1000" DynamicHorizontalOffset="1" Orientation="Horizontal"
+                                        SkipLinkText="">
+                                        <StaticMenuStyle BorderStyle="None" CssClass="autoWidth" />
+                                        <LevelSubMenuStyles>
+                                            <asp:SubMenuStyle />
+                                            <asp:SubMenuStyle CssClass="menuBgr0" BackColor="#a1d495" />
+                                            <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                            <asp:SubMenuStyle CssClass="menuBgr1" BackColor="#a1d495" />
+                                            <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                            <asp:SubMenuStyle CssClass="menuBgr1" BackColor="#a1d495" />
+                                            <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                            <asp:SubMenuStyle CssClass="menuBgr1" BackColor="#a1d495" />
+                                            <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                            <asp:SubMenuStyle CssClass="menuBgr1" BackColor="#a1d495" />
+                                            <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                        </LevelSubMenuStyles>
+                                        <LevelMenuItemStyles>
+                                            <asp:MenuItemStyle Font-Underline="False" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                        </LevelMenuItemStyles>
+                                        <StaticMenuItemStyle CssClass="noEffect" Font-Bold="True"
+                                            Font-Names="&quot;Trebuchet MS&quot;,Verdana,&quot;Times New Roman&quot;"
+                                            Font-Overline="False" Font-Size="Medium" ForeColor="White" />
+                                        <DynamicHoverStyle Font-Italic="False"
+                                            Font-Underline="False" CssClass="noEffect" ForeColor="#254b28" />
+                                        <DynamicMenuItemStyle
+                                            CssClass="categoryLinks" HorizontalPadding="3px" />
+                                        <StaticHoverStyle CssClass="noEffect" />
+                                    </asp:Menu>
+
+                                </td>
+
+                                <td style="white-space: nowrap; width: 20px;">
+                                    <div style="padding-left: 14px;">
+                                        <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/Home.aspx"
+                                            CssClass="headerLinks">Home</asp:HyperLink>
+                                    </div>
+                                </td>
+
+
+                                <td style="width: 20px; white-space: nowrap">
+
+                                    <div style="padding-left: 4px;">
+                                        <asp:Menu ID="navLinks" runat="server"
+                                            Style="margin-left: 10px; font-size: 18px;"
+                                            MaximumDynamicDisplayLevels="50" BorderColor="#333300"
+                                            BorderWidth="1px" BorderStyle="Solid"
+                                            Font-Names="arial,georgia,&quot;Trebuchet MS&quot;,&quot;Times New Roman&quot;"
+                                            StaticSubMenuIndent="" Font-Size="16px" Orientation="Horizontal"
+                                            StaticPopOutImageUrl="~/images/SiteImages/navMenusImg.png"
+                                            DynamicPopOutImageUrl="~/images/SiteImages/catMenuImgS.png"
+                                            DynamicHorizontalOffset="1"
+                                            DisappearAfter="1000"
+                                            CssClass="inlineTable">
+                                            <StaticMenuStyle BorderStyle="None" CssClass="autoWidth" />
+                                            <LevelSubMenuStyles>
+                                                <asp:SubMenuStyle />
+                                                <asp:SubMenuStyle CssClass="menuBgr0" BackColor="#a1d495" />
+                                                <asp:SubMenuStyle CssClass="menuBgr2" BackColor="#499650" />
+                                                <asp:SubMenuStyle CssClass="menuBgr1" BackColor="#a1d495" />
+                                            </LevelSubMenuStyles>
+                                            <LevelMenuItemStyles>
+                                                <asp:MenuItemStyle Font-Underline="False" />
+                                                <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                                <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                                <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            </LevelMenuItemStyles>
+                                            <StaticMenuItemStyle CssClass="none" Font-Bold="True"
+                                                Font-Names="&quot;Trebuchet MS&quot;,Verdana,&quot;Times New Roman&quot;"
+                                                Font-Overline="False" Font-Size="Medium" ForeColor="White" />
+                                            <DynamicHoverStyle Font-Italic="False"
+                                                Font-Underline="False" CssClass="noEffect" ForeColor="#254b28" />
+                                            <DynamicMenuItemStyle
+                                                CssClass="categoryLinks" HorizontalPadding="3px" />
+                                            <StaticHoverStyle CssClass="noEffect" />
+                                        </asp:Menu>
+                                    </div>
+                                </td>
+
+
+
+                                <td style="width: 10px; white-space: nowrap;">
+                                    <div style="padding-left: 4px;">
+                                        <asp:Menu ID="userMenu" runat="server"
+                                            Style="margin-left: 10px; font-size: 18px;"
+                                            MaximumDynamicDisplayLevels="50" BorderColor="#333300"
+                                            BorderWidth="1px" BorderStyle="Solid"
+                                            Font-Names="arial,georgia,&quot;Trebuchet MS&quot;,&quot;Times New Roman&quot;"
+                                            StaticSubMenuIndent="" Font-Size="16px" Orientation="Horizontal"
+                                            StaticPopOutImageUrl="~/images/SiteImages/navMenusImg.png"
+                                            CssClass="inlineTable" Visible="False">
+                                            <StaticMenuStyle BorderStyle="None" CssClass="autoWidth" />
+                                            <LevelSubMenuStyles>
+                                                <asp:SubMenuStyle />
+                                                <asp:SubMenuStyle CssClass="menuBgr0" BackColor="#a1d495" />
+                                            </LevelSubMenuStyles>
+                                            <LevelMenuItemStyles>
+                                                <asp:MenuItemStyle Font-Underline="False" />
+                                                <asp:MenuItemStyle Font-Underline="False" Width="100%" />
+                                            </LevelMenuItemStyles>
+                                            <StaticMenuItemStyle CssClass="none" Font-Bold="True"
+                                                Font-Names="&quot;Trebuchet MS&quot;,Verdana,&quot;Times New Roman&quot;"
+                                                Font-Overline="False" Font-Size="Medium" ForeColor="White" />
+                                            <DynamicHoverStyle Font-Italic="False"
+                                                Font-Underline="False" CssClass="noEffect" ForeColor="#254b28" />
+                                            <DynamicMenuItemStyle
+                                                CssClass="categoryLinks" HorizontalPadding="3px" />
+                                            <StaticHoverStyle ForeColor="#004F00" CssClass="noEffect" />
+                                        </asp:Menu>
+                                    </div>
+
+
+
+
+                                </td>
+                                <td style="vertical-align: middle; width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewMail" ToolTip="You have unread message/s"
+                                        Visible="False" NavigateUrl="~/Messages.aspx" ImageUrl="~/images/SiteImages/newMail.png"></asp:HyperLink>
+
+                                </td>
+                                <td style="vertical-align: middle; width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewWarning" ToolTip="You have new warning"
+                                        Visible="False" NavigateUrl="~/Profile.aspx" ImageUrl="~/images/SiteImages/newWarning.png"></asp:HyperLink>
+
+
+                                </td>
+                                <td style="vertical-align: middle; width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewSysMsg" ToolTip="You have unread system message/s"
+                                        Visible="False" NavigateUrl="~/Profile.aspx" ImageUrl="~/images/SiteImages/newSysMsg.png"></asp:HyperLink>
+
+                                </td>
+
+                                <td style="vertical-align: middle; width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewContent" ToolTip="New content"
+                                        Visible="False" NavigateUrl="~/Notifications.aspx" ImageUrl="~/images/SiteImages/newContent.png"></asp:HyperLink>
+
+                                </td>
+
+                                <td style="width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewEditSuggestionData" ToolTip="New suggestion/opinion sent to you"
+                                        Visible="False" NavigateUrl="~/EditSuggestions.aspx" ImageUrl="~/images/SiteImages/newEditSuggestion.png"></asp:HyperLink>
+
+                                </td>
+                                <td style="vertical-align: middle; width: 1px;">
+
+                                    <asp:HyperLink runat="server" ID="imgNewReportReply" ToolTip="You have new reply to report"
+                                        Visible="False" NavigateUrl="~/MyReports.aspx" ImageUrl="~/images/SiteImages/newReportReply.png"></asp:HyperLink>
+
+                                </td>
+                                <td style="vertical-align: middle;"></td>
+
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+            <asp:Panel ID="pnlAdvSearch" CssClass="pnlAdvSearch roundedCorners5" runat="server" Style="display: inline-block; width: 160px;">
+                <div runat="server" id="divCloseAdvSearch" class="closeButtonDiv">X</div>
+                <asp:CheckBoxList ID="cblAdvSearch" runat="server">
+                    <asp:ListItem Selected="True">products</asp:ListItem>
+                    <asp:ListItem>companies</asp:ListItem>
+                    <asp:ListItem>users</asp:ListItem>
+                    <asp:ListItem>categories</asp:ListItem>
+                </asp:CheckBoxList>
+            </asp:Panel>
+
+            <div id="divOptions" class="pnlPopUpOptions roundedCorners5" style="font-family: 'Trebuchet MS'; width: 350px;">
+
+
+                <div runat="server" id="divCloseOptions" class="closeButtonDiv">X</div>
+                <div class="sectionTextHeader" style="padding: 3px 0px 5px 0px;">
+                    <asp:Label ID="lblWidth" Font-Size="18px" runat="server" Text="Choose site width :"></asp:Label>
+                </div>
+
+                <div>
+                    <div style="float: left; display: inline-block; width: 90px; padding-right: 5px; text-align: center;">
+
+
+                        <asp:LinkButton ID="lbWidthOpt1" runat="server" Font-Size="17px"
+                            OnClick="lbWidthOpt1_Click">1000-1000</asp:LinkButton>
+
+                        <asp:LinkButton ID="lbWidthOpt2" runat="server" Font-Size="17px"
+                            OnClick="lbWidthOpt2_Click">1000-1500</asp:LinkButton>
+
+                        <asp:LinkButton ID="lbWidthOpt3" runat="server" Font-Size="17px"
+                            OnClick="lbWidthOpt3_Click">1000-100%</asp:LinkButton>
+
+                    </div>
+
+
+                    <div style="display: inline-block;">
+
+
+                        <table>
+                            <tr style="padding: 2px 0px 2px 0px;">
+                                <td style="width: auto; text-align: right;">
+
+                                    <asp:Label ID="lblMinWidthIs" runat="server" Text="Min. :"></asp:Label>
+
+                                </td>
+                                <td>
+
+                                    <asp:TextBox ID="tbMinWidth" runat="server" Height="15px" Width="50px"></asp:TextBox>
+
+                                    <ajaxToolkit:FilteredTextBoxExtender ID="tbMinWidth_FilteredTextBoxExtender"
+                                        runat="server" FilterType="Numbers" TargetControlID="tbMinWidth">
+                                    </ajaxToolkit:FilteredTextBoxExtender>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;">
+
+                                    <asp:Label ID="lblMaxWidthIs" runat="server" Text="Max. :"></asp:Label>
+
+                                </td>
+                                <td>
+
+                                    <asp:TextBox ID="tbMaxWidth" runat="server" Height="15px" Width="50px"></asp:TextBox>
+
+                                    <ajaxToolkit:FilteredTextBoxExtender ID="tbMaxWidth_FilteredTextBoxExtender"
+                                        runat="server" FilterType="Numbers" TargetControlID="tbMaxWidth">
+                                    </ajaxToolkit:FilteredTextBoxExtender>
+
+                                    <asp:Label ID="lblOr" runat="server" Text="or"></asp:Label>
+                                    <asp:CheckBox ID="cbMaxWidth" runat="server" Text="100%" />
+
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="padding: 8px 0px 8px 5px;">
+                            <asp:Button ID="btnSaveOptions" runat="server" Text="Save"
+                                OnClick="btnSaveOptions_Click" />
+                            <asp:Button ID="btnResetOptions" runat="server" Text="Reset" OnClick="btnResetOptions_Click" />
+                        </div>
+                    </div>
+                </div>
+
+                <asp:Label ID="lblCurrently" runat="server" Style="margin-left: 5px;" Text="currently :"></asp:Label>
+                <asp:Label ID="lblMinWidth" runat="server" Text="Min Width"></asp:Label>
+                /
+            <asp:Label ID="lblMaxWidth" runat="server" Text="Max Width"></asp:Label>
+
+                <br />
+
+                <asp:Label ID="lblOptionError" runat="server" CssClass="searchPageRatings"
+                    Text="Error" Visible="False"></asp:Label>
+
+            </div>
+
+            <asp:Panel ID="pnlAdmin" runat="server" Visible="False" HorizontalAlign="Center">
+
+                <asp:HyperLink ID="hlStatistics" runat="server"
+                    NavigateUrl="~/Statistics.aspx" CssClass="marginsLR">Statistics</asp:HyperLink>
+
+                <asp:HyperLink ID="hlReportsPage" runat="server" Text="Reports"
+                    NavigateUrl="~/Reports.aspx" CssClass="marginsLR"></asp:HyperLink>
+
+                <asp:HyperLink ID="hlLogs" runat="server" Text="Logs" NavigateUrl="~/Logs.aspx" CssClass="marginsLR"></asp:HyperLink>
+
+                <asp:HyperLink ID="hlAdmin" runat="server" Text="Admins"
+                    NavigateUrl="~/Administrators.aspx" CssClass="marginsLR"></asp:HyperLink>
+
+                <asp:HyperLink ID="hlSiteText" runat="server" NavigateUrl="~/SiteTexts.aspx" CssClass="marginsLR">Texts</asp:HyperLink>
+
+                <asp:HyperLink ID="hlAdPage" runat="server" NavigateUrl="~/Advertisements.aspx" CssClass="marginsLR">Advertisements</asp:HyperLink>
+
+                <asp:HyperLink ID="hlAdressActivity" runat="server" CssClass="marginsLR"
+                    NavigateUrl="~/AddressActivity.aspx">Ip adresses</asp:HyperLink>
+
+                <asp:HyperLink ID="hlLastComments" runat="server" CssClass="marginsLR"
+                    NavigateUrl="~/LastComments.aspx">Last Comments</asp:HyperLink>
+
+                <asp:HyperLink ID="hlLastCP" runat="server" NavigateUrl="~/LastCP.aspx" CssClass="marginsLR">Last Comp & Prod</asp:HyperLink>
+
+                <asp:HyperLink ID="hlWarnings" runat="server" CssClass="marginsLR"
+                    NavigateUrl="~/Warnings.aspx">Warnings</asp:HyperLink>
+
+            </asp:Panel>
+
+            <asp:Panel ID="pnlError" runat="server" Visible="False" HorizontalAlign="Center">
+                <asp:Label ID="lblError" runat="server" ForeColor="#CC3300" Text="Error:"
+                    Font-Size="Larger"></asp:Label>
+            </asp:Panel>
+
+            <noscript>
+                <div style="text-align: center; color: #CC3300; font-size: larger;">
+                    <asp:Label ID="lblJavascriptError" runat="server" Text="Label"></asp:Label>
+                    Javascript is necessary in order this site to run properly. Please enable it!
+                </div>
+            </noscript>
+
+            <div class="contentPages">
+                <div class="contentHeaderBgr">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom">
+
+            <asp:Label ID="lblSite" runat="server"
+                Text="Site made and owned by George Kolev"></asp:Label>
+        </div>
+
+
+        <!-- Session Refresh -->
+        <iframe id="Refresh" src="SessionRefresh.aspx"
+            frameborder="0" runat="server" style="width: 0; height: 0; visibility: hidden; position: absolute; top: 1px; left: 1px;"></iframe>
+
+        <asp:Panel ID="pnlHidden" runat="server" Visible="False" BackColor="#FF99CC" Style="text-align: left;">
+            &nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hlAddCompany" runat="server" CssClass="headerLinks"
+                NavigateUrl="~/AddCompany.aspx">Add Maker</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="hlAbout" runat="server" NavigateUrl="~/AboutUs.aspx"
+            CssClass="headerLinks">About</asp:HyperLink>
+            &nbsp;
+        <asp:HyperLink ID="hlFAQ" runat="server" NavigateUrl="~/FAQ.aspx"
+            CssClass="headerLinks">FAQ</asp:HyperLink>
+            &nbsp;
+        <asp:HyperLink ID="hlRules" runat="server" NavigateUrl="~/Rules.aspx"
+            CssClass="headerLinks">Rules</asp:HyperLink>
+            &nbsp;
+        <asp:HyperLink ID="hlSuggestions" runat="server" NavigateUrl="~/SuggestionsForSite.aspx"
+            CssClass="headerLinks">Suggestions</asp:HyperLink>
+            &nbsp;&nbsp;
+        <br />
+            <asp:PlaceHolder ID="phMenu" runat="server"></asp:PlaceHolder>
+            <br />
+            <br />
+            <br />
+            <asp:PlaceHolder ID="phLogInOut" runat="server"></asp:PlaceHolder>
+            <br />
+            <br />
+            <asp:LinkButton ID="LogOutBtn" runat="server" CssClass="logOutBtn"
+                OnClick="LogOutBtn_Click" Visible="False">(log out)</asp:LinkButton>
+            <br />
+
+            <br />
+            <br />
+        </asp:Panel>
+    </form>
+
+
+</body>
+
+</html>

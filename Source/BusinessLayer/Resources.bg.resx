@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddUserActionAddMakers" xml:space="preserve">
+    <value>Получихте право за добавяне на компании.</value>
+  </data>
+  <data name="AddUserActionAddProducts" xml:space="preserve">
+    <value>Получихте право за добавяне на продукти.</value>
+  </data>
+  <data name="AddUserActionCommenter" xml:space="preserve">
+    <value>Получихте право за писане на мнения и лични съобщения.</value>
+  </data>
+  <data name="AddUserActionHaveSignature" xml:space="preserve">
+    <value>Получихте право, което ви позволява да имате сигнатура.</value>
+  </data>
+  <data name="AddUserActionRateComments" xml:space="preserve">
+    <value>Получихте право за оценка на мнения.</value>
+  </data>
+  <data name="AddUserActionRateProducts" xml:space="preserve">
+    <value>Получихте право за оценка на продукти.</value>
+  </data>
+  <data name="AddUserActionRateUsers" xml:space="preserve">
+    <value>Получихте право за оценка на потребители.</value>
+  </data>
+  <data name="AddUserActionSendReports" xml:space="preserve">
+    <value>Получихте право за изпращане на доклади.</value>
+  </data>
+  <data name="AddUserActionSendSuggestions" xml:space="preserve">
+    <value>Получихте право за писане на предложения.</value>
+  </data>
+  <data name="AddUserTypeActionAllMakerProducts" xml:space="preserve">
+    <value>Получихте право да редактирате всички продукти на</value>
+  </data>
+  <data name="AddUserTypeActionEditMaker" xml:space="preserve">
+    <value>Получихте право да редактирате компанията</value>
+  </data>
+  <data name="AddUserTypeActionEditProduct" xml:space="preserve">
+    <value>Получихте право да редактирате продукта</value>
+  </data>
+  <data name="allCommsWereDeleted" xml:space="preserve">
+    <value>Всички ваши мнения бяха изтрити.</value>
+  </data>
+  <data name="big" xml:space="preserve">
+    <value>голям</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>категория</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>мнение</value>
+  </data>
+  <data name="commentEditedBy" xml:space="preserve">
+    <value>мнението e променено от :</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>дни</value>
+  </data>
+  <data name="DeletingSuggestionSM" xml:space="preserve">
+    <value>Предложението ви e изтрито :</value>
+  </data>
+  <data name="DeletingSuggestionW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата за писане на предложения!</value>
+  </data>
+  <data name="DeletingSuggestionW2" xml:space="preserve">
+    <value>Причина е написаното от вас предложение :</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание :</value>
+  </data>
+  <data name="errAlreadyBlockingUser" xml:space="preserve">
+    <value>Този потребител вече e блокиран.</value>
+  </data>
+  <data name="errCantBlockUrself" xml:space="preserve">
+    <value>Не може да блокирате себе си.</value>
+  </data>
+  <data name="errCantBlockUser" xml:space="preserve">
+    <value>Не може да блокирате този потребител.</value>
+  </data>
+  <data name="errImgFileSize" xml:space="preserve">
+    <value>Файлът е прекалено</value>
+  </data>
+  <data name="errImgFileType" xml:space="preserve">
+    <value>Тип на файла</value>
+  </data>
+  <data name="errImgFileType2" xml:space="preserve">
+    <value>не се поддържа</value>
+  </data>
+  <data name="errImgNotValidType" xml:space="preserve">
+    <value>Невалиден</value>
+  </data>
+  <data name="errImgTypeNotSupported" xml:space="preserve">
+    <value>Типа на изображението не се поддържа.</value>
+  </data>
+  <data name="errImgUploading" xml:space="preserve">
+    <value>Грешка при добавяне на изображението.</value>
+  </data>
+  <data name="errImgWidthHeight" xml:space="preserve">
+    <value>Изображението е малко, широчината/височината му трябва да е по-голяма от</value>
+  </data>
+  <data name="errIsntActivated" xml:space="preserve">
+    <value>не е активиран.</value>
+  </data>
+  <data name="errNoSuchUser" xml:space="preserve">
+    <value>Няма такъв потребител.</value>
+  </data>
+  <data name="errTransferActionAlreadyTransf" xml:space="preserve">
+    <value>Това право се прехвърля в момента.</value>
+  </data>
+  <data name="errTransferActionCantTransfer" xml:space="preserve">
+    <value>Не може да прехвърлите това право.</value>
+  </data>
+  <data name="errTransferActionCantTransferRoles" xml:space="preserve">
+    <value>Не може да прехвърляте права.</value>
+  </data>
+  <data name="errTransferActionCantTransferTo" xml:space="preserve">
+    <value>Не може да прехвърляте права към</value>
+  </data>
+  <data name="errTransferActionCantTransferTo2" xml:space="preserve">
+    <value>, защото ви е блокирал.</value>
+  </data>
+  <data name="errTransferActionCantTransferTo3" xml:space="preserve">
+    <value>, защото сте го блокирали.</value>
+  </data>
+  <data name="errTransferActionCantTransferToUrself" xml:space="preserve">
+    <value>Не може да прехвърляте права към себе си.</value>
+  </data>
+  <data name="errTransferActionOtherIsTransf" xml:space="preserve">
+    <value>В момента друг потребител прехвърля това право към</value>
+  </data>
+  <data name="errTransferActionUserAlreadyHave" xml:space="preserve">
+    <value>вече има това право.</value>
+  </data>
+  <data name="errTypeSuggAlreadyHaveSugg" xml:space="preserve">
+    <value>В момента имате активно предложение за този продукт.</value>
+  </data>
+  <data name="errTypeSuggAlreadyHaveSuggMaker" xml:space="preserve">
+    <value>В момента имате активно предложение за тази компания</value>
+  </data>
+  <data name="errTypeSuggCantSent" xml:space="preserve">
+    <value>Не може да изпратите предложение за продукта, защото сте негов редактор.</value>
+  </data>
+  <data name="errTypeSuggCantSentMaker" xml:space="preserve">
+    <value>Не може да изпратите предложение за компанията, защото сте неин редактор.</value>
+  </data>
+  <data name="errTypeSuggCantSentSuggestions" xml:space="preserve">
+    <value>Не може да изпращате предложения.</value>
+  </data>
+  <data name="errTypeSuggLimitReached" xml:space="preserve">
+    <value>Максималният брой активни предложения е достигнат.</value>
+  </data>
+  <data name="errTypeSuggUserCantEdit" xml:space="preserve">
+    <value>не може да редактира продукта</value>
+  </data>
+  <data name="errTypeSuggUserCantEditMaker" xml:space="preserve">
+    <value>не може да редактира компанията</value>
+  </data>
+  <data name="errUserNotActivated" xml:space="preserve">
+    <value>Този потребител не е активиран.</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>файл</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>общ</value>
+  </data>
+  <data name="maker" xml:space="preserve">
+    <value>компания</value>
+  </data>
+  <data name="notifRemovedMaker" xml:space="preserve">
+    <value>Отписан сте за известия относно компанията</value>
+  </data>
+  <data name="notifRemovedMaker2" xml:space="preserve">
+    <value>, защото тя e изтрита.</value>
+  </data>
+  <data name="notifRemovedProduct" xml:space="preserve">
+    <value>Отписан сте за известия за продукта</value>
+  </data>
+  <data name="notifRemovedProduct2" xml:space="preserve">
+    <value>, защото той e изтрит.</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value>на</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>продукт</value>
+  </data>
+  <data name="products" xml:space="preserve">
+    <value>продукти</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Причина :</value>
+  </data>
+  <data name="RemoveUserActionAddMakers" xml:space="preserve">
+    <value>Правото ви да добавяте компании e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionAddProducts" xml:space="preserve">
+    <value>Правото ви да добавяте продукти e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionCommenter" xml:space="preserve">
+    <value>Правото ви да пишете мнения и лични съобщения e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionHaveSignature" xml:space="preserve">
+    <value>Правото ви да имате сигнатура e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionRateComments" xml:space="preserve">
+    <value>Правото ви да оценявате мнения e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionRateProducts" xml:space="preserve">
+    <value>Правото ви да оценявате продукти e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionRateUsers" xml:space="preserve">
+    <value>Правото ви да оценявате потребители e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionSendReports" xml:space="preserve">
+    <value>Правото ви да пишете доклади e премахнато.</value>
+  </data>
+  <data name="RemoveUserActionSendSuggestions" xml:space="preserve">
+    <value>Правото ви да пишете предложения e премахнато.</value>
+  </data>
+  <data name="RemoveUserTypeActionAllMakerProducts" xml:space="preserve">
+    <value>Правото ви да редактирате всички продукти на</value>
+  </data>
+  <data name="RemoveUserTypeActionAllMakerProducts2" xml:space="preserve">
+    <value>e премахнато.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditAllMakerProdsCusDeleted2" xml:space="preserve">
+    <value>e премахнато, защото компанията e изтрита.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditAllMakerProdsCusDeleted" xml:space="preserve">
+    <value>Правото ви да редактирате всички продукти на</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMaker" xml:space="preserve">
+    <value>Правото ви да редактирате</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMaker2" xml:space="preserve">
+    <value>e премахнато.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMakerCusDeleted" xml:space="preserve">
+    <value>Правото ви да редактирате</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMakerCusDeleted2" xml:space="preserve">
+    <value>e премахнато, защото компанията e изтрита.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProduct" xml:space="preserve">
+    <value>Правото ви да редактирате</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProduct2" xml:space="preserve">
+    <value>e премахнато.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProductCusDeleted" xml:space="preserve">
+    <value>Правото ви да редактирате</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProductCusDeleted2" xml:space="preserve">
+    <value>e премахнато, защото продукта e изтрит.</value>
+  </data>
+  <data name="reportReolvedMessage" xml:space="preserve">
+    <value>Автоматично съобщение : Доклада e прочетен и затворен - благодарим ви, че го написахте!</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription" xml:space="preserve">
+    <value>Здравейте</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription2" xml:space="preserve">
+    <value>, вие поискахте нова парола чрез попълване на формата "забравена парола", и използване на препратката за смяната и.</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription3" xml:space="preserve">
+    <value>Вашата нова парола е :</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription4" xml:space="preserve">
+    <value>Може да я смените винаги от страницата на вашият профил.</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription5" xml:space="preserve">
+    <value>Моля, не отговоряйте на това съобщение, защото е автоматично.</value>
+  </data>
+  <data name="sendMailToUserNewPassSubject" xml:space="preserve">
+    <value>Нова парола за</value>
+  </data>
+  <data name="sendMailToUserNewPassSubject2" xml:space="preserve">
+    <value>в wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription" xml:space="preserve">
+    <value>Благодарим ви за регистрирането в wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription2" xml:space="preserve">
+    <value>Вашето потребителско име е :</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription3" xml:space="preserve">
+    <value>Профилът ви в момента не е активиран - за да го активирате, моля, посете тази препратка</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription4" xml:space="preserve">
+    <value>Всяка парола се криптира в нашата база от данни и не може да се възстанови. Ако я забравите, може да поискате нова чрез попълване формата "забравена парола".</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription5" xml:space="preserve">
+    <value>Моля, не отговоряйте на това съобщение - то е автоматично.</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationSubject" xml:space="preserve">
+    <value>Добре дошли в wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription" xml:space="preserve">
+    <value>Здравейте</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription2" xml:space="preserve">
+    <value>, вие поискахте смяна на паролата в</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription3" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription4" xml:space="preserve">
+    <value>Трябва да използвате препратката до 24 часа. Ако не искате смяна на паролата - не използвайте препратката и изтрийте това съобщение!</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription6" xml:space="preserve">
+    <value>Моля, не отговоряйте на съобщението - то е автоматично.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkSubject" xml:space="preserve">
+    <value>Препратка за смяна на парола на</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkSubject2" xml:space="preserve">
+    <value>в wiadvice.com</value>
+  </data>
+  <data name="small" xml:space="preserve">
+    <value>малък</value>
+  </data>
+  <data name="transferDaysToAcceptOrDecline" xml:space="preserve">
+    <value>дни за приемане или отхвърляне.</value>
+  </data>
+  <data name="transferSmAccept" xml:space="preserve">
+    <value>прие прехвърлянето на право за редактиране на</value>
+  </data>
+  <data name="transferSmAccept2" xml:space="preserve">
+    <value>Сега може да редактирате</value>
+  </data>
+  <data name="transferSmAdd" xml:space="preserve">
+    <value>прехвърля към вас право да редактирате</value>
+  </data>
+  <data name="transferSmDeactivate" xml:space="preserve">
+    <value>Прехвърлянето на право за редактиране на</value>
+  </data>
+  <data name="transferSmDeactivate2" xml:space="preserve">
+    <value>e спряно.</value>
+  </data>
+  <data name="transferSmDeactivateTime" xml:space="preserve">
+    <value>Прехвърлянето на право за редактиране на</value>
+  </data>
+  <data name="transferSmDeactivateTime2" xml:space="preserve">
+    <value>е спряно, защото не е прието или отказано за</value>
+  </data>
+  <data name="transferSmDecline" xml:space="preserve">
+    <value>отказа прехвърлянето на право за редактиране на</value>
+  </data>
+  <data name="TypeSuggACdeclined" xml:space="preserve">
+    <value>Автоматичен коментар : Предложението е отказано от системата, защото</value>
+  </data>
+  <data name="TypeSuggACdeclined2" xml:space="preserve">
+    <value>вече няма право да редактира</value>
+  </data>
+  <data name="TypeSuggACdeclined3" xml:space="preserve">
+    <value>вече няма право да редактира всички продукти на</value>
+  </data>
+  <data name="typeSuggestion" xml:space="preserve">
+    <value>предложение за промяна</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>потребител</value>
+  </data>
+  <data name="UserB" xml:space="preserve">
+    <value>Потребителя</value>
+  </data>
+  <data name="UserTookActionFrom" xml:space="preserve">
+    <value>взе правото за редактиране на</value>
+  </data>
+  <data name="UserTookActionFrom2" xml:space="preserve">
+    <value>от вас.</value>
+  </data>
+  <data name="UserTookActionFrom3" xml:space="preserve">
+    <value>Защото не се бяхте вписвали повече от</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>Вие имате</value>
+  </data>
+  <data name="SuggestionDesign" xml:space="preserve">
+    <value>дизайн</value>
+  </data>
+  <data name="SuggestionFeatures" xml:space="preserve">
+    <value>възможности</value>
+  </data>
+  <data name="SuggestionGeneral" xml:space="preserve">
+    <value>общо</value>
+  </data>
+  <data name="SignatureRemoved" xml:space="preserve">
+    <value>Сигнатурата ви e изтрита.</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct" xml:space="preserve">
+    <value>добави продукт</value>
+    <comment>product</comment>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct1" xml:space="preserve">
+    <value>към компания</value>
+    <comment>name</comment>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct2" xml:space="preserve">
+    <value>в категория "Други -&gt; Неопределени".</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct3" xml:space="preserve">
+    <value>Желаната категория за този продукт е</value>
+    <comment>category</comment>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct4" xml:space="preserve">
+    <value>. Ако сте забравили да добавите тази категория към компанията, моля направете го и продукта ще бъде преместен в нея автоматично. Ако мислите, че продукта не съответства на желаната категория или подозирате некоректно отношение, моля пратете доклад до администраторите!</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved" xml:space="preserve">
+    <value>Продуктът</value>
+    <comment>наме</comment>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved1" xml:space="preserve">
+    <value>с компания</value>
+    <comment>наме</comment>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved2" xml:space="preserve">
+    <value>, който е добавен към 'Други -&gt; Неопределени', e преместен в желаната категория</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved3" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="ESuggestionStatusAccepted" xml:space="preserve">
+    <value>Прието</value>
+  </data>
+  <data name="ESuggestionStatusDeclined" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="ESuggestionStatusExpired" xml:space="preserve">
+    <value>Изтекло</value>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires" xml:space="preserve">
+    <value>Предложението за промяна относно</value>
+    <comment>product/company [name]</comment>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires1" xml:space="preserve">
+    <value>което изпратихте на</value>
+    <comment>user</comment>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires2" xml:space="preserve">
+    <value>изтече, защото той не го прие или отказа в срок от</value>
+    <comment>[count]</comment>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires3" xml:space="preserve">
+    <value>дни след изпращането.</value>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires" xml:space="preserve">
+    <value>Предложението за промяна относно</value>
+    <comment>product/company [name]</comment>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires1" xml:space="preserve">
+    <value>което получихте от</value>
+    <comment>user</comment>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires2" xml:space="preserve">
+    <value>изтече, защото не го прихте или отказахте в срок от</value>
+    <comment>[count]</comment>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires3" xml:space="preserve">
+    <value>дни след получаването му.</value>
+  </data>
+  <data name="CommToUsersAboutEditSuggWhenCompanyIsDeleted" xml:space="preserve">
+    <value>Автоматично съобщение: Системата отказа предложението, защото компанията e изтрита.</value>
+    <comment>not used</comment>
+  </data>
+  <data name="CommToUsersAboutEditSuggWhenProductIsDeleted" xml:space="preserve">
+    <value>Автоматично съобщение: Системата отказа предложението, защото продукта e изтрит.</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errOpinionRatAlreadyRated" xml:space="preserve">
+    <value>Вече сте оценили това мнение!</value>
+  </data>
+  <data name="errCommRatMaxRatingsForDayReached" xml:space="preserve">
+    <value>Не може да оценявате повече мнения днес!</value>
+  </data>
+  <data name="errCommRatMaxRatingsForProductReached" xml:space="preserve">
+    <value>Не може да оценявате повече мнения за този продукт!</value>
+  </data>
+  <data name="errCantSendReport" xml:space="preserve">
+    <value>Не може да пишете доклади!</value>
+  </data>
+  <data name="errMaxIrrRepLimitReached" xml:space="preserve">
+    <value>Достигнат е максимален брой неприключени доклади!</value>
+  </data>
+  <data name="errMaxSpamReached" xml:space="preserve">
+    <value>Достигнат е максимален брой активни доклади за нарушение. Изчакайте, докато броят им бъде намален, за да може да маркирате отново.</value>
+  </data>
+  <data name="errRepAlreadyHaveSuchActive" xml:space="preserve">
+    <value>Вече имате такъв активен доклад, трябва да бъде приключен, за да може да изпратите нов.</value>
+  </data>
+  <data name="errReportInvalidType" xml:space="preserve">
+    <value>Невалиден тип, за който е репорта.</value>
+  </data>
+  <data name="errMaxTypeSuggNumberReached" xml:space="preserve">
+    <value>Достигнали сте максимален брой активни предложения.</value>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted" xml:space="preserve">
+    <value>Системата спря прехвърлянето на право за</value>
+    <comment>type name</comment>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted2" xml:space="preserve">
+    <value>, защото</value>
+    <comment>user</comment>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted3" xml:space="preserve">
+    <value>e изтрит.</value>
+  </data>
+  <data name="TypeSuggDeclinedCusUserIsDeleted" xml:space="preserve">
+    <value>Автоматичен коментар : Предложението е отказано от системата, защото</value>
+    <comment>username</comment>
+  </data>
+  <data name="TypeSuggDeclinedCusUserIsDeleted2" xml:space="preserve">
+    <value>е изтрит.</value>
+  </data>
+  <data name="errOpinionCantRateUrs" xml:space="preserve">
+    <value>Не може да оценявате вашите мнения!</value>
+  </data>
+  <data name="DeletingCommentW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата за писане на мнения!</value>
+  </data>
+  <data name="DeletingCommentW2" xml:space="preserve">
+    <value>Причина е написаното от вас мнение :</value>
+  </data>
+  <data name="repResCusUserDeleted" xml:space="preserve">
+    <value>Автоматично съобщение : Доклада е затворен,  защото потребителят e изтрит!</value>
+  </data>
+  <data name="SMwarningRemoved" xml:space="preserve">
+    <value>Предупреждението, което получихте, беше изтрито :</value>
+  </data>
+  <data name="DeletingProductTopicW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата за писане на теми!</value>
+  </data>
+  <data name="DeletingProductTopicW2" xml:space="preserve">
+    <value>Причина е започнатата от вас тема</value>
+    <comment>name</comment>
+  </data>
+  <data name="DeletingProductTopicW3" xml:space="preserve">
+    <value>за продукта</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted" xml:space="preserve">
+    <value>Темата</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted2" xml:space="preserve">
+    <value>, която вие започнахте за продукта</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted3" xml:space="preserve">
+    <value>беше изтрита.</value>
+  </data>
+  <data name="notifRemovedProductForum" xml:space="preserve">
+    <value>Отписан сте за известия за форума на продукта</value>
+  </data>
+  <data name="notifRemovedProductForum2" xml:space="preserve">
+    <value>, защото той е изтрит.</value>
+  </data>
+  <data name="notifRemovedProductTopic" xml:space="preserve">
+    <value>Отписан сте за известия за темата</value>
+  </data>
+  <data name="notifRemovedProductTopic2" xml:space="preserve">
+    <value>, защото тя е изтрита/заключена.</value>
+  </data>
+  <data name="DeletingTopicCommentW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата за писане на коментари в форума!</value>
+  </data>
+  <data name="DeletingTopicCommentW2" xml:space="preserve">
+    <value>Причина е написаният от вас коментар :</value>
+  </data>
+  <data name="SMProdCommentDeleted" xml:space="preserve">
+    <value>Мнението, което написахте, е изтрито :</value>
+  </data>
+  <data name="SMTopicCommentDeleted" xml:space="preserve">
+    <value>Коментара, който написахте, е изтрит :</value>
+  </data>
+  <data name="LockingProductTopicW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата за писане на теми!</value>
+  </data>
+  <data name="LockingProductTopicW2" xml:space="preserve">
+    <value>Причина е започнатата от вас тема</value>
+  </data>
+  <data name="LockingProductTopicW3" xml:space="preserve">
+    <value>за продукта</value>
+  </data>
+  <data name="ProductTopicLocked" xml:space="preserve">
+    <value>Темата</value>
+  </data>
+  <data name="ProductTopicLocked2" xml:space="preserve">
+    <value>, която вие започнахте за продукта</value>
+  </data>
+  <data name="ProductTopicLocked3" xml:space="preserve">
+    <value>беше заключена.</value>
+  </data>
+  <data name="errCommRatMaxRatingsForTopicReached" xml:space="preserve">
+    <value>Не може да оценявате повече коментари в този тема!</value>
+  </data>
+  <data name="errCommCantRateUrs" xml:space="preserve">
+    <value>Не може да оценявате вашите коментари!</value>
+  </data>
+  <data name="errCommRatAlreadyRated" xml:space="preserve">
+    <value>Вече сте оценили този коментар!</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>тема</value>
+  </data>
+  <data name="errMaxProducLinksReached" xml:space="preserve">
+    <value>Максималната бройка връзка за продукта е достигната.</value>
+  </data>
+  <data name="errProdLinkMinToWaitToAddAnother" xml:space="preserve">
+    <value>Минути, които трябва да изчакате преди да добавите нова връзка :</value>
+  </data>
+  <data name="productLinkDeletedW" xml:space="preserve">
+    <value>Автоматично предупреждение : Моля, следвайте правилата при добавяне на връзки към продукт! Причина е добавената от вас връзка за продукта</value>
+    <comment>наме</comment>
+  </data>
+  <data name="productLinkDeletedW2" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="SMproductLinkDeleted" xml:space="preserve">
+    <value>Връзката за продукта</value>
+    <comment>наме</comment>
+  </data>
+  <data name="SMproductLinkDeleted2" xml:space="preserve">
+    <value>, която добавихте, е изтрита :</value>
+  </data>
+  <data name="SMproductLinkDescrChanged" xml:space="preserve">
+    <value>Описанието на връзката</value>
+    <comment>линк</comment>
+  </data>
+  <data name="SMproductLinkDescrChanged2" xml:space="preserve">
+    <value>за продукта</value>
+    <comment>продукт</comment>
+  </data>
+  <data name="SMproductLinkDescrChanged3" xml:space="preserve">
+    <value>, която добавихте, беше сменено от</value>
+    <comment>име</comment>
+  </data>
+</root>

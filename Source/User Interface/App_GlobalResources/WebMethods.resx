@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="by" xml:space="preserve">
+    <value>by :</value>
+  </data>
+  <data name="OpinionMarkedSpam" xml:space="preserve">
+    <value>Opinion reported to administrators! Number of remaining opinions which can be marked as violation :</value>
+  </data>
+  <data name="CommentRated" xml:space="preserve">
+    <value>Opinion/comment rated!</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Opinions :</value>
+  </data>
+  <data name="CommentToSuggestionWritten" xml:space="preserve">
+    <value>Opinion added!</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description :</value>
+  </data>
+  <data name="errAlreadyRated" xml:space="preserve">
+    <value>You have already rated this opinion!</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errCantMarkAdminForSPam" xml:space="preserve">
+    <value>You cannot mark administrator opinions!</value>
+  </data>
+  <data name="errCantMarkAdminSuggForSpam" xml:space="preserve">
+    <value>You cannot mark administrator suggestions!"</value>
+  </data>
+  <data name="errCantMarkCommSpam" xml:space="preserve">
+    <value>You cannot mark opinions.</value>
+  </data>
+  <data name="errCantMarkSuggAsSpam" xml:space="preserve">
+    <value>You cannot mark suggestions.</value>
+  </data>
+  <data name="errCantRate" xml:space="preserve">
+    <value>You cannot rate opinions/comments.</value>
+  </data>
+  <data name="errCantRateAdminComms" xml:space="preserve">
+    <value>You cannot rate administrator opinions/comments!</value>
+  </data>
+  <data name="errCantRateMyComms" xml:space="preserve">
+    <value>You cannot rate your own opinions/comments!</value>
+  </data>
+  <data name="errCantSendMsg" xml:space="preserve">
+    <value>You cannot send messages.</value>
+  </data>
+  <data name="errCantSendMsgToAdmin" xml:space="preserve">
+    <value>You cannot send messages to administrators!</value>
+  </data>
+  <data name="errCantSendMsgToGuest" xml:space="preserve">
+    <value>You cannot send messages to guests!</value>
+  </data>
+  <data name="errCantSendMsgToUrself" xml:space="preserve">
+    <value>You cannot send messages to yourself!</value>
+  </data>
+  <data name="errCantSendMsgToUser" xml:space="preserve">
+    <value>You cannot send message to that user!</value>
+  </data>
+  <data name="errCantSendReport" xml:space="preserve">
+    <value>You cannot send reports!</value>
+  </data>
+  <data name="errCantWrite" xml:space="preserve">
+    <value>You cannot write opinions.</value>
+  </data>
+  <data name="errLogInSendMsg" xml:space="preserve">
+    <value>Log in, in order to send messages.</value>
+  </data>
+  <data name="errLogInToMarkSuggAsSpam" xml:space="preserve">
+    <value>Log in, in order to mark suggestions.</value>
+  </data>
+  <data name="errLogInToRate" xml:space="preserve">
+    <value>Log in, in order to rate opinions.</value>
+  </data>
+  <data name="errLogInToReply" xml:space="preserve">
+    <value>Log in, in order to reply to opinions.</value>
+  </data>
+  <data name="errLogInToSpam" xml:space="preserve">
+    <value>Log in, in order to mark opinions.</value>
+  </data>
+  <data name="errMaxNumCommReached" xml:space="preserve">
+    <value>Sorry, the maximum number of opinions which you can post about this product is reached.</value>
+  </data>
+  <data name="errMaxRepLimitReached" xml:space="preserve">
+    <value>You cannot send reports, because your maximum non-resolved reports limit is reached.</value>
+  </data>
+  <data name="errMaxReplyLvl" xml:space="preserve">
+    <value>Maximum reply level reached! This opinion cannot have sub-opinions.</value>
+  </data>
+  <data name="errMaxSpamReached" xml:space="preserve">
+    <value>You have reached maximum number of active violation reports. You have to wait until you can mark opinions.</value>
+  </data>
+  <data name="errMaxSpamReachedSugg" xml:space="preserve">
+    <value>You have reached maximum number of active violation reports. You have to wait until you can mark suggestions.</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm" xml:space="preserve">
+    <value>Minimum time between posting opinions is</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm2" xml:space="preserve">
+    <value>min, you can post after</value>
+  </data>
+  <data name="errMinTimeBetwPostingComm3" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="errNotifLimit" xml:space="preserve">
+    <value>You cannot receive notifications for more than</value>
+  </data>
+  <data name="errNotifLimit2" xml:space="preserve">
+    <value>types</value>
+  </data>
+  <data name="errNoUser" xml:space="preserve">
+    <value>No such user.</value>
+  </data>
+  <data name="errTypeReport" xml:space="preserve">
+    <value>Type a report.</value>
+  </data>
+  <data name="errWriteOpinion" xml:space="preserve">
+    <value>Write opinion!</value>
+  </data>
+  <data name="errWriteMessage" xml:space="preserve">
+    <value>Write a message!</value>
+  </data>
+  <data name="for1" xml:space="preserve">
+    <value>for :</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From :</value>
+  </data>
+  <data name="InvalidSubjectLength" xml:space="preserve">
+    <value>Invalid subject length!</value>
+  </data>
+  <data name="maker" xml:space="preserve">
+    <value>maker</value>
+  </data>
+  <data name="MakersWithSimNames" xml:space="preserve">
+    <value>Companies with similar names</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Message sent!</value>
+  </data>
+  <data name="NoSubject" xml:space="preserve">
+    <value>No Subject.</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>product</value>
+  </data>
+  <data name="ProductsWithSimNames" xml:space="preserve">
+    <value>Products with similar names</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating :</value>
+  </data>
+  <data name="ReplySent" xml:space="preserve">
+    <value>Reply sent!</value>
+  </data>
+  <data name="ReplyToReportSent" xml:space="preserve">
+    <value>Reply sent!</value>
+  </data>
+  <data name="ReportSent" xml:space="preserve">
+    <value>Report sent! Remaining number reports which can be sent :</value>
+  </data>
+  <data name="SignNotifOnMaker" xml:space="preserve">
+    <value>You signed for notifications when new products are added to this company.</value>
+  </data>
+  <data name="SignNotifOnProduct" xml:space="preserve">
+    <value>You signed for notifications when new opinions are written to this product.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status :</value>
+  </data>
+  <data name="SuggestionMarkedAsSpam" xml:space="preserve">
+    <value>Suggestion reported to administrators! Number of remaining suggestions which can be marked as violation :</value>
+  </data>
+  <data name="TransferCreated" xml:space="preserve">
+    <value>Transfer created!</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="TypeSuggestionSent" xml:space="preserve">
+    <value>Suggestion for</value>
+  </data>
+  <data name="TypeSuggestionSent2" xml:space="preserve">
+    <value>sent to</value>
+  </data>
+  <data name="errExceptionMsg" xml:space="preserve">
+    <value>System error incurred! Request coudn`t be handled.</value>
+  </data>
+  <data name="errMaxTypeSuggNumberReached" xml:space="preserve">
+    <value>You have reached maximum number of active suggestions.</value>
+  </data>
+  <data name="DescrNotEntered" xml:space="preserve">
+    <value>Not entered.</value>
+  </data>
+  <data name="errTimeAddTopic" xml:space="preserve">
+    <value>You can start new topic after</value>
+    <comment>min</comment>
+  </data>
+  <data name="errTimeAddTopic2" xml:space="preserve">
+    <value>minutes.</value>
+  </data>
+  <data name="errTopicSubjectFormat" xml:space="preserve">
+    <value>Incorrect topic subject format.</value>
+  </data>
+  <data name="topicCreated" xml:space="preserve">
+    <value>Topic posted!</value>
+  </data>
+  <data name="SignNotifOnProductForum" xml:space="preserve">
+    <value>You signed for notifications when new topics are started in this forum.</value>
+  </data>
+  <data name="SignNotifOnProductTopic" xml:space="preserve">
+    <value>You signed for notifications when new comments are written in this topic.</value>
+  </data>
+  <data name="CommToTopicAdded" xml:space="preserve">
+    <value>Comment added!</value>
+  </data>
+  <data name="CommentMarkedSpam" xml:space="preserve">
+    <value>Comment reported to administrators! Number of remaining comments which can be marked as violation :</value>
+  </data>
+  <data name="errMinTimeBetwPostingTopicComm" xml:space="preserve">
+    <value>Minimum time between posting comment is</value>
+  </data>
+  <data name="errWriteComment" xml:space="preserve">
+    <value>Write comment!</value>
+  </data>
+  <data name="errAdmCantModifTopicComm" xml:space="preserve">
+    <value>You cannot edit this comment!</value>
+  </data>
+  <data name="errCantDelTopicComm" xml:space="preserve">
+    <value>You cannot delete the comment!</value>
+  </data>
+  <data name="errChangeTopicComm" xml:space="preserve">
+    <value>The description is same as old!</value>
+  </data>
+  <data name="TopicCommUpdated" xml:space="preserve">
+    <value>Comment changed!</value>
+  </data>
+  <data name="errAdmCantModifTopic" xml:space="preserve">
+    <value>You cannot modify this topic.</value>
+  </data>
+  <data name="errUpdateTopic" xml:space="preserve">
+    <value>Update topic subject or description.</value>
+  </data>
+  <data name="TopicUpdated" xml:space="preserve">
+    <value>Topic updated!</value>
+  </data>
+  <data name="errProdLinkDuplicating" xml:space="preserve">
+    <value>This link is already added!</value>
+  </data>
+  <data name="errProductLinkFormat" xml:space="preserve">
+    <value>Incorrect link format.</value>
+  </data>
+  <data name="ProductLinkAdded" xml:space="preserve">
+    <value>Product link added!</value>
+  </data>
+  <data name="ProductLinkMarkedAsSpam" xml:space="preserve">
+    <value>Link reported to administrators! Number of remaining links which can be marked as violation :</value>
+  </data>
+  <data name="errUpdateDescription" xml:space="preserve">
+    <value>Update description!</value>
+  </data>
+  <data name="ProductLinkDeleted" xml:space="preserve">
+    <value>Link deleted!</value>
+  </data>
+  <data name="ProductLinkDescriptionChanged" xml:space="preserve">
+    <value>Link description updated!</value>
+  </data>
+</root>

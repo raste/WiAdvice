@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accRegistered" xml:space="preserve">
+    <value>Поздравления! Регистрирахте се успешно. Ще получите писмо до 1 час,</value>
+  </data>
+  <data name="accRegistered2" xml:space="preserve">
+    <value>съдържащо връзка за активиране на профила ви. Посетете я, за да се впишете.</value>
+  </data>
+  <data name="accRegistered3" xml:space="preserve">
+    <value>Ако профила не бъде активиран до 24 часа, ще бъде автоматично изтрит!</value>
+  </data>
+  <data name="AgreeTerms" xml:space="preserve">
+    <value>Съгласен съм с</value>
+  </data>
+  <data name="AgreeTerms2" xml:space="preserve">
+    <value>за използване на сайта.</value>
+  </data>
+  <data name="answer" xml:space="preserve">
+    <value>Отговор :</value>
+  </data>
+  <data name="captchaInfo" xml:space="preserve">
+    <value>Попълнете буквите</value>
+  </data>
+  <data name="captchaInfo2" xml:space="preserve">
+    <value>от изображението.</value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>символа</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Ел.поща :</value>
+  </data>
+  <data name="emailRules" xml:space="preserve">
+    <value>На нея ще получите връзка за активация на профила.</value>
+  </data>
+  <data name="errEmailRegsReached" xml:space="preserve">
+    <value>Вече има</value>
+  </data>
+  <data name="errEmailRegsReached2" xml:space="preserve">
+    <value>или повече потребители, регистрирани с тази ел.поща.</value>
+  </data>
+  <data name="errIncAnswer" xml:space="preserve">
+    <value>Неправилен формат на отговора на тайния въпрос.</value>
+  </data>
+  <data name="errIncQuest" xml:space="preserve">
+    <value>Неправилен формат на тайния въпрос.</value>
+  </data>
+  <data name="errIpBan" xml:space="preserve">
+    <value>Блокиран IP адрес заради нарушени правила - не може да се регистрирате!</value>
+  </data>
+  <data name="errLoggedIn" xml:space="preserve">
+    <value>Вече сте вписан.</value>
+  </data>
+  <data name="errRegsReached" xml:space="preserve">
+    <value>Регистрация невъзможна - достигнат максимален брой регистрации от IP адрес!</value>
+  </data>
+  <data name="errTerms" xml:space="preserve">
+    <value>Трябва да сте съгласни с условията за използване на сайта, за да може да се регистрирате!</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Парола :</value>
+  </data>
+  <data name="passwordRules" xml:space="preserve">
+    <value>Паролата може да съдържа букви от латиница A-Z или числа 0-9.</value>
+  </data>
+  <data name="passwordRules2" xml:space="preserve">
+    <value>Дължината на паролата трябва да е между</value>
+  </data>
+  <data name="qnaRules" xml:space="preserve">
+    <value>Дължината на тайния въпрос и отговор може да е между 1-100 символа.</value>
+  </data>
+  <data name="qnaRules2" xml:space="preserve">
+    <value>И двете полета не могат да започват или завършват с ' ' (интервал).</value>
+  </data>
+  <data name="questionInfo" xml:space="preserve">
+    <value>Ще се използва в случай на забравена парола.</value>
+  </data>
+  <data name="regForm" xml:space="preserve">
+    <value>Форма за регистрация</value>
+  </data>
+  <data name="regSuccessful" xml:space="preserve">
+    <value>Успешно се регистрирахте! Вече сте вписан.</value>
+  </data>
+  <data name="repPassword" xml:space="preserve">
+    <value>Повтори паролата :</value>
+  </data>
+  <data name="secQuestion" xml:space="preserve">
+    <value>Таен въпрос :</value>
+  </data>
+  <data name="terms" xml:space="preserve">
+    <value>условията</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Регистрация в wiadvice.com</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>Потребителско име :</value>
+  </data>
+  <data name="usernameRules" xml:space="preserve">
+    <value>Потребителското име може да съдържа букви от латиница A-Z или числа 0-9</value>
+  </data>
+  <data name="usernameRules2" xml:space="preserve">
+    <value>(по 1 интервал между думите). Дължината на потребителското име трябва да е между</value>
+  </data>
+  <data name="PassStrengthLvl1" xml:space="preserve">
+    <value>Много слаба</value>
+  </data>
+  <data name="PassStrengthLvl10" xml:space="preserve">
+    <value>Силна</value>
+  </data>
+  <data name="PassStrengthLvl2" xml:space="preserve">
+    <value>Много слаба</value>
+  </data>
+  <data name="PassStrengthLvl3" xml:space="preserve">
+    <value>Слаба</value>
+  </data>
+  <data name="PassStrengthLvl4" xml:space="preserve">
+    <value>Слаба</value>
+  </data>
+  <data name="PassStrengthLvl5" xml:space="preserve">
+    <value>Приемлива</value>
+  </data>
+  <data name="PassStrengthLvl6" xml:space="preserve">
+    <value>Приемлива</value>
+  </data>
+  <data name="PassStrengthLvl7" xml:space="preserve">
+    <value>Средна</value>
+  </data>
+  <data name="PassStrengthLvl8" xml:space="preserve">
+    <value>Добра</value>
+  </data>
+  <data name="PassStrengthLvl9" xml:space="preserve">
+    <value>Силна</value>
+  </data>
+  <data name="Strength" xml:space="preserve">
+    <value>Сигурност :</value>
+  </data>
+  <data name="errPassNeedToBeDiffFromName" xml:space="preserve">
+    <value>Паролата не трябва да съдържа името.</value>
+  </data>
+</root>

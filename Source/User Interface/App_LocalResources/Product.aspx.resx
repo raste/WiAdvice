@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="(guest)" xml:space="preserve">
+    <value>(guest)</value>
+  </data>
+  <data name="..characterisic.." xml:space="preserve">
+    <value>... characterisic</value>
+  </data>
+  <data name="..user.." xml:space="preserve">
+    <value>... user</value>
+  </data>
+  <data name="..variant.." xml:space="preserve">
+    <value>... variant</value>
+  </data>
+  <data name="AboutCharacteristic" xml:space="preserve">
+    <value>For characteristic :</value>
+  </data>
+  <data name="AboutVariant" xml:space="preserve">
+    <value>For variant :</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddCharacteristic" xml:space="preserve">
+    <value>Add characteristic</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="AddDescr" xml:space="preserve">
+    <value>Description :</value>
+  </data>
+  <data name="AddedBy" xml:space="preserve">
+    <value>Added by : </value>
+  </data>
+  <data name="AddedOn" xml:space="preserve">
+    <value>on :</value>
+  </data>
+  <data name="AddProductFor" xml:space="preserve">
+    <value>Add product for</value>
+  </data>
+  <data name="AddSubVariant" xml:space="preserve">
+    <value>Add subvariant</value>
+  </data>
+  <data name="AddVariant" xml:space="preserve">
+    <value>Add variant</value>
+  </data>
+  <data name="AllComments" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="CanEditProduct" xml:space="preserve">
+    <value>Now you can edit product</value>
+    <comment>product name</comment>
+  </data>
+  <data name="ChangeDescription" xml:space="preserve">
+    <value>Description : </value>
+  </data>
+  <data name="CharacteristicAdded" xml:space="preserve">
+    <value>New characteristic added!</value>
+  </data>
+  <data name="Characteristics" xml:space="preserve">
+    <value>Characteristics</value>
+  </data>
+  <data name="CharDeleted" xml:space="preserve">
+    <value>Characteristic deleted!</value>
+  </data>
+  <data name="CharDescrChanged" xml:space="preserve">
+    <value>Characteristic description changed!</value>
+  </data>
+  <data name="CharTopicChanged" xml:space="preserve">
+    <value>Characteristic topic changed!</value>
+  </data>
+  <data name="CharsInfo" xml:space="preserve">
+    <value>You won`t be able to change characteristic topic if there are opinions for it.&lt;br /&gt;If you don`t want to change characteristic topic leave the field empty. Same for description.</value>
+  </data>
+  <data name="choose..." xml:space="preserve">
+    <value>... choose</value>
+  </data>
+  <data name="ChooseCharacteristic" xml:space="preserve">
+    <value>Characteristic :</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Click here</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Opinions :</value>
+  </data>
+  <data name="CommentsOnPage" xml:space="preserve">
+    <value>Opinions per page :</value>
+  </data>
+  <data name="commentsSmall" xml:space="preserve">
+    <value>opinions :</value>
+  </data>
+  <data name="CommentWritten" xml:space="preserve">
+    <value>Opinion written!</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="deleted" xml:space="preserve">
+    <value>deleted</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>description</value>
+  </data>
+  <data name="DescriptionUpdated" xml:space="preserve">
+    <value>Description of</value>
+  </data>
+  <data name="DescrRules" xml:space="preserve">
+    <value>Description can be between</value>
+  </data>
+  <data name="DontHaveEditors" xml:space="preserve">
+    <value>don`t have any editors. You can take the role to edit it.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditCharacteristics" xml:space="preserve">
+    <value>Edit characteristic</value>
+  </data>
+  <data name="EditDescription" xml:space="preserve">
+    <value>Edit description</value>
+  </data>
+  <data name="Editors" xml:space="preserve">
+    <value>Editors</value>
+  </data>
+  <data name="EditSubVariant" xml:space="preserve">
+    <value>Edit subvariant</value>
+  </data>
+  <data name="EditVariant" xml:space="preserve">
+    <value>Edit variant</value>
+  </data>
+  <data name="EditWebsite" xml:space="preserve">
+    <value>Edit website</value>
+  </data>
+  <data name="errCantChangeCharName" xml:space="preserve">
+    <value>You cannot change the name of characteristic</value>
+  </data>
+  <data name="errCantChangeCharName2" xml:space="preserve">
+    <value>because there are opinions for it</value>
+  </data>
+  <data name="errChangeDescr" xml:space="preserve">
+    <value>Change description !</value>
+  </data>
+  <data name="errChoose" xml:space="preserve">
+    <value>Choose either variant or characteristic.</value>
+  </data>
+  <data name="errChooseFile" xml:space="preserve">
+    <value>Choose file to upload.</value>
+  </data>
+  <data name="errChooseVariant" xml:space="preserve">
+    <value>Choose variant.</value>
+  </data>
+  <data name="errImage" xml:space="preserve">
+    <value>Incorrect image width/height, or file is damaged.</value>
+  </data>
+  <data name="errIncParameters" xml:space="preserve">
+    <value>Incorrect parameters for product page.</value>
+  </data>
+  <data name="errIpBan" xml:space="preserve">
+    <value>You cannot post opinions because the IP adress from which you are trying to access the site is blocked. This happens when users continuosly break site rules.</value>
+  </data>
+  <data name="errNewDescr" xml:space="preserve">
+    <value>Type new description.</value>
+  </data>
+  <data name="errNoProduct" xml:space="preserve">
+    <value>No such product.</value>
+  </data>
+  <data name="errSite" xml:space="preserve">
+    <value>New site is equal to the old one.</value>
+  </data>
+  <data name="errTypeName" xml:space="preserve">
+    <value>Type a name.</value>
+  </data>
+  <data name="errUploading" xml:space="preserve">
+    <value>Error uploading the file.</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="ImageDeleted" xml:space="preserve">
+    <value>Image deleted!</value>
+  </data>
+  <data name="ImageRules" xml:space="preserve">
+    <value>Maximum allowed image size 2mb, minimum width/height :</value>
+  </data>
+  <data name="ImageRules2" xml:space="preserve">
+    <value>Types allowed : JPG,BMP,PNG.</value>
+  </data>
+  <data name="imgUploaded" xml:space="preserve">
+    <value>New image uploaded!</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="InfoOnEditing" xml:space="preserve">
+    <value>for more information on editing.</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>Last modified :</value>
+  </data>
+  <data name="main" xml:space="preserve">
+    <value>main</value>
+  </data>
+  <data name="MaxCharsAllowed" xml:space="preserve">
+    <value>Maximum 20 characteristics are allowed.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageTo" xml:space="preserve">
+    <value>Message to :</value>
+  </data>
+  <data name="MsgSubject" xml:space="preserve">
+    <value>Subject :</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name :</value>
+  </data>
+  <data name="nameRules" xml:space="preserve">
+    <value>Name must be between</value>
+  </data>
+  <data name="NewName" xml:space="preserve">
+    <value>New name :</value>
+  </data>
+  <data name="NewWebsite" xml:space="preserve">
+    <value>New website :</value>
+  </data>
+  <data name="NoComments" xml:space="preserve">
+    <value>No posted opinions.</value>
+  </data>
+  <data name="NoEditors" xml:space="preserve">
+    <value>No editors.</value>
+  </data>
+  <data name="NoEnteredCharacteristics" xml:space="preserve">
+    <value>No entered Characteristics</value>
+  </data>
+  <data name="NoGallery" xml:space="preserve">
+    <value>No images in gallery</value>
+  </data>
+  <data name="NoImages" xml:space="preserve">
+    <value>This product does not have added images.</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Notify</value>
+  </data>
+  <data name="NoVariants" xml:space="preserve">
+    <value>No variants</value>
+  </data>
+  <data name="NoWebSite" xml:space="preserve">
+    <value>Website : not set</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page : </value>
+  </data>
+  <data name="ProductRated" xml:space="preserve">
+    <value>Product rated!</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating :</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="ReplyTo" xml:space="preserve">
+    <value>Reply to :</value>
+  </data>
+  <data name="SaveInSent" xml:space="preserve">
+    <value>Save in sent ?</value>
+  </data>
+  <data name="SendSuggestion" xml:space="preserve">
+    <value>Send suggestion</value>
+  </data>
+  <data name="SiteChanged" xml:space="preserve">
+    <value>Website changed!</value>
+  </data>
+  <data name="SiteRemoved" xml:space="preserve">
+    <value>Site removed!</value>
+  </data>
+  <data name="siteRules" xml:space="preserve">
+    <value>Type the product official web site adress.</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Filter by :</value>
+  </data>
+  <data name="SortByRating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="SubVariant" xml:space="preserve">
+    <value>Subvariant :</value>
+  </data>
+  <data name="subvariantAdded" xml:space="preserve">
+    <value>New subvariant added!</value>
+  </data>
+  <data name="SugegstionTo" xml:space="preserve">
+    <value>To :</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>symbols</value>
+  </data>
+  <data name="TakeRole" xml:space="preserve">
+    <value>Take right</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="UploadImage" xml:space="preserve">
+    <value>Upload image</value>
+  </data>
+  <data name="UsersRated" xml:space="preserve">
+    <value>Users rated :</value>
+  </data>
+  <data name="Variant" xml:space="preserve">
+    <value>Variant :</value>
+  </data>
+  <data name="variantAdded" xml:space="preserve">
+    <value>New variant added!</value>
+  </data>
+  <data name="variantRules" xml:space="preserve">
+    <value>If you delete variant which have subvariants, the subvariants will be deleted also.</value>
+  </data>
+  <data name="Variants" xml:space="preserve">
+    <value>Variants</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website : </value>
+  </data>
+  <data name="WriteComment" xml:space="preserve">
+    <value>Write opinion</value>
+  </data>
+  <data name="DescriptionUpdated2" xml:space="preserve">
+    <value>updated!</value>
+  </data>
+  <data name="Actions2" xml:space="preserve">
+    <value>Actions :</value>
+  </data>
+  <data name="captchaLetters" xml:space="preserve">
+    <value>Type image letters here</value>
+  </data>
+  <data name="SuggestionInfo" xml:space="preserve">
+    <value>Send suggestion</value>
+  </data>
+  <data name="SortByNoAbout" xml:space="preserve">
+    <value>For product</value>
+  </data>
+  <data name="wantedCategory" xml:space="preserve">
+    <value>Wanted category :</value>
+  </data>
+  <data name="SubVariant2" xml:space="preserve">
+    <value>subvariant</value>
+  </data>
+  <data name="Variant2" xml:space="preserve">
+    <value>variant</value>
+  </data>
+  <data name="LastModifiedBy" xml:space="preserve">
+    <value>Last modified by :</value>
+  </data>
+  <data name="SignNotifiesTooltip" xml:space="preserve">
+    <value>Sign for notifications when new opinions are added.</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Add product</value>
+  </data>
+  <data name="TakeRoleS" xml:space="preserve">
+    <value>take right</value>
+  </data>
+  <data name="UploadingImg" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="errEditCharTypeNewNameOrDescr" xml:space="preserve">
+    <value>Type new name or description for the characteristic.</value>
+  </data>
+  <data name="errNoSuchChar" xml:space="preserve">
+    <value>There is no such characteristic.</value>
+  </data>
+  <data name="errNoSuchSubVariant" xml:space="preserve">
+    <value>There is no such subvariant.</value>
+  </data>
+  <data name="errNoSuchVariant" xml:space="preserve">
+    <value>There is no such variant.</value>
+  </data>
+  <data name="orAbout" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="SubvarDeleted" xml:space="preserve">
+    <value>Subvariant deleted!</value>
+  </data>
+  <data name="VarDeleted" xml:space="preserve">
+    <value>Variant deleted!</value>
+  </data>
+  <data name="CharTopic" xml:space="preserve">
+    <value>Topic :</value>
+  </data>
+  <data name="CharTopicRules" xml:space="preserve">
+    <value>Characteristic topic must be between</value>
+  </data>
+  <data name="EditCharTopic" xml:space="preserve">
+    <value>Update topic :</value>
+  </data>
+  <data name="errProdDeleted" xml:space="preserve">
+    <value>That product is deleted.</value>
+  </data>
+  <data name="AddAlternativeName" xml:space="preserve">
+    <value>Add alternative name</value>
+  </data>
+  <data name="AlternativeName" xml:space="preserve">
+    <value>Alternative name :</value>
+  </data>
+  <data name="AlternativeNameAdded" xml:space="preserve">
+    <value>Alternative name added.</value>
+  </data>
+  <data name="AlternativeNameDeleted" xml:space="preserve">
+    <value>Alternative name removed.</value>
+  </data>
+  <data name="AlternativeNames" xml:space="preserve">
+    <value>Alternative names :</value>
+  </data>
+  <data name="AlternativeNamesDeleted" xml:space="preserve">
+    <value>Alternative names removed.</value>
+  </data>
+  <data name="AlternativeNamesInfo" xml:space="preserve">
+    <value>Other names with which the product is known. Up to</value>
+    <comment>number</comment>
+  </data>
+  <data name="AlternativeNamesInfo2" xml:space="preserve">
+    <value>can be added.</value>
+  </data>
+  <data name="AlternativeNamesInfo3" xml:space="preserve">
+    <value>Example : product Playstation 3 is also known as PS 3; company LG is known as Lucky-Goldstar and Lucky.</value>
+  </data>
+  <data name="AlternativeNamesInfo4" xml:space="preserve">
+    <value>Products can be found also by their alternative names.</value>
+  </data>
+  <data name="errAltNameCanntBeSameAsProduct" xml:space="preserve">
+    <value>Name cannot be same as the product.</value>
+  </data>
+  <data name="errAltNameIsSameAsAnother" xml:space="preserve">
+    <value>This name is added already.</value>
+  </data>
+  <data name="errSelectAltNameToDel" xml:space="preserve">
+    <value>Choose alternative name.</value>
+  </data>
+  <data name="RemoveAlternativeNames" xml:space="preserve">
+    <value>Remove alternative names</value>
+  </data>
+  <data name="chooseImage" xml:space="preserve">
+    <value>Image :</value>
+  </data>
+  <data name="seeImgMinSize" xml:space="preserve">
+    <value>to see minimum image width/height.</value>
+  </data>
+  <data name="textLength" xml:space="preserve">
+    <value>Description length :</value>
+  </data>
+  <data name="errEditCharTypeNewDescr" xml:space="preserve">
+    <value>Type new characteristic description.</value>
+  </data>
+  <data name="errCantDelImage" xml:space="preserve">
+    <value>Couldn`t delete the image! Please try again soon. If the problem persists, please write report.</value>
+  </data>
+  <data name="descrChanged" xml:space="preserve">
+    <value>Description updated!</value>
+  </data>
+  <data name="EditName" xml:space="preserve">
+    <value>Edit name</value>
+  </data>
+  <data name="NewProdName" xml:space="preserve">
+    <value>New name :</value>
+  </data>
+  <data name="ProdNameUpdated" xml:space="preserve">
+    <value>Product name updated!</value>
+  </data>
+  <data name="DeleteNoWarn" xml:space="preserve">
+    <value>DelNoWarn</value>
+  </data>
+  <data name="lastEdited" xml:space="preserve">
+    <value>Last edited by</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>in wiadvice.com</value>
+  </data>
+  <data name="NoLinks" xml:space="preserve">
+    <value>No links</value>
+  </data>
+  <data name="modify" xml:space="preserve">
+    <value>modify</value>
+  </data>
+  <data name="ProdLinkViolationTooltip" xml:space="preserve">
+    <value>Reports to administrators that the link breaks the site rules.</value>
+  </data>
+  <data name="addProdLinkRules1" xml:space="preserve">
+    <value>Follow the</value>
+  </data>
+  <data name="addProdLinkRules2" xml:space="preserve">
+    <value>for adding link.</value>
+  </data>
+  <data name="AddProductLink" xml:space="preserve">
+    <value>Add link</value>
+  </data>
+  <data name="deleteWithWarn" xml:space="preserve">
+    <value>Del. w/ warning</value>
+  </data>
+  <data name="hlAddProdLinkRules" xml:space="preserve">
+    <value>rules</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="modifyLink" xml:space="preserve">
+    <value>Modify link</value>
+  </data>
+  <data name="companyUpdated" xml:space="preserve">
+    <value>Company updated!</value>
+  </data>
+  <data name="editCompany" xml:space="preserve">
+    <value>Change company</value>
+  </data>
+  <data name="editCompanyInfo" xml:space="preserve">
+    <value>Only companies, which can have products in the current product's category.</value>
+  </data>
+  <data name="errChooseNewCompany" xml:space="preserve">
+    <value>Choose company!</value>
+  </data>
+  <data name="newCompany" xml:space="preserve">
+    <value>Company :</value>
+  </data>
+  <data name="categoryChanged" xml:space="preserve">
+    <value>Category changed!</value>
+  </data>
+  <data name="errChooseCategory" xml:space="preserve">
+    <value>Choose category!</value>
+  </data>
+  <data name="changeCategory" xml:space="preserve">
+    <value>Change category</value>
+  </data>
+  <data name="chooseCategory" xml:space="preserve">
+    <value>Choose category :</value>
+  </data>
+  <data name="chooseCategoryInfo" xml:space="preserve">
+    <value>Only categories in which</value>
+    <comment>company</comment>
+  </data>
+  <data name="chooseCategoryInfo2" xml:space="preserve">
+    <value>can have products are shown.</value>
+  </data>
+</root>

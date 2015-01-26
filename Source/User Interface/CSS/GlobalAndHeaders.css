@@ -1,0 +1,288 @@
+﻿/* Wi Advice (https://github.com/raste/WiAdvice)(http://www.wiadvice.com/)
+   Copyright (c) 2015 Georgi Kolev. 
+   Licensed under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0). */
+
+/* GENERAL tags styles*/
+
+td, table, tr, div, p {
+    background-color: Transparent;
+}
+
+body {
+    background-image: url('../images/SiteImages/headerBackgrExt.bmp');
+    background-repeat: repeat-x;
+    background-color: #F8FFF8;
+    word-wrap: break-word;
+}
+
+html, body, form {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+table {
+    width: auto;
+}
+
+
+div {
+    color: #333333;
+    font-family: "Trebuchet MS",Verdana,Arial,"Times New Roman",Georgia,Tahoma,"Segoe UI";
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+hr {
+    color: #9C9EA2;
+    margin-left: 0px;
+}
+/* -----------------  */
+
+/* HEADER DIV`s styles */
+
+div.page {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+div.header {
+    height: 113px;
+}
+
+div.left {
+    padding: 2px 2px 2px 2px;
+    float: left;
+    width: 130px;
+    text-align: right;
+}
+
+div.right {
+    float: right;
+    vertical-align: top;
+    text-align: right;
+    padding-top: 5px;
+}
+
+div.content {
+    margin-left: 135px;
+    margin-right: 10px;
+    padding-top: 13px;
+}
+
+div.menusIE {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+div.menusOther {
+    margin-top: 7px;
+    vertical-align: middle;
+}
+
+div.search {
+    margin-top: 10px;
+}
+
+div.bottom {
+    height: 25px;
+    background-color: Black;
+    background-image: url('../images/SiteImages/bottomBGR.bmp');
+    background-repeat: repeat-x;
+    padding-top: 5px;
+    text-align: center;
+    color: White;
+}
+
+
+.contentHeaderBgr {
+    background-image: url('../images/SiteImages/aboutBGR.bmp');
+    background-repeat: repeat-x;
+    padding-bottom: 5px;
+}
+
+
+div.contentPages {
+    background-color: #F8FFF8;
+}
+
+
+/*Category MENU*/
+
+.catDynMenu {
+    border-style: solid;
+    border-color: Yellow;
+    border-width: 1px;
+    width: auto;
+}
+
+.catDynMenuPercentWidth {
+    border-style: solid;
+    border-color: #007000;
+    border-width: 1px;
+    width: 10%;
+}
+
+/* MENU */
+.menuDynMenu {
+    border-style: solid;
+    border-color: Yellow;
+    border-width: 1px;
+    width: auto;
+}
+
+.menuDynMenuPercentWidth {
+    border-style: solid;
+    border-color: Black;
+    border-width: 1px;
+    width: 10%;
+}
+
+.categoryLinks {
+    font-family: Georgia,"Trebuchet MS","Times New Roman";
+    text-decoration: none;
+    font-size: 15px;
+    color: White;
+    font-weight: bold;
+    margin: 0px 0px 1px 0px;
+}
+
+    .categoryLinks:hover {
+        text-decoration: none;
+        color: #254b28;
+    }
+
+
+.menuLinks {
+    font-family: Georgia,"Trebuchet MS","Times New Roman";
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: White;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+/* Master Page Pages Links style */
+a.headerLinks {
+    font-size: large;
+    font-weight: bold;
+    color: White;
+    text-transform: capitalize;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Trebuchet MS",Verdana,"Times New Roman";
+}
+
+    a.headerLinks:visited {
+        font-size: large;
+        color: White;
+        text-decoration: none;
+    }
+
+    a.headerLinks:hover {
+        text-decoration: none;
+        color: #004F00;
+    }
+
+
+a.logOutBtn {
+    font-size: large;
+    color: White;
+    font-family: "Trebuchet MS",Verdana,"Times New Roman";
+}
+
+    a.logOutBtn:visited {
+        font-size: large;
+        color: White;
+        text-decoration: none;
+    }
+
+    a.logOutBtn:hover {
+        text-decoration: none;
+        color: #BE1138;
+    }
+
+
+/* styles for links */
+a {
+    color: #428220;
+    font-size: large;
+    text-decoration: none;
+    font-family: "Times New Roman",Tahoma,"Segoe UI","Trebuchet MS";
+}
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+input::-moz-focus-inner /*Remove button padding in FF*/ {
+    border: 0px;
+    padding: 0px;
+}
+
+
+
+.roundedCorners {
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.roundedCorners5 {
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.clearfix:after {
+    /*http://positioniseverything.net/easyclearing.html*/
+    /*http://gtwebdev.com/workshop/floats/enclosing-floats.php*/
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix2 {
+    width: 100%;
+    overflow: auto;
+}
+
+.webkbd-main {
+    font-family: "Trebuchet MS",arial,helvetica,clean,sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1px 3px 1px 3px;
+    border: 1px solid black;
+    font-size: 13px;
+    color: White;
+    background-image: url('../images/SiteImages/btnBGR.bmp');
+    background-repeat: repeat-x;
+}
+
+.webkbd-IE {
+    padding: 2px 3px 1px 3px;
+}
+
+.webkbd-Firefox {
+    padding: 1px 3px 1px 3px;
+}
+
+.webkbd-Chrome {
+    padding: 0px 3px 0px 3px;
+}

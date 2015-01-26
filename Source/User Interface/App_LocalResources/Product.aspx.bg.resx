@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="(guest)" xml:space="preserve">
+    <value>(гост)</value>
+  </data>
+  <data name="..characterisic.." xml:space="preserve">
+    <value>... характеристика</value>
+  </data>
+  <data name="..user.." xml:space="preserve">
+    <value>..потребител..</value>
+  </data>
+  <data name="..variant.." xml:space="preserve">
+    <value>... вариант</value>
+  </data>
+  <data name="AboutCharacteristic" xml:space="preserve">
+    <value>За характеристика :</value>
+  </data>
+  <data name="AboutVariant" xml:space="preserve">
+    <value>За вариант :</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="AddCharacteristic" xml:space="preserve">
+    <value>Добави характеристика</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Изпрати</value>
+  </data>
+  <data name="AddDescr" xml:space="preserve">
+    <value>Описание :</value>
+  </data>
+  <data name="AddedBy" xml:space="preserve">
+    <value>Добавен от : </value>
+  </data>
+  <data name="AddedOn" xml:space="preserve">
+    <value>на :</value>
+  </data>
+  <data name="AddProductFor" xml:space="preserve">
+    <value>Добави продукт за</value>
+  </data>
+  <data name="AddSubVariant" xml:space="preserve">
+    <value>Добави подвариант</value>
+  </data>
+  <data name="AddVariant" xml:space="preserve">
+    <value>Добави вариант</value>
+  </data>
+  <data name="AllComments" xml:space="preserve">
+    <value>Всички</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Анонимен</value>
+  </data>
+  <data name="CanEditProduct" xml:space="preserve">
+    <value>Можете да редактирате продукта</value>
+    <comment>product name</comment>
+  </data>
+  <data name="ChangeDescription" xml:space="preserve">
+    <value>Описание : </value>
+  </data>
+  <data name="CharacteristicAdded" xml:space="preserve">
+    <value>Характеристиката е добавена!</value>
+  </data>
+  <data name="Characteristics" xml:space="preserve">
+    <value>Характеристики</value>
+  </data>
+  <data name="CharDeleted" xml:space="preserve">
+    <value>Характеристиката е изтрита!</value>
+  </data>
+  <data name="CharDescrChanged" xml:space="preserve">
+    <value>Описанието на характеристиката е сменено!</value>
+  </data>
+  <data name="CharTopicChanged" xml:space="preserve">
+    <value>Темата на характеристиката е сменена!</value>
+  </data>
+  <data name="CharsInfo" xml:space="preserve">
+    <value>Не може да сменяте тема на характеристика, ако има мнения за нея. &lt;br /&gt;Ако не искате да променяте тема на характеристика или описание, оставете полето празно.</value>
+  </data>
+  <data name="choose..." xml:space="preserve">
+    <value>.... избери</value>
+  </data>
+  <data name="ChooseCharacteristic" xml:space="preserve">
+    <value>Характеристика :</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Kликни тук</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Мнения :</value>
+  </data>
+  <data name="CommentsOnPage" xml:space="preserve">
+    <value>Мнения на страница :</value>
+  </data>
+  <data name="commentsSmall" xml:space="preserve">
+    <value>мнения :</value>
+  </data>
+  <data name="CommentWritten" xml:space="preserve">
+    <value>Мнението е написано!</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Изтрии</value>
+  </data>
+  <data name="deleted" xml:space="preserve">
+    <value>изтрит</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>описание</value>
+  </data>
+  <data name="DescriptionUpdated" xml:space="preserve">
+    <value>Описанието на</value>
+  </data>
+  <data name="DescrRules" xml:space="preserve">
+    <value>Описанието може да е между</value>
+  </data>
+  <data name="DontHaveEditors" xml:space="preserve">
+    <value>няма редактори. Можете да вземете правото.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Промени</value>
+  </data>
+  <data name="EditCharacteristics" xml:space="preserve">
+    <value>Промени характеристика</value>
+  </data>
+  <data name="EditDescription" xml:space="preserve">
+    <value>Промени описание</value>
+  </data>
+  <data name="Editors" xml:space="preserve">
+    <value>Редактори</value>
+  </data>
+  <data name="EditSubVariant" xml:space="preserve">
+    <value>Промени подвариант</value>
+  </data>
+  <data name="EditVariant" xml:space="preserve">
+    <value>Промени вариант</value>
+  </data>
+  <data name="EditWebsite" xml:space="preserve">
+    <value>Промени сайт</value>
+  </data>
+  <data name="errCantChangeCharName" xml:space="preserve">
+    <value>Не може да смените името на</value>
+  </data>
+  <data name="errCantChangeCharName2" xml:space="preserve">
+    <value>, защото има мнения.</value>
+  </data>
+  <data name="errChangeDescr" xml:space="preserve">
+    <value>Променете описанието !</value>
+  </data>
+  <data name="errChoose" xml:space="preserve">
+    <value>Изберете вариант или характеристика.</value>
+  </data>
+  <data name="errChooseFile" xml:space="preserve">
+    <value>Изберете изображение.</value>
+  </data>
+  <data name="errChooseVariant" xml:space="preserve">
+    <value>Изберете вариант.</value>
+  </data>
+  <data name="errImage" xml:space="preserve">
+    <value>Неправилна дължина/широчина на изображението или файлът е с грешки.</value>
+  </data>
+  <data name="errIncParameters" xml:space="preserve">
+    <value>Неправилни параметри за страницата на продукт.</value>
+  </data>
+  <data name="errIpBan" xml:space="preserve">
+    <value>Блокиран IP адрес заради нарушени правила - не може да пишете мнения!</value>
+  </data>
+  <data name="errNewDescr" xml:space="preserve">
+    <value>Обновете описанието.</value>
+  </data>
+  <data name="errNoProduct" xml:space="preserve">
+    <value>Не съществува такъв продукт.</value>
+  </data>
+  <data name="errSite" xml:space="preserve">
+    <value>Променете сайта.</value>
+  </data>
+  <data name="errTypeName" xml:space="preserve">
+    <value>Въведете име.</value>
+  </data>
+  <data name="errUploading" xml:space="preserve">
+    <value>Грешка при добавяне на изображението.</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Галерия</value>
+  </data>
+  <data name="ImageDeleted" xml:space="preserve">
+    <value>Изображението е изтрито!</value>
+  </data>
+  <data name="ImageRules" xml:space="preserve">
+    <value>Максимален размер на изображението е 2мб, минимална широчина/височина :</value>
+  </data>
+  <data name="ImageRules2" xml:space="preserve">
+    <value>Позволени типове : JPG,BMP,PNG.</value>
+  </data>
+  <data name="imgUploaded" xml:space="preserve">
+    <value>Изображението е добавено!</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value>в</value>
+  </data>
+  <data name="InfoOnEditing" xml:space="preserve">
+    <value>, за повече информация за редактиране.</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>Последно модифициран :</value>
+  </data>
+  <data name="main" xml:space="preserve">
+    <value>главно</value>
+  </data>
+  <data name="MaxCharsAllowed" xml:space="preserve">
+    <value>Максимален брой характеристики 20.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Съобщение</value>
+  </data>
+  <data name="MessageTo" xml:space="preserve">
+    <value>Съобщение към :</value>
+  </data>
+  <data name="MsgSubject" xml:space="preserve">
+    <value>Тема :</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Име :</value>
+  </data>
+  <data name="nameRules" xml:space="preserve">
+    <value>Дължина на името трябва да е между</value>
+  </data>
+  <data name="NewName" xml:space="preserve">
+    <value>Ново име :</value>
+  </data>
+  <data name="NewWebsite" xml:space="preserve">
+    <value>Нов сайт :</value>
+  </data>
+  <data name="NoComments" xml:space="preserve">
+    <value>Няма добавени мнения.</value>
+  </data>
+  <data name="NoEditors" xml:space="preserve">
+    <value>Без редактори.</value>
+  </data>
+  <data name="NoEnteredCharacteristics" xml:space="preserve">
+    <value>Няма добавени характеристики</value>
+  </data>
+  <data name="NoGallery" xml:space="preserve">
+    <value>Няма добавени изображения</value>
+  </data>
+  <data name="NoImages" xml:space="preserve">
+    <value>Няма добавени изображения към продукта.</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Известия</value>
+  </data>
+  <data name="NoVariants" xml:space="preserve">
+    <value>Няма добавени варианти</value>
+  </data>
+  <data name="NoWebSite" xml:space="preserve">
+    <value>Сайт : не е въведен</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Страница : </value>
+  </data>
+  <data name="ProductRated" xml:space="preserve">
+    <value>Продуктът е оценен!</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Оцени</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Оценка :</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Отговори</value>
+  </data>
+  <data name="ReplyTo" xml:space="preserve">
+    <value>Отговори на :</value>
+  </data>
+  <data name="SaveInSent" xml:space="preserve">
+    <value>Запази ?</value>
+  </data>
+  <data name="SendSuggestion" xml:space="preserve">
+    <value>Изпрати предложение</value>
+  </data>
+  <data name="SiteChanged" xml:space="preserve">
+    <value>Сайтът променен!</value>
+  </data>
+  <data name="SiteRemoved" xml:space="preserve">
+    <value>Сайтът е премахнат!</value>
+  </data>
+  <data name="siteRules" xml:space="preserve">
+    <value>Официалният сайт на продукта.</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Сортирай по :</value>
+  </data>
+  <data name="SortByRating" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="SubVariant" xml:space="preserve">
+    <value>Подвариант :</value>
+  </data>
+  <data name="subvariantAdded" xml:space="preserve">
+    <value>Подвариантът е добавен!</value>
+  </data>
+  <data name="SugegstionTo" xml:space="preserve">
+    <value>Към :</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>символа</value>
+  </data>
+  <data name="TakeRole" xml:space="preserve">
+    <value>Вземи право</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="UploadImage" xml:space="preserve">
+    <value>Добави изображение</value>
+  </data>
+  <data name="UsersRated" xml:space="preserve">
+    <value>От потребители :</value>
+  </data>
+  <data name="Variant" xml:space="preserve">
+    <value>Вариант :</value>
+  </data>
+  <data name="variantAdded" xml:space="preserve">
+    <value>Вариантът е добавен!</value>
+  </data>
+  <data name="variantRules" xml:space="preserve">
+    <value>Ако изтриете вариант, който има подварианти, те също ще бъдат изтрити.</value>
+  </data>
+  <data name="Variants" xml:space="preserve">
+    <value>Варианти</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Сайт : </value>
+  </data>
+  <data name="WriteComment" xml:space="preserve">
+    <value>Напиши мнение</value>
+  </data>
+  <data name="DescriptionUpdated2" xml:space="preserve">
+    <value>е сменено!</value>
+  </data>
+  <data name="Actions2" xml:space="preserve">
+    <value>Действия :</value>
+  </data>
+  <data name="captchaLetters" xml:space="preserve">
+    <value>Въведи буквите тук</value>
+  </data>
+  <data name="SuggestionInfo" xml:space="preserve">
+    <value>Изпрати предложение</value>
+  </data>
+  <data name="SortByNoAbout" xml:space="preserve">
+    <value>За продукта</value>
+  </data>
+  <data name="wantedCategory" xml:space="preserve">
+    <value>Желана категория :</value>
+  </data>
+  <data name="SubVariant2" xml:space="preserve">
+    <value>подвариант</value>
+  </data>
+  <data name="Variant2" xml:space="preserve">
+    <value>вариант</value>
+  </data>
+  <data name="LastModifiedBy" xml:space="preserve">
+    <value>Последно модифициран от :</value>
+  </data>
+  <data name="SignNotifiesTooltip" xml:space="preserve">
+    <value>Запишете се за известия при добавяне на нови мнения.</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Добави продукт</value>
+  </data>
+  <data name="TakeRoleS" xml:space="preserve">
+    <value>вземи право</value>
+  </data>
+  <data name="UploadingImg" xml:space="preserve">
+    <value>Добавяне...</value>
+  </data>
+  <data name="errEditCharTypeNewNameOrDescr" xml:space="preserve">
+    <value>Въведете ново име или описание за характеристиката.</value>
+  </data>
+  <data name="errNoSuchChar" xml:space="preserve">
+    <value>Няма такава характеристика.</value>
+  </data>
+  <data name="errNoSuchSubVariant" xml:space="preserve">
+    <value>Няма такъв подвариант.</value>
+  </data>
+  <data name="errNoSuchVariant" xml:space="preserve">
+    <value>Няма такъв вариант.</value>
+  </data>
+  <data name="orAbout" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="SubvarDeleted" xml:space="preserve">
+    <value>Подвариантът е изтрит!</value>
+  </data>
+  <data name="VarDeleted" xml:space="preserve">
+    <value>Вариантът е итрит!</value>
+  </data>
+  <data name="CharTopic" xml:space="preserve">
+    <value>Тема :</value>
+  </data>
+  <data name="CharTopicRules" xml:space="preserve">
+    <value>Темата на характеристиката трябва да е между</value>
+  </data>
+  <data name="EditCharTopic" xml:space="preserve">
+    <value>Обнови тема :</value>
+  </data>
+  <data name="errProdDeleted" xml:space="preserve">
+    <value>Този продукт е изтрит.</value>
+  </data>
+  <data name="AddAlternativeName" xml:space="preserve">
+    <value>Добави друго име</value>
+  </data>
+  <data name="AlternativeName" xml:space="preserve">
+    <value>Друго име :</value>
+  </data>
+  <data name="AlternativeNameAdded" xml:space="preserve">
+    <value>Добавено е друго име, с което продукта е известен.</value>
+  </data>
+  <data name="AlternativeNameDeleted" xml:space="preserve">
+    <value>Изтрито е другото име, с което продукта е известен.</value>
+  </data>
+  <data name="AlternativeNames" xml:space="preserve">
+    <value>Други имена :</value>
+  </data>
+  <data name="AlternativeNamesDeleted" xml:space="preserve">
+    <value>Изтрито са други имена, с които е известен продукта.</value>
+  </data>
+  <data name="AlternativeNamesInfo" xml:space="preserve">
+    <value>Други имена, с които е известен продукта. Могат да се добавят до</value>
+  </data>
+  <data name="AlternativeNamesInfo2" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="AlternativeNamesInfo3" xml:space="preserve">
+    <value>Пример : продуктът "Sony Playstation 3" е известен и като "PS 3"; компанията "LG" е известна и като "Lucky-Goldstar" и "Lucky".</value>
+  </data>
+  <data name="AlternativeNamesInfo4" xml:space="preserve">
+    <value>Продуктите могат да бъдат открити и по другите им имена.</value>
+  </data>
+  <data name="errAltNameCanntBeSameAsProduct" xml:space="preserve">
+    <value>Името не може да съвпада с това на продукта.</value>
+  </data>
+  <data name="errAltNameIsSameAsAnother" xml:space="preserve">
+    <value>Името вече е добавено.</value>
+  </data>
+  <data name="errSelectAltNameToDel" xml:space="preserve">
+    <value>Изберете име.</value>
+  </data>
+  <data name="RemoveAlternativeNames" xml:space="preserve">
+    <value>Изтрий други имена</value>
+  </data>
+  <data name="chooseImage" xml:space="preserve">
+    <value>Изображение :</value>
+  </data>
+  <data name="seeImgMinSize" xml:space="preserve">
+    <value>, за да видиш минималния размер на картинките.</value>
+  </data>
+  <data name="textLength" xml:space="preserve">
+    <value>Дължина на описанието :</value>
+  </data>
+  <data name="errEditCharTypeNewDescr" xml:space="preserve">
+    <value>Въведете ново описание за характеристиката.</value>
+  </data>
+  <data name="errCantDelImage" xml:space="preserve">
+    <value>Грешка при изтриване на изображението! Опитайте пак скоро. Ако проблема продължава, моля, напишете доклад.</value>
+  </data>
+  <data name="descrChanged" xml:space="preserve">
+    <value>Описанието е актуализирано!</value>
+  </data>
+  <data name="EditName" xml:space="preserve">
+    <value>Промени име</value>
+  </data>
+  <data name="NewProdName" xml:space="preserve">
+    <value>Ново име :</value>
+  </data>
+  <data name="ProdNameUpdated" xml:space="preserve">
+    <value>Името на продукта е сменено!</value>
+  </data>
+  <data name="DeleteNoWarn" xml:space="preserve">
+    <value>ИзтрийБезПред</value>
+  </data>
+  <data name="lastEdited" xml:space="preserve">
+    <value>Последна промяна от</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>in wiadvice.com</value>
+  </data>
+  <data name="NoLinks" xml:space="preserve">
+    <value>Няма връзки</value>
+  </data>
+  <data name="modify" xml:space="preserve">
+    <value>промени</value>
+  </data>
+  <data name="ProdLinkViolationTooltip" xml:space="preserve">
+    <value>Съобщава на администраторите, че връзката нарушава правилата на сайта.</value>
+  </data>
+  <data name="addProdLinkRules1" xml:space="preserve">
+    <value>Следвай</value>
+  </data>
+  <data name="addProdLinkRules2" xml:space="preserve">
+    <value>за добавяне на връзка.</value>
+  </data>
+  <data name="AddProductLink" xml:space="preserve">
+    <value>Добави връзка</value>
+  </data>
+  <data name="deleteWithWarn" xml:space="preserve">
+    <value>Изтр. с предупрежд.</value>
+  </data>
+  <data name="hlAddProdLinkRules" xml:space="preserve">
+    <value>правилата</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Връзка</value>
+  </data>
+  <data name="links" xml:space="preserve">
+    <value>Връзки</value>
+  </data>
+  <data name="modifyLink" xml:space="preserve">
+    <value>Промени връзка</value>
+  </data>
+  <data name="companyUpdated" xml:space="preserve">
+    <value>Компанията е сменена!</value>
+  </data>
+  <data name="editCompany" xml:space="preserve">
+    <value>Смени компания</value>
+  </data>
+  <data name="editCompanyInfo" xml:space="preserve">
+    <value>Показани са само компании, които могат да имат продукти в категорията на продукта.</value>
+  </data>
+  <data name="errChooseNewCompany" xml:space="preserve">
+    <value>Изберете компания!</value>
+  </data>
+  <data name="newCompany" xml:space="preserve">
+    <value>Компания :</value>
+  </data>
+  <data name="categoryChanged" xml:space="preserve">
+    <value>Категорията е сменена!</value>
+  </data>
+  <data name="errChooseCategory" xml:space="preserve">
+    <value>Изберете категория!</value>
+  </data>
+  <data name="changeCategory" xml:space="preserve">
+    <value>Смени категория</value>
+  </data>
+  <data name="chooseCategory" xml:space="preserve">
+    <value>Избери категория :</value>
+  </data>
+  <data name="chooseCategoryInfo" xml:space="preserve">
+    <value>Показани са категории, в които</value>
+    <comment>компания</comment>
+  </data>
+  <data name="chooseCategoryInfo2" xml:space="preserve">
+    <value>може да има продукти.</value>
+  </data>
+</root>

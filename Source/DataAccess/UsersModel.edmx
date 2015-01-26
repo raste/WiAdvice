@@ -1,0 +1,1120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="UserDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="UserDBModelStoreContainer">
+          <EntitySet Name="Actions" EntityType="UserDBModel.Store.Actions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IpAttempts" EntityType="UserDBModel.Store.IpAttempts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IpBans" EntityType="UserDBModel.Store.IpBans" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Messages" EntityType="UserDBModel.Store.Messages" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ScalarValues" EntityType="UserDBModel.Store.ScalarValues" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SystemMessages" EntityType="UserDBModel.Store.SystemMessages" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="user_actions" EntityType="UserDBModel.Store.user_actions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserLogs" EntityType="UserDBModel.Store.UserLogs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserOptions" EntityType="UserDBModel.Store.UserOptions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="UserDBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UsersBlocked" EntityType="UserDBModel.Store.UsersBlocked" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Warnings" EntityType="UserDBModel.Store.Warnings" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_IpBans_ByUser" Association="UserDBModel.Store.FK_IpBans_ByUser">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="IpBans" EntitySet="IpBans" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IpBans_modifiedBy" Association="UserDBModel.Store.FK_IpBans_modifiedBy">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="IpBans" EntitySet="IpBans" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Messages_FromUser" Association="UserDBModel.Store.FK_Messages_FromUser">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Messages" EntitySet="Messages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Messages_ToUser" Association="UserDBModel.Store.FK_Messages_ToUser">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Messages" EntitySet="Messages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SystemMessages_User" Association="UserDBModel.Store.FK_SystemMessages_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="SystemMessages" EntitySet="SystemMessages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user-actions_actions" Association="UserDBModel.Store.FK_user-actions_actions">
+            <End Role="Actions" EntitySet="Actions" />
+            <End Role="user_actions" EntitySet="user_actions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user-actions1" Association="UserDBModel.Store.FK_user-actions1">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="user_actions" EntitySet="user_actions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user-actions2" Association="UserDBModel.Store.FK_user-actions2">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="user_actions" EntitySet="user_actions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserLogs_UserModified" Association="UserDBModel.Store.FK_UserLogs_UserModified">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserLogs" EntitySet="UserLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserLogs_UserModifying" Association="UserDBModel.Store.FK_UserLogs_UserModifying">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserLogs" EntitySet="UserLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserOptions_User" Association="UserDBModel.Store.FK_UserOptions_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserOptions" EntitySet="UserOptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersBlocked_UserBlocked" Association="UserDBModel.Store.FK_UsersBlocked_UserBlocked">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UsersBlocked" EntitySet="UsersBlocked" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersBlocked_UserBlocking" Association="UserDBModel.Store.FK_UsersBlocked_UserBlocking">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UsersBlocked" EntitySet="UsersBlocked" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Warnings_ByAdmin" Association="UserDBModel.Store.FK_Warnings_ByAdmin">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Warnings" EntitySet="Warnings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Warnings_ModifiedBy" Association="UserDBModel.Store.FK_Warnings_ModifiedBy">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Warnings" EntitySet="Warnings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Warnings_User" Association="UserDBModel.Store.FK_Warnings_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Warnings" EntitySet="Warnings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Warnings_UserAction" Association="UserDBModel.Store.FK_Warnings_UserAction">
+            <End Role="user_actions" EntitySet="user_actions" />
+            <End Role="Warnings" EntitySet="Warnings" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Actions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="1000" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="type" Type="nvarchar" MaxLength="100" />
+          <Property Name="typeID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="IpAttempts">
+          <Key>
+            <PropertyRef Name="IPaddress" />
+          </Key>
+          <Property Name="IPaddress" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="lastLogIn" Type="datetime" />
+          <Property Name="loginAttempts" Type="int" />
+          <Property Name="lastAnsSecQuestTry" Type="datetime" />
+          <Property Name="ansSecQuestAttempts" Type="int" />
+          <Property Name="lastAnsUserAndMailTry" Type="datetime" />
+          <Property Name="ansUserAndMailAttempts" Type="int" />
+        </EntityType>
+        <EntityType Name="IpBans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IPadress" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="byUser" Type="bigint" Nullable="false" />
+          <Property Name="active" Type="bit" Nullable="false" />
+          <Property Name="untillDate" Type="datetime" />
+          <Property Name="notes" Type="nvarchar(max)" />
+          <Property Name="lastModified" Type="datetime" Nullable="false" />
+          <Property Name="modifiedBy" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Messages">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fromUser" Type="bigint" Nullable="false" />
+          <Property Name="toUser" Type="bigint" Nullable="false" />
+          <Property Name="subject" Type="nvarchar" MaxLength="500" />
+          <Property Name="description" Type="ntext" Nullable="false" />
+          <Property Name="visibleFromUser" Type="bit" Nullable="false" />
+          <Property Name="visibleToUser" Type="bit" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ScalarValues">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="3500" />
+          <Property Name="DataType" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="SystemMessages">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User" Type="bigint" Nullable="false" />
+          <Property Name="visible" Type="bit" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="description" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user_actions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userID" Type="bigint" Nullable="false" />
+          <Property Name="actionID" Type="bigint" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="approvedBy" Type="bigint" Nullable="false" />
+          <Property Name="visible" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserLogs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserModifying" Type="bigint" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="description" Type="ntext" Nullable="false" />
+          <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="UserModified" Type="bigint" Nullable="false" />
+          <Property Name="IpAdress" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="typeModified" Type="nchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="UserOptions">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="bigint" Nullable="false" />
+          <Property Name="canReceiveMessages" Type="bit" Nullable="false" />
+          <Property Name="haveNewMessages" Type="bit" Nullable="false" />
+          <Property Name="secretQuestion" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="secretAnswer" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="activated" Type="bit" Nullable="false" />
+          <Property Name="activationCode" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="resetPasswordKey" Type="nvarchar" MaxLength="1000" />
+          <Property Name="dateResetPasswordKeyCreated" Type="datetime" />
+          <Property Name="haveNewSystemMessages" Type="bit" Nullable="false" />
+          <Property Name="haveNewWarning" Type="bit" Nullable="false" />
+          <Property Name="warnings" Type="int" Nullable="false" />
+          <Property Name="unreadReportReply" Type="bit" Nullable="false" />
+          <Property Name="unseenTypeSuggestionData" Type="bit" Nullable="false" />
+          <Property Name="changeName" Type="bit" Nullable="false" />
+          <Property Name="registeredWithMail" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="visible" Type="bit" Nullable="false" />
+          <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="createdBy" Type="bigint" Nullable="false" />
+          <Property Name="userData" Type="ntext" />
+          <Property Name="rating" Type="float" Nullable="false" />
+          <Property Name="lastLogIn" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UsersBlocked">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userBlocking" Type="bigint" Nullable="false" />
+          <Property Name="userBlocked" Type="bigint" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="blockActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Warnings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User" Type="bigint" Nullable="false" />
+          <Property Name="dateCreated" Type="datetime" Nullable="false" />
+          <Property Name="visible" Type="bit" Nullable="false" />
+          <Property Name="UserAction" Type="bigint" />
+          <Property Name="description" Type="ntext" Nullable="false" />
+          <Property Name="ByAdmin" Type="bigint" Nullable="false" />
+          <Property Name="lastModified" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" Nullable="false" />
+          <Property Name="modifiedReason" Type="ntext" />
+        </EntityType>
+        <Association Name="FK_IpBans_ByUser">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="IpBans" Type="UserDBModel.Store.IpBans" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="IpBans">
+              <PropertyRef Name="byUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IpBans_modifiedBy">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="IpBans" Type="UserDBModel.Store.IpBans" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="IpBans">
+              <PropertyRef Name="modifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Messages_FromUser">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="Messages" Type="UserDBModel.Store.Messages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Messages">
+              <PropertyRef Name="fromUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Messages_ToUser">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="Messages" Type="UserDBModel.Store.Messages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Messages">
+              <PropertyRef Name="toUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SystemMessages_User">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="SystemMessages" Type="UserDBModel.Store.SystemMessages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SystemMessages">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_user-actions_actions">
+          <End Role="Actions" Type="UserDBModel.Store.Actions" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.Store.user_actions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Actions">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user_actions">
+              <PropertyRef Name="actionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_user-actions1">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.Store.user_actions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user_actions">
+              <PropertyRef Name="approvedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_user-actions2">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.Store.user_actions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user_actions">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserLogs_UserModified">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="UserLogs" Type="UserDBModel.Store.UserLogs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserLogs">
+              <PropertyRef Name="UserModified" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserLogs_UserModifying">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="UserLogs" Type="UserDBModel.Store.UserLogs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserLogs">
+              <PropertyRef Name="UserModifying" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserOptions_User">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="UserOptions" Type="UserDBModel.Store.UserOptions" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserOptions">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersBlocked_UserBlocked">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="UsersBlocked" Type="UserDBModel.Store.UsersBlocked" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersBlocked">
+              <PropertyRef Name="userBlocked" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersBlocked_UserBlocking">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="UsersBlocked" Type="UserDBModel.Store.UsersBlocked" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersBlocked">
+              <PropertyRef Name="userBlocking" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Warnings_ByAdmin">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="Warnings" Type="UserDBModel.Store.Warnings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Warnings">
+              <PropertyRef Name="ByAdmin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Warnings_ModifiedBy">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="Warnings" Type="UserDBModel.Store.Warnings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Warnings">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Warnings_User">
+          <End Role="Users" Type="UserDBModel.Store.Users" Multiplicity="1" />
+          <End Role="Warnings" Type="UserDBModel.Store.Warnings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Warnings">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Warnings_UserAction">
+          <End Role="user_actions" Type="UserDBModel.Store.user_actions" Multiplicity="0..1" />
+          <End Role="Warnings" Type="UserDBModel.Store.Warnings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user_actions">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Warnings">
+              <PropertyRef Name="UserAction" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="DeleteOldIPAttempts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="FindCountUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="searchKeywords" Type="nvarchar" Mode="In" />
+          <Parameter Name="fromIndex" Type="bigint" Mode="In" />
+          <Parameter Name="toIndex" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="FindUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="searchKeywords" Type="nvarchar" Mode="In" />
+          <Parameter Name="fromIndex" Type="bigint" Mode="In" />
+          <Parameter Name="toIndex" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="GetLastDeletedUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nameContains" Type="nvarchar" Mode="In" />
+          <Parameter Name="count" Type="bigint" Mode="In" />
+          <Parameter Name="userID" Type="bigint" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UserDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="EntitiesUsers">
+          <EntitySet Name="ActionsSet" EntityType="UserDBModel.Actions" />
+          <EntitySet Name="UserActionSet" EntityType="UserDBModel.UserAction" />
+          <EntitySet Name="UserOptionsSet" EntityType="UserDBModel.UserOptions" />
+          <EntitySet Name="UserSet" EntityType="UserDBModel.User" />
+          <EntitySet Name="UsersBlockedSet" EntityType="UserDBModel.UsersBlocked" />
+          <AssociationSet Name="FK_user_actions_actions" Association="UserDBModel.FK_user_actions_actions">
+            <End Role="Actions" EntitySet="ActionsSet" />
+            <End Role="user_actions" EntitySet="UserActionSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user_actions1" Association="UserDBModel.FK_user_actions1">
+            <End Role="Users" EntitySet="UserSet" />
+            <End Role="user_actions" EntitySet="UserActionSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_user_actions2" Association="UserDBModel.FK_user_actions2">
+            <End Role="Users" EntitySet="UserSet" />
+            <End Role="user_actions" EntitySet="UserActionSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserOptions_User" Association="UserDBModel.FK_UserOptions_User">
+            <End Role="Users" EntitySet="UserSet" />
+            <End Role="UserOptions" EntitySet="UserOptionsSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersBlocked_UserBlocked" Association="UserDBModel.FK_UsersBlocked_UserBlocked">
+            <End Role="Users" EntitySet="UserSet" />
+            <End Role="UsersBlocked" EntitySet="UsersBlockedSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersBlocked_UserBlocking" Association="UserDBModel.FK_UsersBlocked_UserBlocking">
+            <End Role="Users" EntitySet="UserSet" />
+            <End Role="UsersBlocked" EntitySet="UsersBlockedSet" />
+          </AssociationSet>
+          <EntitySet Name="MessageSet" EntityType="UserDBModel.Message" />
+          <AssociationSet Name="FK_Messages_FromUser" Association="UserDBModel.FK_Messages_FromUser">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Messages" EntitySet="MessageSet" /></AssociationSet>
+          <AssociationSet Name="FK_Messages_ToUser" Association="UserDBModel.FK_Messages_ToUser">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="Messages" EntitySet="MessageSet" /></AssociationSet>
+          <FunctionImport Name="FindUsers" EntitySet="UserSet" ReturnType="Collection(UserDBModel.User)">
+            <Parameter Name="searchKeywords" Mode="In" Type="String" />
+            <Parameter Name="fromIndex" Mode="In" Type="Int64" />
+            <Parameter Name="toIndex" Mode="In" Type="Int64" /></FunctionImport>
+          <FunctionImport Name="FindCountUsers" ReturnType="Collection(Int64)">
+            <Parameter Name="searchKeywords" Mode="In" Type="String" />
+            <Parameter Name="fromIndex" Mode="In" Type="Int64" />
+            <Parameter Name="toIndex" Mode="In" Type="Int64" /></FunctionImport>
+          <EntitySet Name="ScalarValueUsersSet" EntityType="UserDBModel.ScalarValueUsers" />
+          <FunctionImport Name="FindCountUsersScalarValue" EntitySet="ScalarValueUsersSet" ReturnType="Collection(UserDBModel.ScalarValueUsers)">
+            <Parameter Name="searchKeywords" Mode="In" Type="String" />
+            <Parameter Name="fromIndex" Mode="In" Type="Int64" />
+            <Parameter Name="toIndex" Mode="In" Type="Int64" /></FunctionImport>
+          <EntitySet Name="UserLogSet" EntityType="UserDBModel.UserLog" />
+          <AssociationSet Name="FK_UserLogs_UserModified" Association="UserDBModel.FK_UserLogs_UserModified">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="UserLogs" EntitySet="UserLogSet" /></AssociationSet>
+          <AssociationSet Name="FK_UserLogs_UserModifying" Association="UserDBModel.FK_UserLogs_UserModifying">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="UserLogs" EntitySet="UserLogSet" /></AssociationSet>
+          <EntitySet Name="IpBanSet" EntityType="UserDBModel.IpBan" />
+          <AssociationSet Name="FK_IpBans_ByUser" Association="UserDBModel.FK_IpBans_ByUser">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="IpBans" EntitySet="IpBanSet" /></AssociationSet>
+          <AssociationSet Name="FK_IpBans_modifiedBy" Association="UserDBModel.FK_IpBans_modifiedBy">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="IpBans" EntitySet="IpBanSet" /></AssociationSet>
+          <EntitySet Name="WarningSet" EntityType="UserDBModel.Warning" />
+          <AssociationSet Name="FK_Warnings_UserAction" Association="UserDBModel.FK_Warnings_UserAction">
+            <End EntitySet="UserActionSet" Role="UserAction" />
+            <End EntitySet="WarningSet" Role="Warnings" /></AssociationSet>
+          <AssociationSet Name="FK_Warnings_ByAdmin" Association="UserDBModel.FK_Warnings_ByAdmin">
+            <End EntitySet="UserSet" Role="User" />
+            <End EntitySet="WarningSet" Role="Warnings" /></AssociationSet>
+          <AssociationSet Name="FK_Warnings_ModifiedBy" Association="UserDBModel.FK_Warnings_ModifiedBy">
+            <End EntitySet="UserSet" Role="User" />
+            <End EntitySet="WarningSet" Role="Warnings" /></AssociationSet>
+          <AssociationSet Name="FK_Warnings_User" Association="UserDBModel.FK_Warnings_User">
+            <End EntitySet="UserSet" Role="User" />
+            <End EntitySet="WarningSet" Role="Warnings" /></AssociationSet>
+          <EntitySet Name="SystemMessageSet" EntityType="UserDBModel.SystemMessage" />
+          <AssociationSet Name="FK_SystemMessages_User" Association="UserDBModel.FK_SystemMessages_User">
+            <End Role="User" EntitySet="UserSet" />
+            <End Role="SystemMessages" EntitySet="SystemMessageSet" /></AssociationSet>
+          <EntitySet Name="IpAttemptSet" EntityType="UserDBModel.IpAttempt" />
+          <FunctionImport Name="DeleteOldIPAttempts" EntitySet="IpAttemptSet" ReturnType="Collection(UserDBModel.IpAttempt)" />
+          <FunctionImport Name="GetLastDeletedUsers" EntitySet="UserSet" ReturnType="Collection(UserDBModel.User)">
+            <Parameter Name="nameContains" Mode="In" Type="String" />
+            <Parameter Name="count" Mode="In" Type="Int64" />
+            <Parameter Name="userID" Mode="In" Type="Int64" /></FunctionImport></EntityContainer>
+        <EntityType Name="Actions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="type" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="typeID" Type="Int64" />
+          <NavigationProperty Name="user_action" Relationship="UserDBModel.FK_user_actions_actions" FromRole="Actions" ToRole="user_actions" />
+        </EntityType>
+        <EntityType Name="UserAction">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="visible" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Action" Relationship="UserDBModel.FK_user_actions_actions" FromRole="user_actions" ToRole="Actions" />
+          <NavigationProperty Name="ApprovedBy" Relationship="UserDBModel.FK_user_actions1" FromRole="user_actions" ToRole="Users" />
+          <NavigationProperty Name="User" Relationship="UserDBModel.FK_user_actions2" FromRole="user_actions" ToRole="Users" />
+          <NavigationProperty Name="Warnings" Relationship="UserDBModel.FK_Warnings_UserAction" FromRole="UserAction" ToRole="Warnings" /></EntityType>
+        <EntityType Name="UserOptions">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int64" Nullable="false" />
+          <Property Name="canReceiveMessages" Type="Boolean" Nullable="false" />
+          <Property Name="haveNewMessages" Type="Boolean" Nullable="false" />
+          <Property Name="secretQuestion" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="secretAnswer" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="activated" Type="Boolean" Nullable="false" />
+          <Property Name="activationCode" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="resetPasswordKey" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="dateResetPasswordKeyCreated" Type="DateTime" />
+          <NavigationProperty Name="User" Relationship="UserDBModel.FK_UserOptions_User" FromRole="UserOptions" ToRole="Users" />
+          <Property Name="haveNewSystemMessages" Type="Boolean" Nullable="false" />
+          <Property Name="haveNewWarning" Type="Boolean" Nullable="false" />
+          <Property Name="warnings" Type="Int32" Nullable="false" />
+          <Property Name="unreadReportReply" Type="Boolean" Nullable="false" />
+          <Property Name="unseenTypeSuggestionData" Type="Boolean" Nullable="false" />
+          <Property Name="changeName" Type="Boolean" Nullable="false" />
+          <Property Name="registeredWithMail" Type="String" Nullable="true" /></EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="visible" Type="Boolean" Nullable="false" />
+          <Property Name="type" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="createdBy" Type="Int64" Nullable="false" />
+          <Property Name="userData" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="rating" Type="Double" Nullable="false" />
+          <NavigationProperty Name="user_actions" Relationship="UserDBModel.FK_user_actions1" FromRole="Users" ToRole="user_actions" />
+          <NavigationProperty Name="user_actions1" Relationship="UserDBModel.FK_user_actions2" FromRole="Users" ToRole="user_actions" />
+          <NavigationProperty Name="UserOptions" Relationship="UserDBModel.FK_UserOptions_User" FromRole="Users" ToRole="UserOptions" />
+          <NavigationProperty Name="UserBlocked" Relationship="UserDBModel.FK_UsersBlocked_UserBlocked" FromRole="Users" ToRole="UsersBlocked" />
+          <NavigationProperty Name="UserBlocking" Relationship="UserDBModel.FK_UsersBlocked_UserBlocking" FromRole="Users" ToRole="UsersBlocked" />
+          <NavigationProperty Name="MessagesSent" Relationship="UserDBModel.FK_Messages_FromUser" FromRole="User" ToRole="Messages" />
+          <NavigationProperty Name="MessagesReceived" Relationship="UserDBModel.FK_Messages_ToUser" FromRole="User" ToRole="Messages" />
+          <NavigationProperty Name="UserLogs" Relationship="UserDBModel.FK_UserLogs_UserModified" FromRole="User" ToRole="UserLogs" />
+          <NavigationProperty Name="UserLogs1" Relationship="UserDBModel.FK_UserLogs_UserModifying" FromRole="User" ToRole="UserLogs" />
+          <NavigationProperty Name="IpBans" Relationship="UserDBModel.FK_IpBans_ByUser" FromRole="User" ToRole="IpBans" />
+          <NavigationProperty Name="IpBans1" Relationship="UserDBModel.FK_IpBans_modifiedBy" FromRole="User" ToRole="IpBans" />
+          <NavigationProperty Name="Warnings" Relationship="UserDBModel.FK_Warnings_ByAdmin" FromRole="User" ToRole="Warnings" />
+          <NavigationProperty Name="Warnings1" Relationship="UserDBModel.FK_Warnings_ModifiedBy" FromRole="User" ToRole="Warnings" />
+          <NavigationProperty Name="Warnings2" Relationship="UserDBModel.FK_Warnings_User" FromRole="User" ToRole="Warnings" />
+          <NavigationProperty Name="SystemMessages" Relationship="UserDBModel.FK_SystemMessages_User" FromRole="User" ToRole="SystemMessages" />
+          <Property Name="lastLogIn" Type="DateTime" Nullable="false" /></EntityType>
+        <EntityType Name="UsersBlocked">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="blockActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BlockedUser" Relationship="UserDBModel.FK_UsersBlocked_UserBlocked" FromRole="UsersBlocked" ToRole="Users" />
+          <NavigationProperty Name="UserBlocking" Relationship="UserDBModel.FK_UsersBlocked_UserBlocking" FromRole="UsersBlocked" ToRole="Users" />
+        </EntityType>
+        <Association Name="FK_user_actions_actions">
+          <End Role="Actions" Type="UserDBModel.Actions" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.UserAction" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_user_actions1">
+          <End Role="Users" Type="UserDBModel.User" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.UserAction" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_user_actions2">
+          <End Role="Users" Type="UserDBModel.User" Multiplicity="1" />
+          <End Role="user_actions" Type="UserDBModel.UserAction" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_UserOptions_User">
+          <End Role="Users" Type="UserDBModel.User" Multiplicity="1" />
+          <End Role="UserOptions" Type="UserDBModel.UserOptions" Multiplicity="0..1" />
+        <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" /></Principal>
+            <Dependent Role="UserOptions">
+              <PropertyRef Name="userID" /></Dependent></ReferentialConstraint></Association>
+        <Association Name="FK_UsersBlocked_UserBlocked">
+          <End Role="Users" Type="UserDBModel.User" Multiplicity="1" />
+          <End Role="UsersBlocked" Type="UserDBModel.UsersBlocked" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_UsersBlocked_UserBlocking">
+          <End Role="Users" Type="UserDBModel.User" Multiplicity="1" />
+          <End Role="UsersBlocked" Type="UserDBModel.UsersBlocked" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="subject" Type="String" Nullable="true" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="visibleFromUser" Type="Boolean" Nullable="false" />
+          <Property Name="visibleToUser" Type="Boolean" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="FromUser" Relationship="UserDBModel.FK_Messages_FromUser" FromRole="Messages" ToRole="User" />
+          <NavigationProperty Name="ToUser" Relationship="UserDBModel.FK_Messages_ToUser" FromRole="Messages" ToRole="User" /></EntityType>
+        <Association Name="FK_Messages_FromUser">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.Message" Role="Messages" Multiplicity="*" /></Association>
+        <Association Name="FK_Messages_ToUser">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.Message" Role="Messages" Multiplicity="*" /></Association>
+        <EntityType Name="ScalarValueUsers">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" />
+          <Property Name="DataType" Type="String" Nullable="false" /></EntityType>
+        <EntityType Name="UserLog">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="type" Type="String" Nullable="false" />
+          <Property Name="IpAdress" Type="String" Nullable="false" />
+          <Property Name="typeModified" Type="String" Nullable="false" />
+          <NavigationProperty Name="UserModified" Relationship="UserDBModel.FK_UserLogs_UserModified" FromRole="UserLogs" ToRole="User" />
+          <NavigationProperty Name="UserModifying" Relationship="UserDBModel.FK_UserLogs_UserModifying" FromRole="UserLogs" ToRole="User" /></EntityType>
+        <Association Name="FK_UserLogs_UserModified">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.UserLog" Role="UserLogs" Multiplicity="*" /></Association>
+        <Association Name="FK_UserLogs_UserModifying">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.UserLog" Role="UserLogs" Multiplicity="*" /></Association>
+        <EntityType Name="IpBan">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="IPadress" Type="String" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="active" Type="Boolean" Nullable="false" />
+          <Property Name="untillDate" Type="DateTime" Nullable="true" />
+          <Property Name="notes" Type="String" Nullable="true" />
+          <Property Name="lastModified" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="byUser" Relationship="UserDBModel.FK_IpBans_ByUser" FromRole="IpBans" ToRole="User" />
+          <NavigationProperty Name="modifiedBy" Relationship="UserDBModel.FK_IpBans_modifiedBy" FromRole="IpBans" ToRole="User" /></EntityType>
+        <Association Name="FK_IpBans_ByUser">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.IpBan" Role="IpBans" Multiplicity="*" /></Association>
+        <Association Name="FK_IpBans_modifiedBy">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.IpBan" Role="IpBans" Multiplicity="*" /></Association>
+        <EntityType Name="Warning">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="visible" Type="Boolean" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="lastModified" Type="DateTime" Nullable="false" />
+          <Property Name="modifiedReason" Type="String" Nullable="true" />
+          <NavigationProperty Name="UserAction" Relationship="UserDBModel.FK_Warnings_UserAction" FromRole="Warnings" ToRole="UserAction" />
+          <NavigationProperty Name="ByAdmin" Relationship="UserDBModel.FK_Warnings_ByAdmin" FromRole="Warnings" ToRole="User" />
+          <NavigationProperty Name="ModifiedBy" Relationship="UserDBModel.FK_Warnings_ModifiedBy" FromRole="Warnings" ToRole="User" />
+          <NavigationProperty Name="User" Relationship="UserDBModel.FK_Warnings_User" FromRole="Warnings" ToRole="User" /></EntityType>
+        <Association Name="FK_Warnings_UserAction">
+          <End Type="UserDBModel.UserAction" Multiplicity="0..1" Role="UserAction" />
+          <End Type="UserDBModel.Warning" Multiplicity="*" Role="Warnings" /></Association>
+        <Association Name="FK_Warnings_ByAdmin">
+          <End Type="UserDBModel.User" Multiplicity="1" Role="User" />
+          <End Type="UserDBModel.Warning" Multiplicity="*" Role="Warnings" /></Association>
+        <Association Name="FK_Warnings_ModifiedBy">
+          <End Type="UserDBModel.User" Multiplicity="1" Role="User" />
+          <End Type="UserDBModel.Warning" Multiplicity="*" Role="Warnings" /></Association>
+        <Association Name="FK_Warnings_User">
+          <End Type="UserDBModel.User" Multiplicity="1" Role="User" />
+          <End Type="UserDBModel.Warning" Multiplicity="*" Role="Warnings" /></Association>
+        <EntityType Name="SystemMessage">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="visible" Type="Boolean" Nullable="false" />
+          <Property Name="dateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="UserDBModel.FK_SystemMessages_User" FromRole="SystemMessages" ToRole="User" /></EntityType>
+        <Association Name="FK_SystemMessages_User">
+          <End Type="UserDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="UserDBModel.SystemMessage" Role="SystemMessages" Multiplicity="*" /></Association>
+        <EntityType Name="IpAttempt">
+          <Key>
+            <PropertyRef Name="IPaddress" /></Key>
+          <Property Name="IPaddress" Type="String" Nullable="false" />
+          <Property Name="lastLogIn" Type="DateTime" Nullable="true" />
+          <Property Name="loginAttempts" Type="Int32" Nullable="true" />
+          <Property Name="lastAnsSecQuestTry" Type="DateTime" Nullable="true" />
+          <Property Name="ansSecQuestAttempts" Type="Int32" Nullable="true" />
+          <Property Name="lastAnsUserAndMailTry" Type="DateTime" Nullable="true" />
+          <Property Name="ansUserAndMailAttempts" Type="Int32" Nullable="true" /></EntityType></Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="UserDBModelStoreContainer" CdmEntityContainer="EntitiesUsers">
+          <EntitySetMapping Name="ActionsSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.Actions)">
+              <MappingFragment StoreEntitySet="Actions">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="typeID" ColumnName="typeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserActionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.UserAction)">
+              <MappingFragment StoreEntitySet="user_actions">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="visible" ColumnName="visible" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserOptionsSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.UserOptions)">
+              <MappingFragment StoreEntitySet="UserOptions">
+                <ScalarProperty Name="registeredWithMail" ColumnName="registeredWithMail" />
+                <ScalarProperty Name="changeName" ColumnName="changeName" />
+                <ScalarProperty Name="unseenTypeSuggestionData" ColumnName="unseenTypeSuggestionData" />
+                <ScalarProperty Name="unreadReportReply" ColumnName="unreadReportReply" />
+                <ScalarProperty Name="warnings" ColumnName="warnings" />
+                <ScalarProperty Name="haveNewWarning" ColumnName="haveNewWarning" />
+                <ScalarProperty Name="haveNewSystemMessages" ColumnName="haveNewSystemMessages" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="canReceiveMessages" ColumnName="canReceiveMessages" />
+                <ScalarProperty Name="haveNewMessages" ColumnName="haveNewMessages" />
+                <ScalarProperty Name="secretQuestion" ColumnName="secretQuestion" />
+                <ScalarProperty Name="secretAnswer" ColumnName="secretAnswer" />
+                <ScalarProperty Name="activated" ColumnName="activated" />
+                <ScalarProperty Name="activationCode" ColumnName="activationCode" />
+                <ScalarProperty Name="resetPasswordKey" ColumnName="resetPasswordKey" />
+                <ScalarProperty Name="dateResetPasswordKeyCreated" ColumnName="dateResetPasswordKeyCreated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.User)">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="lastLogIn" ColumnName="lastLogIn" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="visible" ColumnName="visible" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+                <ScalarProperty Name="userData" ColumnName="userData" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsersBlockedSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.UsersBlocked)">
+              <MappingFragment StoreEntitySet="UsersBlocked">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="blockActive" ColumnName="blockActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_user_actions_actions" TypeName="UserDBModel.FK_user_actions_actions" StoreEntitySet="user_actions">
+            <EndProperty Name="Actions">
+              <ScalarProperty Name="ID" ColumnName="actionID" />
+            </EndProperty>
+            <EndProperty Name="user_actions">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_user_actions1" TypeName="UserDBModel.FK_user_actions1" StoreEntitySet="user_actions">
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="approvedBy" />
+            </EndProperty>
+            <EndProperty Name="user_actions">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_user_actions2" TypeName="UserDBModel.FK_user_actions2" StoreEntitySet="user_actions">
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="userID" />
+            </EndProperty>
+            <EndProperty Name="user_actions">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_UserOptions_User" TypeName="UserDBModel.FK_UserOptions_User" StoreEntitySet="UserOptions">
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="userID" />
+            </EndProperty>
+            <EndProperty Name="UserOptions">
+              <ScalarProperty Name="userID" ColumnName="userID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_UsersBlocked_UserBlocked" TypeName="UserDBModel.FK_UsersBlocked_UserBlocked" StoreEntitySet="UsersBlocked">
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="userBlocked" />
+            </EndProperty>
+            <EndProperty Name="UsersBlocked">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_UsersBlocked_UserBlocking" TypeName="UserDBModel.FK_UsersBlocked_UserBlocking" StoreEntitySet="UsersBlocked">
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="userBlocking" />
+            </EndProperty>
+            <EndProperty Name="UsersBlocked">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="MessageSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.Message)">
+              <MappingFragment StoreEntitySet="Messages">
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="visibleToUser" ColumnName="visibleToUser" />
+                <ScalarProperty Name="visibleFromUser" ColumnName="visibleFromUser" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_Messages_FromUser" TypeName="UserDBModel.FK_Messages_FromUser" StoreEntitySet="Messages">
+            <EndProperty Name="Messages">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="fromUser" /></EndProperty></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Messages_ToUser" TypeName="UserDBModel.FK_Messages_ToUser" StoreEntitySet="Messages">
+            <EndProperty Name="Messages">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="toUser" /></EndProperty></AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="FindUsers" FunctionName="UserDBModel.Store.FindUsers" />
+          <FunctionImportMapping FunctionImportName="FindCountUsers" FunctionName="UserDBModel.Store.FindCountUsers" />
+          <EntitySetMapping Name="ScalarValueUsersSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.ScalarValueUsers)">
+              <MappingFragment StoreEntitySet="ScalarValues">
+                <ScalarProperty Name="DataType" ColumnName="DataType" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="FindCountUsersScalarValue" FunctionName="UserDBModel.Store.FindCountUsers" />
+          <EntitySetMapping Name="UserLogSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.UserLog)">
+              <MappingFragment StoreEntitySet="UserLogs">
+                <ScalarProperty Name="typeModified" ColumnName="typeModified" />
+                <ScalarProperty Name="IpAdress" ColumnName="IpAdress" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_UserLogs_UserModified" TypeName="UserDBModel.FK_UserLogs_UserModified" StoreEntitySet="UserLogs">
+            <EndProperty Name="UserLogs">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="UserModified" /></EndProperty></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_UserLogs_UserModifying" TypeName="UserDBModel.FK_UserLogs_UserModifying" StoreEntitySet="UserLogs">
+            <EndProperty Name="UserLogs">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="UserModifying" /></EndProperty></AssociationSetMapping>
+          <EntitySetMapping Name="IpBanSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.IpBan)">
+              <MappingFragment StoreEntitySet="IpBans">
+                <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="untillDate" ColumnName="untillDate" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="IPadress" ColumnName="IPadress" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_IpBans_ByUser" TypeName="UserDBModel.FK_IpBans_ByUser" StoreEntitySet="IpBans">
+            <EndProperty Name="IpBans">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="byUser" /></EndProperty></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_IpBans_modifiedBy" TypeName="UserDBModel.FK_IpBans_modifiedBy" StoreEntitySet="IpBans">
+            <EndProperty Name="IpBans">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="modifiedBy" /></EndProperty></AssociationSetMapping>
+          <EntitySetMapping Name="WarningSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.Warning)">
+              <MappingFragment StoreEntitySet="Warnings">
+                <ScalarProperty Name="modifiedReason" ColumnName="modifiedReason" />
+                <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="visible" ColumnName="visible" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_Warnings_UserAction" TypeName="UserDBModel.FK_Warnings_UserAction" StoreEntitySet="Warnings">
+            <EndProperty Name="Warnings">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="UserAction">
+              <ScalarProperty Name="ID" ColumnName="UserAction" /></EndProperty>
+            <Condition ColumnName="UserAction" IsNull="false" /></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Warnings_ByAdmin" TypeName="UserDBModel.FK_Warnings_ByAdmin" StoreEntitySet="Warnings">
+            <EndProperty Name="Warnings">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="ByAdmin" /></EndProperty></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Warnings_ModifiedBy" TypeName="UserDBModel.FK_Warnings_ModifiedBy" StoreEntitySet="Warnings">
+            <EndProperty Name="Warnings">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="ModifiedBy" /></EndProperty></AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Warnings_User" TypeName="UserDBModel.FK_Warnings_User" StoreEntitySet="Warnings">
+            <EndProperty Name="Warnings">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="User" /></EndProperty></AssociationSetMapping>
+          <EntitySetMapping Name="SystemMessageSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.SystemMessage)">
+              <MappingFragment StoreEntitySet="SystemMessages">
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="visible" ColumnName="visible" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_SystemMessages_User" TypeName="UserDBModel.FK_SystemMessages_User" StoreEntitySet="SystemMessages">
+            <EndProperty Name="SystemMessages">
+              <ScalarProperty Name="ID" ColumnName="ID" /></EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="User" /></EndProperty></AssociationSetMapping>
+          <EntitySetMapping Name="IpAttemptSet">
+            <EntityTypeMapping TypeName="IsTypeOf(UserDBModel.IpAttempt)">
+              <MappingFragment StoreEntitySet="IpAttempts">
+                <ScalarProperty Name="ansUserAndMailAttempts" ColumnName="ansUserAndMailAttempts" />
+                <ScalarProperty Name="lastAnsUserAndMailTry" ColumnName="lastAnsUserAndMailTry" />
+                <ScalarProperty Name="ansSecQuestAttempts" ColumnName="ansSecQuestAttempts" />
+                <ScalarProperty Name="lastAnsSecQuestTry" ColumnName="lastAnsSecQuestTry" />
+                <ScalarProperty Name="loginAttempts" ColumnName="loginAttempts" />
+                <ScalarProperty Name="lastLogIn" ColumnName="lastLogIn" />
+                <ScalarProperty Name="IPaddress" ColumnName="IPaddress" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="DeleteOldIPAttempts" FunctionName="UserDBModel.Store.DeleteOldIPAttempts" />
+          <FunctionImportMapping FunctionImportName="GetLastDeletedUsers" FunctionName="UserDBModel.Store.GetLastDeletedUsers" /></EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="UsersModel">
+        <EntityTypeShape EntityType="UserDBModel.Actions" Width="1.5" PointX="2.375" PointY="5.125" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.UserAction" Width="1.5" PointX="4.375" PointY="5.125" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.UserOptions" Width="1.5" PointX="2.25" PointY="7.75" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.User" Width="1.5" PointX="6.375" PointY="5.375" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.UsersBlocked" Width="1.5" PointX="6.125" PointY="2.625" Height="1.9802864583333339" IsExpanded="true" />
+        <AssociationConnector Association="UserDBModel.FK_user_actions_actions" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.875" PointY="6.3074446614583337" />
+          <ConnectorPoint PointX="4.375" PointY="6.3074446614583337" />
+          </AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_user_actions1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="6.4324446614583337" />
+          <ConnectorPoint PointX="6.208333333333333" PointY="6.4324446614583328" />
+          <ConnectorPoint PointX="6.041666666666667" PointY="6.4324446614583337" />
+          <ConnectorPoint PointX="5.875" PointY="6.4324446614583337" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_user_actions2" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="5.8412223307291669" />
+          <ConnectorPoint PointX="6.208333333333333" PointY="5.841222330729166" />
+          <ConnectorPoint PointX="6.041666666666667" PointY="5.8412223307291669" />
+          <ConnectorPoint PointX="5.875" PointY="5.8412223307291669" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_UserOptions_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="8.53125" />
+          <ConnectorPoint PointX="3.75" PointY="8.53125" />
+          </AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_UsersBlocked_UserBlocked" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75006103515625" PointY="5.375" />
+          <ConnectorPoint PointX="6.75006103515625" PointY="4.6052864583333335" />
+          </AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_UsersBlocked_UserBlocking" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.250030517578125" PointY="5.375" />
+          <ConnectorPoint PointX="7.250030517578125" PointY="4.6052864583333335" />
+          </AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.Message" Width="1.5" PointX="8.75" PointY="8.875" Height="2.5571907552083317" />
+        <AssociationConnector Association="UserDBModel.FK_Messages_FromUser" >
+          <ConnectorPoint PointX="7.875" PointY="10.038157552083334" />
+          <ConnectorPoint PointX="8.75" PointY="10.038157552083334" />
+          </AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_Messages_ToUser" >
+          <ConnectorPoint PointX="7.875" PointY="9.3940787760416669" />
+          <ConnectorPoint PointX="8.75" PointY="9.3940787760416669" />
+          </AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.ScalarValueUsers" Width="1.5" PointX="3.75" PointY="2.75" Height="1.5956835937499998" />
+        <EntityTypeShape EntityType="UserDBModel.UserLog" Width="1.5" PointX="8.875" PointY="6" Height="2.5571907552083335" />
+        <AssociationConnector Association="UserDBModel.FK_UserLogs_UserModified" >
+          <ConnectorPoint PointX="7.875" PointY="7.7463697528839113" />
+          <ConnectorPoint PointX="8.875" PointY="7.7463697528839113" />
+          </AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_UserLogs_UserModifying" >
+          <ConnectorPoint PointX="7.875" PointY="6.8106848764419556" />
+          <ConnectorPoint PointX="8.875" PointY="6.8106848764419556" />
+          </AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.IpBan" Width="1.5" PointX="8.625" PointY="1.5" Height="2.7494921874999996" />
+        <AssociationConnector Association="UserDBModel.FK_IpBans_ByUser" >
+          <ConnectorPoint PointX="7.78125" PointY="5.375" />
+          <ConnectorPoint PointX="7.78125" PointY="1.8335249462890626" />
+          <ConnectorPoint PointX="8.625" PointY="1.8335249462890626" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_IpBans_modifiedBy" >
+          <ConnectorPoint PointX="7.7499975" PointY="5.375" />
+          <ConnectorPoint PointX="7.7499975" PointY="2.2292649731445313" />
+          <ConnectorPoint PointX="8.625" PointY="2.2292649731445313" /></AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.Warning" PointX="11.25" PointY="5.375" Width="1.5" Height="2.9417936197916674" />
+        <AssociationConnector Association="UserDBModel.FK_Warnings_UserAction">
+          <ConnectorPoint PointX="5.875" PointY="6.9924189921875008" />
+          <ConnectorPoint PointX="6.125" PointY="6.9924189921875008" />
+          <ConnectorPoint PointX="6.125" PointY="5.125" />
+          <ConnectorPoint PointX="6.666727701822917" PointY="5.1249999999999991" />
+          <ConnectorPoint PointX="6.833394368489583" PointY="5.125" />
+          <ConnectorPoint PointX="7.166697184244792" PointY="5.1249999999999991" />
+          <ConnectorPoint PointX="7.333363850911458" PointY="5.125" />
+          <ConnectorPoint PointX="7.6666641666666671" PointY="5.1249999999999991" />
+          <ConnectorPoint PointX="7.8645833333333321" PointY="5.125" />
+          <ConnectorPoint PointX="12" PointY="5.125" />
+          <ConnectorPoint PointX="12" PointY="5.375" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_Warnings_ByAdmin">
+          <ConnectorPoint PointX="7.875" PointY="5.65625" />
+          <ConnectorPoint PointX="11.25" PointY="5.65625" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_Warnings_ModifiedBy">
+          <ConnectorPoint PointX="7.875" PointY="5.859375" />
+          <ConnectorPoint PointX="11.25" PointY="5.859375" /></AssociationConnector>
+        <AssociationConnector Association="UserDBModel.FK_Warnings_User">
+          <ConnectorPoint PointX="7.875" PointY="5.4531250000000009" />
+          <ConnectorPoint PointX="11.25" PointY="5.4531250000000009" /></AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.SystemMessage" Width="1.5" PointX="4.25" PointY="9.375" Height="1.9802864583333317" />
+        <AssociationConnector Association="UserDBModel.FK_SystemMessages_User" >
+          <ConnectorPoint PointX="6.375" PointY="10.288157552083334" />
+          <ConnectorPoint PointX="5.75" PointY="10.288157552083334" />
+          </AssociationConnector>
+        <EntityTypeShape EntityType="UserDBModel.IpAttempt" Width="1.5" PointX="1.625" PointY="1.875" Height="2.3648893229166665" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

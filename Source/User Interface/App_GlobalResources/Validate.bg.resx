@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="and" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>букви</value>
+  </data>
+  <data name="errCantSendMsgToUser" xml:space="preserve">
+    <value>Не може да изпратите съобщение към този потребител.</value>
+  </data>
+  <data name="errDescrLength" xml:space="preserve">
+    <value>Описанието трябва да е между</value>
+  </data>
+  <data name="errDuplicateSubVariantName" xml:space="preserve">
+    <value>Името е заето.</value>
+  </data>
+  <data name="errDuplicateVariantName" xml:space="preserve">
+    <value>Името е заето.</value>
+  </data>
+  <data name="errIdLength" xml:space="preserve">
+    <value>ID-то трябва да е между</value>
+  </data>
+  <data name="errIncCurrPass" xml:space="preserve">
+    <value>Грешна парола.</value>
+  </data>
+  <data name="errIncNameFormat" xml:space="preserve">
+    <value>Неправилен формат на името.</value>
+  </data>
+  <data name="errInvMail" xml:space="preserve">
+    <value>Неправилен формат на ел.поща.</value>
+  </data>
+  <data name="errInvSiteFormat" xml:space="preserve">
+    <value>Неправилен формат на адрес на сайт.</value>
+  </data>
+  <data name="errLocalWordForLengthDescription" xml:space="preserve">
+    <value>Дължината на описанието трябва да е между</value>
+  </data>
+  <data name="errLocalWordForLengthName" xml:space="preserve">
+    <value>Дължината на името трябва да е между</value>
+  </data>
+  <data name="errLocalWordForLengthSignature" xml:space="preserve">
+    <value>Дължината на сигнатурата трябва да е между</value>
+  </data>
+  <data name="errLocalWordForLengthSubject" xml:space="preserve">
+    <value>Дължината на темата трябва да е между</value>
+  </data>
+  <data name="errLocalWordForTypeItDescription" xml:space="preserve">
+    <value>Въведи описание.</value>
+  </data>
+  <data name="errLocalWordForTypeItName" xml:space="preserve">
+    <value>Въведи име.</value>
+  </data>
+  <data name="errLocalWordForTypeItSignature" xml:space="preserve">
+    <value>Въведи сигнатура.</value>
+  </data>
+  <data name="errLocalWordForTypeItSubject" xml:space="preserve">
+    <value>Въведи тема.</value>
+  </data>
+  <data name="errMsgCantSendToSelf" xml:space="preserve">
+    <value>Не може да изпращате съобщения към себе си.</value>
+  </data>
+  <data name="errNameLength" xml:space="preserve">
+    <value>Дължината на името трябва да е между</value>
+  </data>
+  <data name="errNameTaken" xml:space="preserve">
+    <value>Името е заето.</value>
+  </data>
+  <data name="errNewUserPass" xml:space="preserve">
+    <value>Използвайте само букви от латиница и цифри за парола.</value>
+  </data>
+  <data name="errNoSuchUser" xml:space="preserve">
+    <value>Няма такъв потребител.</value>
+  </data>
+  <data name="errParseToLong" xml:space="preserve">
+    <value>Числото трябва да е положително.</value>
+  </data>
+  <data name="errPassCannotContainUsername" xml:space="preserve">
+    <value>Паролата не може да съдържа потребителското име.</value>
+  </data>
+  <data name="errPassChars" xml:space="preserve">
+    <value>Използвайте само букви от латиница и цифри за парола.</value>
+  </data>
+  <data name="errPassFieldsDoNotMatch" xml:space="preserve">
+    <value>Повторението на паролата не съвпада.</value>
+  </data>
+  <data name="errPassLength" xml:space="preserve">
+    <value>Дължината на паролата трябва да е между</value>
+  </data>
+  <data name="errProdNameTaken" xml:space="preserve">
+    <value>Името е заето. Добавете името на компанията отпред.</value>
+  </data>
+  <data name="errSiteLength" xml:space="preserve">
+    <value>Дължината на адреса е прекалено голяма.</value>
+  </data>
+  <data name="errTextLength" xml:space="preserve">
+    <value>Дължината на текста трябва да е между</value>
+  </data>
+  <data name="errTypeCurrPass" xml:space="preserve">
+    <value>Въведете вашата парола.</value>
+  </data>
+  <data name="errTypeDescr" xml:space="preserve">
+    <value>Въведете описание.</value>
+  </data>
+  <data name="errTypeMail" xml:space="preserve">
+    <value>Въведете ел.поща.</value>
+  </data>
+  <data name="errTypeName" xml:space="preserve">
+    <value>Въведете име.</value>
+  </data>
+  <data name="errTypeNumber" xml:space="preserve">
+    <value>Въведете число.</value>
+  </data>
+  <data name="errTypePass" xml:space="preserve">
+    <value>Въведете парола.</value>
+  </data>
+  <data name="errTypePassForNewUser" xml:space="preserve">
+    <value>Въведете парола за нов потребител.</value>
+  </data>
+  <data name="errTypeRepPass" xml:space="preserve">
+    <value>Повторете паролата в съответното поле.</value>
+  </data>
+  <data name="errTypeSite" xml:space="preserve">
+    <value>Въведете адрес на сайта.</value>
+  </data>
+  <data name="errTypeText" xml:space="preserve">
+    <value>Въведете текст.</value>
+  </data>
+  <data name="errTypeUserToSendMsg" xml:space="preserve">
+    <value>Въведете потребител, на който искате да пратите съобщението.</value>
+  </data>
+  <data name="errUserNameTaken" xml:space="preserve">
+    <value>Това име е заето.</value>
+  </data>
+  <data name="errWordsLength" xml:space="preserve">
+    <value>Не трябва да има думи с дължина по-голяма от</value>
+  </data>
+  <data name="shouldBeBetween" xml:space="preserve">
+    <value>дължината трябва да е между</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>символа</value>
+  </data>
+</root>

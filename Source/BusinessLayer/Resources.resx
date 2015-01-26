@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddUserActionAddMakers" xml:space="preserve">
+    <value>You received a right to add companies.</value>
+  </data>
+  <data name="AddUserActionAddProducts" xml:space="preserve">
+    <value>You received a right to add products.</value>
+  </data>
+  <data name="AddUserActionCommenter" xml:space="preserve">
+    <value>You received a right for writing opinions and messages.</value>
+  </data>
+  <data name="AddUserActionHaveSignature" xml:space="preserve">
+    <value>You received a right which enables you to have signature.</value>
+  </data>
+  <data name="AddUserActionRateComments" xml:space="preserve">
+    <value>You received a right to rate opinions.</value>
+  </data>
+  <data name="AddUserActionRateProducts" xml:space="preserve">
+    <value>You received a right to rate products.</value>
+  </data>
+  <data name="AddUserActionRateUsers" xml:space="preserve">
+    <value>You received a right to rate users.</value>
+  </data>
+  <data name="AddUserActionSendReports" xml:space="preserve">
+    <value>You received a right to send reports.</value>
+  </data>
+  <data name="AddUserActionSendSuggestions" xml:space="preserve">
+    <value>You received a right to write suggestions.</value>
+  </data>
+  <data name="AddUserTypeActionAllMakerProducts" xml:space="preserve">
+    <value>You received a right to edit all products of company</value>
+  </data>
+  <data name="AddUserTypeActionEditMaker" xml:space="preserve">
+    <value>You received a right to edit company</value>
+  </data>
+  <data name="AddUserTypeActionEditProduct" xml:space="preserve">
+    <value>You received a right to edit product</value>
+  </data>
+  <data name="allCommsWereDeleted" xml:space="preserve">
+    <value>All your opinions were deleted.</value>
+  </data>
+  <data name="big" xml:space="preserve">
+    <value>big</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>category</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>opinion</value>
+  </data>
+  <data name="commentEditedBy" xml:space="preserve">
+    <value>opinion edited by :</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="DeletingSuggestionSM" xml:space="preserve">
+    <value>The following suggestion which you wrote was deleted :</value>
+  </data>
+  <data name="DeletingSuggestionW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when posting suggestions.</value>
+  </data>
+  <data name="DeletingSuggestionW2" xml:space="preserve">
+    <value>Reason is deleting of the following suggestion :</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description :</value>
+  </data>
+  <data name="errAlreadyBlockingUser" xml:space="preserve">
+    <value>You have blocked that user already.</value>
+  </data>
+  <data name="errCantBlockUrself" xml:space="preserve">
+    <value>You cannot block yourself.</value>
+  </data>
+  <data name="errCantBlockUser" xml:space="preserve">
+    <value>You cannot block that user.</value>
+  </data>
+  <data name="errImgFileSize" xml:space="preserve">
+    <value>The file is too</value>
+  </data>
+  <data name="errImgFileType" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="errImgFileType2" xml:space="preserve">
+    <value>is not supported</value>
+  </data>
+  <data name="errImgNotValidType" xml:space="preserve">
+    <value>Not a valid</value>
+  </data>
+  <data name="errImgTypeNotSupported" xml:space="preserve">
+    <value>The image type is not supported.</value>
+  </data>
+  <data name="errImgUploading" xml:space="preserve">
+    <value>Error uploading the image.</value>
+  </data>
+  <data name="errImgWidthHeight" xml:space="preserve">
+    <value>The image is small, it's width/height must be more more than</value>
+  </data>
+  <data name="errIsntActivated" xml:space="preserve">
+    <value>is not activated.</value>
+  </data>
+  <data name="errNoSuchUser" xml:space="preserve">
+    <value>No such user.</value>
+  </data>
+  <data name="errTransferActionAlreadyTransf" xml:space="preserve">
+    <value>You are currently transferring that right.</value>
+  </data>
+  <data name="errTransferActionCantTransfer" xml:space="preserve">
+    <value>You cannot transfer that right.</value>
+  </data>
+  <data name="errTransferActionCantTransferRoles" xml:space="preserve">
+    <value>You cannot transfer rights.</value>
+  </data>
+  <data name="errTransferActionCantTransferTo" xml:space="preserve">
+    <value>You cannot transfer rights to</value>
+  </data>
+  <data name="errTransferActionCantTransferTo2" xml:space="preserve">
+    <value>, because you are blocked by him/her.</value>
+  </data>
+  <data name="errTransferActionCantTransferTo3" xml:space="preserve">
+    <value>, because you blocked him.</value>
+  </data>
+  <data name="errTransferActionCantTransferToUrself" xml:space="preserve">
+    <value>You cannot transfer rights to yourself.</value>
+  </data>
+  <data name="errTransferActionOtherIsTransf" xml:space="preserve">
+    <value>Other user is currently transferring the same right to</value>
+  </data>
+  <data name="errTransferActionUserAlreadyHave" xml:space="preserve">
+    <value>already have that right.</value>
+  </data>
+  <data name="errTypeSuggAlreadyHaveSugg" xml:space="preserve">
+    <value>You currently have active suggestion about this product.</value>
+  </data>
+  <data name="errTypeSuggAlreadyHaveSuggMaker" xml:space="preserve">
+    <value>You currently have active suggestion for this company.</value>
+  </data>
+  <data name="errTypeSuggCantSent" xml:space="preserve">
+    <value>You cannot send suggestions for this product, because you can edit it.</value>
+  </data>
+  <data name="errTypeSuggCantSentMaker" xml:space="preserve">
+    <value>You cannot send suggestions for this company, because you can edit it.</value>
+  </data>
+  <data name="errTypeSuggCantSentSuggestions" xml:space="preserve">
+    <value>You cannot send suggestions.</value>
+  </data>
+  <data name="errTypeSuggLimitReached" xml:space="preserve">
+    <value>Your limit of maximum active suggestions is currently reached.</value>
+  </data>
+  <data name="errTypeSuggUserCantEdit" xml:space="preserve">
+    <value>cannot edit product</value>
+  </data>
+  <data name="errTypeSuggUserCantEditMaker" xml:space="preserve">
+    <value>cannot edit company</value>
+  </data>
+  <data name="errUserNotActivated" xml:space="preserve">
+    <value>That user is not activated.</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>file</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>general</value>
+  </data>
+  <data name="maker" xml:space="preserve">
+    <value>company</value>
+  </data>
+  <data name="notifRemovedMaker" xml:space="preserve">
+    <value>You are unsigned for notifications for company</value>
+  </data>
+  <data name="notifRemovedMaker2" xml:space="preserve">
+    <value>, because it was deleted.</value>
+  </data>
+  <data name="notifRemovedProduct" xml:space="preserve">
+    <value>You are unsigned for notifications for product</value>
+  </data>
+  <data name="notifRemovedProduct2" xml:space="preserve">
+    <value>, because it was deleted.</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>product</value>
+  </data>
+  <data name="products" xml:space="preserve">
+    <value>products</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Reason :</value>
+  </data>
+  <data name="RemoveUserActionAddMakers" xml:space="preserve">
+    <value>Your right to add companies was removed.</value>
+  </data>
+  <data name="RemoveUserActionAddProducts" xml:space="preserve">
+    <value>Your right to add products was removed.</value>
+  </data>
+  <data name="RemoveUserActionCommenter" xml:space="preserve">
+    <value>Your right to write opinions and messages was removed. </value>
+  </data>
+  <data name="RemoveUserActionHaveSignature" xml:space="preserve">
+    <value>Your signature and the possibility to have one were removed.</value>
+  </data>
+  <data name="RemoveUserActionRateComments" xml:space="preserve">
+    <value>Your right to rate opinions was removed. </value>
+  </data>
+  <data name="RemoveUserActionRateProducts" xml:space="preserve">
+    <value>Your right to rate products was removed. </value>
+  </data>
+  <data name="RemoveUserActionRateUsers" xml:space="preserve">
+    <value>Your right to rate users was removed. </value>
+  </data>
+  <data name="RemoveUserActionSendReports" xml:space="preserve">
+    <value>Your right to send reports was removed. </value>
+  </data>
+  <data name="RemoveUserActionSendSuggestions" xml:space="preserve">
+    <value>Your right to write suggestions was removed.</value>
+  </data>
+  <data name="RemoveUserTypeActionAllMakerProducts" xml:space="preserve">
+    <value>Your right to edit all products of company</value>
+  </data>
+  <data name="RemoveUserTypeActionAllMakerProducts2" xml:space="preserve">
+    <value>was removed.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditAllMakerProdsCusDeleted" xml:space="preserve">
+    <value>Your right to edit all company</value>
+  </data>
+  <data name="RemoveUserTypeActionEditAllMakerProdsCusDeleted2" xml:space="preserve">
+    <value>products was removed, because the company was deleted.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMaker" xml:space="preserve">
+    <value>Your right to edit company</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMaker2" xml:space="preserve">
+    <value>was removed.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMakerCusDeleted" xml:space="preserve">
+    <value>Your right to edit company</value>
+  </data>
+  <data name="RemoveUserTypeActionEditMakerCusDeleted2" xml:space="preserve">
+    <value>was removed, because it was deleted.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProduct" xml:space="preserve">
+    <value>Your right to edit product</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProduct2" xml:space="preserve">
+    <value>was removed.</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProductCusDeleted" xml:space="preserve">
+    <value>Your right to edit product</value>
+  </data>
+  <data name="RemoveUserTypeActionEditProductCusDeleted2" xml:space="preserve">
+    <value>was removed, because he was deleted.</value>
+  </data>
+  <data name="reportReolvedMessage" xml:space="preserve">
+    <value>Automatic message : The report was read and now its closed, thank you for contacting us.</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription2" xml:space="preserve">
+    <value>, you requested new password by filling the form for forgotten password and then visiting the link for resetting the password.</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription3" xml:space="preserve">
+    <value>Your new password is :</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription4" xml:space="preserve">
+    <value>You can change it always from your profile page.</value>
+  </data>
+  <data name="sendMailToUserNewPassDescription5" xml:space="preserve">
+    <value>Please, do not answer to this massage as it is automatically sent.</value>
+  </data>
+  <data name="sendMailToUserNewPassSubject" xml:space="preserve">
+    <value>New password for</value>
+  </data>
+  <data name="sendMailToUserNewPassSubject2" xml:space="preserve">
+    <value>in wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription" xml:space="preserve">
+    <value>Thank you for your registration in wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription2" xml:space="preserve">
+    <value>Your user name is :</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription3" xml:space="preserve">
+    <value>Your account is currently inactive. You cannot use it until you visit the following link:</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription4" xml:space="preserve">
+    <value>Please, do not forget your password as it has been encrypted in our database and we cannot retrieve it for you. However, if you forget your password you can request a new one which will be activated in the same way as this account.</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationDescription5" xml:space="preserve">
+    <value>Please do not answer to this message as it is automatically sent.</value>
+  </data>
+  <data name="sendMailToUserOnRegistrationSubject" xml:space="preserve">
+    <value>Welcome to wiadvice.com</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription2" xml:space="preserve">
+    <value>, you requested new password through</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription3" xml:space="preserve">
+    <value>by filling your user name and password in the form.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription4" xml:space="preserve">
+    <value>It will be active only 24 hours, and if you don`t visit it in that time your password won`t change. If you changed your mind or don`t want to reset password don`t visit the link.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription5" xml:space="preserve">
+    <value>To receive new password visit the following link.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkDescription6" xml:space="preserve">
+    <value>Please, do not answer to this message as it is automatically sent.</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkSubject" xml:space="preserve">
+    <value>Reset password link for</value>
+  </data>
+  <data name="sendMailToUserResetPassLinkSubject2" xml:space="preserve">
+    <value>in wiadvice.com</value>
+  </data>
+  <data name="small" xml:space="preserve">
+    <value>small</value>
+  </data>
+  <data name="transferDaysToAcceptOrDecline" xml:space="preserve">
+    <value>days to accept or decline.</value>
+  </data>
+  <data name="transferSmAccept" xml:space="preserve">
+    <value>accepted transfer of right to edit</value>
+  </data>
+  <data name="transferSmAccept2" xml:space="preserve">
+    <value>Now you cannot edit</value>
+  </data>
+  <data name="transferSmAdd" xml:space="preserve">
+    <value>is transfering to you right to edit</value>
+  </data>
+  <data name="transferSmDeactivate" xml:space="preserve">
+    <value>Transaction of right to edit</value>
+  </data>
+  <data name="transferSmDeactivate2" xml:space="preserve">
+    <value>has been removed.</value>
+  </data>
+  <data name="transferSmDeactivateTime" xml:space="preserve">
+    <value>Transaction of right to edit</value>
+  </data>
+  <data name="transferSmDeactivateTime2" xml:space="preserve">
+    <value>has been removed, because it wasn`t accepted or declined in</value>
+  </data>
+  <data name="transferSmDecline" xml:space="preserve">
+    <value>declined transfer of right to edit</value>
+  </data>
+  <data name="TypeSuggACdeclined" xml:space="preserve">
+    <value>Automatic comment : Suggestion declined by system, because</value>
+  </data>
+  <data name="TypeSuggACdeclined2" xml:space="preserve">
+    <value>doesn`t have anymore the right to edit</value>
+  </data>
+  <data name="TypeSuggACdeclined3" xml:space="preserve">
+    <value>doesn`t have anymore the right to edit all products of company</value>
+  </data>
+  <data name="typeSuggestion" xml:space="preserve">
+    <value>typeSuggestion</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>user</value>
+  </data>
+  <data name="UserB" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserTookActionFrom" xml:space="preserve">
+    <value>took the edit right for</value>
+  </data>
+  <data name="UserTookActionFrom2" xml:space="preserve">
+    <value>from you.</value>
+  </data>
+  <data name="UserTookActionFrom3" xml:space="preserve">
+    <value>He was able to take it, because you haven`t logged in for (or more than)</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>You have</value>
+  </data>
+  <data name="SuggestionDesign" xml:space="preserve">
+    <value>design</value>
+  </data>
+  <data name="SuggestionFeatures" xml:space="preserve">
+    <value>features</value>
+  </data>
+  <data name="SuggestionGeneral" xml:space="preserve">
+    <value>general</value>
+  </data>
+  <data name="SignatureRemoved" xml:space="preserve">
+    <value>Your signature has been deleted.</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct" xml:space="preserve">
+    <value>added product</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct1" xml:space="preserve">
+    <value>to company</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct2" xml:space="preserve">
+    <value>in unspecified category.</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct3" xml:space="preserve">
+    <value>Wanted category for this product is</value>
+  </data>
+  <data name="SMtoEditorForAddOfUnsProduct4" xml:space="preserve">
+    <value>, if you forgot to add this category to company categories, please do so. If you do it, the product will be moved to the category automatically. If you are sure that the company does not have products in this category, send a report and the administrators will deal with it.</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved" xml:space="preserve">
+    <value>The product</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved1" xml:space="preserve">
+    <value>with company</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved2" xml:space="preserve">
+    <value>which was added to 'unspecified' category, was moved to wanted category</value>
+  </data>
+  <data name="SMtoEditorWhenProdInUnsCatIsMoved3" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="ESuggestionStatusAccepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="ESuggestionStatusDeclined" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="ESuggestionStatusExpired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires" xml:space="preserve">
+    <value>The edit suggestion for</value>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires1" xml:space="preserve">
+    <value>which you sent to</value>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires2" xml:space="preserve">
+    <value>expired, because he/she didn`t accept or decline it in</value>
+  </data>
+  <data name="SMtoAuthorOfEditSuggestWhenExpires3" xml:space="preserve">
+    <value>days.</value>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires" xml:space="preserve">
+    <value>Edit suggestion for</value>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires1" xml:space="preserve">
+    <value>which was sent to you by</value>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires2" xml:space="preserve">
+    <value>expired, because you didn`t accept or decline it in</value>
+  </data>
+  <data name="SMtoEditorWhenEditSuggestExpires3" xml:space="preserve">
+    <value>days.</value>
+  </data>
+  <data name="CommToUsersAboutEditSuggWhenCompanyIsDeleted" xml:space="preserve">
+    <value>Automatic message: System declined the suggestion because the company was deleted!</value>
+    <comment>not used</comment>
+  </data>
+  <data name="CommToUsersAboutEditSuggWhenProductIsDeleted" xml:space="preserve">
+    <value>Automatic message: System declined the suggestion because the product was deleted!</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errOpinionRatAlreadyRated" xml:space="preserve">
+    <value>You have rated this opinion already!</value>
+  </data>
+  <data name="errCommRatMaxRatingsForDayReached" xml:space="preserve">
+    <value>You cannot rate anymore opinions today!</value>
+  </data>
+  <data name="errCommRatMaxRatingsForProductReached" xml:space="preserve">
+    <value>You cannot rate anymore opinions for this product!</value>
+  </data>
+  <data name="errCantSendReport" xml:space="preserve">
+    <value>You cannot send reports!</value>
+  </data>
+  <data name="errMaxIrrRepLimitReached" xml:space="preserve">
+    <value>You cannot send reports, because your maximum not-resolved reports limit is reached.</value>
+  </data>
+  <data name="errMaxSpamReached" xml:space="preserve">
+    <value>You have reached the maximum number active violation reports. You have to wait until you can mark again.</value>
+  </data>
+  <data name="errRepAlreadyHaveSuchActive" xml:space="preserve">
+    <value>You already have such active report, after it's resolved you can send another.</value>
+  </data>
+  <data name="errReportInvalidType" xml:space="preserve">
+    <value>Invalid type for which the report is.</value>
+  </data>
+  <data name="errMaxTypeSuggNumberReached" xml:space="preserve">
+    <value>You have reached the maximum number of active suggestions.</value>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted" xml:space="preserve">
+    <value>System removed the transaction of right for</value>
+    <comment>type name</comment>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted2" xml:space="preserve">
+    <value>, because</value>
+    <comment>user</comment>
+  </data>
+  <data name="TransferSmDeactivateCusUserIsDeleted3" xml:space="preserve">
+    <value>was deleted.</value>
+  </data>
+  <data name="TypeSuggDeclinedCusUserIsDeleted" xml:space="preserve">
+    <value>Automatic comment : Suggestion declined by system, because</value>
+    <comment>username</comment>
+  </data>
+  <data name="TypeSuggDeclinedCusUserIsDeleted2" xml:space="preserve">
+    <value>was deleted.</value>
+  </data>
+  <data name="errOpinionCantRateUrs" xml:space="preserve">
+    <value>You cannot rate your opinions!</value>
+  </data>
+  <data name="DeletingCommentW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when posting opinions.</value>
+  </data>
+  <data name="DeletingCommentW2" xml:space="preserve">
+    <value>Reason is deleting of the following opinion :</value>
+  </data>
+  <data name="repResCusUserDeleted" xml:space="preserve">
+    <value>Automatic message : The report was closed, because the user was deleted.</value>
+  </data>
+  <data name="SMwarningRemoved" xml:space="preserve">
+    <value>The following warning, which you received, was deleted :</value>
+  </data>
+  <data name="DeletingProductTopicW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when starting topics.</value>
+  </data>
+  <data name="DeletingProductTopicW2" xml:space="preserve">
+    <value>Reason is deleting of the topic </value>
+    <comment>name</comment>
+  </data>
+  <data name="DeletingProductTopicW3" xml:space="preserve">
+    <value>for product</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted" xml:space="preserve">
+    <value>The topic</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted2" xml:space="preserve">
+    <value>for product </value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicDeleted3" xml:space="preserve">
+    <value>, which you started was deleted.</value>
+  </data>
+  <data name="notifRemovedProductForum" xml:space="preserve">
+    <value>You are unsigned for notifications for product</value>
+  </data>
+  <data name="notifRemovedProductForum2" xml:space="preserve">
+    <value>forum, because it was deleted.</value>
+  </data>
+  <data name="notifRemovedProductTopic" xml:space="preserve">
+    <value>You are unsigned for notifications for topic</value>
+  </data>
+  <data name="notifRemovedProductTopic2" xml:space="preserve">
+    <value>, because it was deleted/locked.</value>
+  </data>
+  <data name="DeletingTopicCommentW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when posting comments in the forum.</value>
+  </data>
+  <data name="DeletingTopicCommentW2" xml:space="preserve">
+    <value>Reason is deleting of the following comment :</value>
+  </data>
+  <data name="SMProdCommentDeleted" xml:space="preserve">
+    <value>The following opinion, which you wrote was deleted :</value>
+  </data>
+  <data name="SMTopicCommentDeleted" xml:space="preserve">
+    <value>The following comment, which you wrote was deleted :</value>
+  </data>
+  <data name="LockingProductTopicW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when starting topics.</value>
+  </data>
+  <data name="LockingProductTopicW2" xml:space="preserve">
+    <value>Reason is locking of the topic</value>
+    <comment>name</comment>
+  </data>
+  <data name="LockingProductTopicW3" xml:space="preserve">
+    <value>for product</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicLocked" xml:space="preserve">
+    <value>The topic</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicLocked2" xml:space="preserve">
+    <value>for product</value>
+    <comment>name</comment>
+  </data>
+  <data name="ProductTopicLocked3" xml:space="preserve">
+    <value>, which you started was locked.</value>
+  </data>
+  <data name="errCommRatMaxRatingsForTopicReached" xml:space="preserve">
+    <value>You cannot rate anymore comments for this topic!</value>
+  </data>
+  <data name="errCommCantRateUrs" xml:space="preserve">
+    <value>You cannot rate your comments!</value>
+  </data>
+  <data name="errCommRatAlreadyRated" xml:space="preserve">
+    <value>You have rated this comment already!</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>topic</value>
+  </data>
+  <data name="errMaxProducLinksReached" xml:space="preserve">
+    <value> The maximum product links number is reached.</value>
+  </data>
+  <data name="errProdLinkMinToWaitToAddAnother" xml:space="preserve">
+    <value>Minutes you need to wait until you can add another link :</value>
+  </data>
+  <data name="productLinkDeletedW" xml:space="preserve">
+    <value>Automatic warning : Please follow the rules when adding product links. Reason is deleting of the following link for product</value>
+    <comment>name</comment>
+  </data>
+  <data name="productLinkDeletedW2" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="SMproductLinkDeleted" xml:space="preserve">
+    <value>The following link, which you added for product</value>
+    <comment>product</comment>
+  </data>
+  <data name="SMproductLinkDeleted2" xml:space="preserve">
+    <value>was deleted :</value>
+  </data>
+  <data name="SMproductLinkDescrChanged" xml:space="preserve">
+    <value>The description for link</value>
+    <comment>link</comment>
+  </data>
+  <data name="SMproductLinkDescrChanged2" xml:space="preserve">
+    <value>, which you added for product</value>
+    <comment>product</comment>
+  </data>
+  <data name="SMproductLinkDescrChanged3" xml:space="preserve">
+    <value>, was modified by</value>
+    <comment>user</comment>
+  </data>
+</root>

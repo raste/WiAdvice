@@ -1,0 +1,87 @@
+﻿<%-- ﻿﻿
+    Wi Advice (https://github.com/raste/WiAdvice)(http://www.wiadvice.com/)
+    Copyright (c) 2015 Georgi Kolev. 
+    Licensed under Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0).
+--%>
+
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/SiteImages/image1.jpg" />
+--%>
+
+<%--
+<asp:Button runat="server" 
+style="background-image:url(images/asd.bmp); BorderStyle:Solid; 
+            BorderWidth:1px; ForeColor:#396CB9; Font-Size:Medium; "/>
+--%>
+
+<%@ Register assembly="CustomServerControls" namespace="CustomServerControls" tagprefix="csc" %>
+
+<asp:Button runat="server" 
+SkinId="headerBtn"
+CssClass="headerSearchButton"
+/>
+
+<asp:Button runat="server" 
+CssClass="defaultButton"
+/>
+
+<csc:DecoratedButton runat="server" 
+ImageLeftUrl="images/SiteImages/btnBGRLeft.png"
+ImageRightUrl="images/SiteImages/btnBGRRight.png"
+CssClass="defaultDecButton"
+/>
+
+<csc:TransliterateButton runat="server" 
+ImageLeftUrl="images/SiteImages/btnBGRLeft.png"
+ImageRightUrl="images/SiteImages/btnBGRRight.png"
+CssClass="defaultDecButton"
+/>
+
+
+<csc:TransliterateButton runat="server" 
+SkinId="ordinaryBtn"
+ImageLeftUrl="images/SiteImages/point.png"
+ImageRightUrl="images/SiteImages/point.png"
+CssClass="htmlButtonStyle paddingLR4"
+/>
+
+<csc:DecoratedButton runat="server" 
+SkinId="headerBtn"
+ImageLeftUrl="images/SiteImages/hdrLeft.png"
+ImageRightUrl="images/SiteImages/hdrRight.png"
+CssClass="decHeaderButton"
+/>
+
+<asp:TextBox runat="server"
+CssClass="standardTextBoxes" 
+/>
+
+<asp:TextBox runat="server"
+SkinId="SearchBox"
+CssClass="searchTextBox"
+/>
+
+<asp:TextBox runat="server"
+SkinId="LogInBox"
+CssClass="logInTextBox"
+/>
+
+
+<asp:DropDownList runat="server"
+CssClass="dropDownList"
+/>
+
+<asp:FileUpload runat="server"
+/>

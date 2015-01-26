@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdvancedSearch" xml:space="preserve">
+    <value>Разширено търсене</value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>категории</value>
+  </data>
+  <data name="comments" xml:space="preserve">
+    <value>мнения :</value>
+  </data>
+  <data name="errInvCat" xml:space="preserve">
+    <value>Грешна категория!</value>
+  </data>
+  <data name="errInvParCat" xml:space="preserve">
+    <value>Грешни параметри за категории.</value>
+  </data>
+  <data name="errInvParCat2" xml:space="preserve">
+    <value>Грешни параметри за търсене в категория.</value>
+  </data>
+  <data name="errInvParCompanies" xml:space="preserve">
+    <value>Грешни параметри за компании.</value>
+  </data>
+  <data name="errInvParProducts" xml:space="preserve">
+    <value>Грешни параметри за продукти.</value>
+  </data>
+  <data name="errInvParTypes" xml:space="preserve">
+    <value>Грешни параметри за тип създатели.</value>
+  </data>
+  <data name="errInvParUsers" xml:space="preserve">
+    <value>Грешни параметри за потребители.</value>
+  </data>
+  <data name="errrInvPar" xml:space="preserve">
+    <value>Грешни параметри за търсене.</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value>в :</value>
+  </data>
+  <data name="inCategories" xml:space="preserve">
+    <value>в "категории" :</value>
+  </data>
+  <data name="inMakers" xml:space="preserve">
+    <value>в "компании" :</value>
+  </data>
+  <data name="inMakersWithType" xml:space="preserve">
+    <value>в "компании" с тип :</value>
+    <comment>не се използа</comment>
+  </data>
+  <data name="inProducts" xml:space="preserve">
+    <value>в "продукти" :</value>
+  </data>
+  <data name="inProductsInCat" xml:space="preserve">
+    <value>за "продукти" в "категория" :</value>
+  </data>
+  <data name="inUsers" xml:space="preserve">
+    <value>в "потребители" :</value>
+  </data>
+  <data name="makers" xml:space="preserve">
+    <value>компании</value>
+  </data>
+  <data name="noResults" xml:space="preserve">
+    <value>Не са открити резултати.</value>
+  </data>
+  <data name="products" xml:space="preserve">
+    <value>продукти</value>
+  </data>
+  <data name="rating" xml:space="preserve">
+    <value>оценка :</value>
+  </data>
+  <data name="ResultsFor" xml:space="preserve">
+    <value>Резултати за</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>търси :</value>
+  </data>
+  <data name="searchBtn" xml:space="preserve">
+    <value>Търси</value>
+  </data>
+  <data name="SerachForMakers" xml:space="preserve">
+    <value>търси за компании от тип :</value>
+    <comment>не се използва</comment>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Търси в wiadvice.com</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>потребители</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>регистриран на</value>
+  </data>
+  <data name="altProdResults" xml:space="preserve">
+    <value>Продукти с други (алтернативни) имена </value>
+  </data>
+  <data name="altCompResults" xml:space="preserve">
+    <value>Компании с други (алтернативни) имена</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Кликни тук</value>
+  </data>
+  <data name="hlRegister" xml:space="preserve">
+    <value>Регистрирай се</value>
+  </data>
+  <data name="RegToAddCompany" xml:space="preserve">
+    <value>, за да добавяш компании.</value>
+  </data>
+  <data name="RegToAddProduct" xml:space="preserve">
+    <value>, за да добавяш продукти.</value>
+  </data>
+  <data name="toAddCompany" xml:space="preserve">
+    <value>, за да добавиш компания.</value>
+  </data>
+  <data name="toAddProduct" xml:space="preserve">
+    <value>, за да добавиш продукт.</value>
+  </data>
+  <data name="toReadHowToAddCompany" xml:space="preserve">
+    <value>как се добавя компания.</value>
+  </data>
+  <data name="toReadHowToAddProduct" xml:space="preserve">
+    <value>как се добавя продукт.</value>
+  </data>
+  <data name="noMainResultsFound" xml:space="preserve">
+    <value>Няма точно съвпадение!</value>
+  </data>
+  <data name="ProductSubVariants" xml:space="preserve">
+    <value>Подварианти на продукти</value>
+  </data>
+  <data name="ProductVariants" xml:space="preserve">
+    <value>Варианти на продукти</value>
+  </data>
+  <data name="ClickHereToReadCompany" xml:space="preserve">
+    <value>Прочети</value>
+  </data>
+  <data name="ClickHereToReadProduct" xml:space="preserve">
+    <value>Прочети</value>
+  </data>
+  <data name="errSearchStrLength" xml:space="preserve">
+    <value>Името за търсене не може да е по-дълго от</value>
+  </data>
+  <data name="errSearchStrLength2" xml:space="preserve">
+    <value>символа.</value>
+  </data>
+  <data name="errTypeSearchString" xml:space="preserve">
+    <value>Въведете име за търсене.</value>
+  </data>
+</root>

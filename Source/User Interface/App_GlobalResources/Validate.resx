@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="and" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>characters</value>
+  </data>
+  <data name="errCantSendMsgToUser" xml:space="preserve">
+    <value>You cannot send message to that user.</value>
+  </data>
+  <data name="errDescrLength" xml:space="preserve">
+    <value>The description should be between</value>
+  </data>
+  <data name="errDuplicateSubVariantName" xml:space="preserve">
+    <value>There is already subvariant with that name.</value>
+  </data>
+  <data name="errDuplicateVariantName" xml:space="preserve">
+    <value>A variant with the specified name already exists.</value>
+  </data>
+  <data name="errIdLength" xml:space="preserve">
+    <value>Id should be between</value>
+  </data>
+  <data name="errIncCurrPass" xml:space="preserve">
+    <value>Incorrect current password.</value>
+  </data>
+  <data name="errIncNameFormat" xml:space="preserve">
+    <value>Incorrect name format.</value>
+  </data>
+  <data name="errInvMail" xml:space="preserve">
+    <value>Invalid email adress.</value>
+  </data>
+  <data name="errInvSiteFormat" xml:space="preserve">
+    <value>Invalid site address format.</value>
+  </data>
+  <data name="errLocalWordForLengthDescription" xml:space="preserve">
+    <value>The description length must be between</value>
+  </data>
+  <data name="errLocalWordForLengthName" xml:space="preserve">
+    <value>The name length must be between</value>
+  </data>
+  <data name="errLocalWordForLengthSignature" xml:space="preserve">
+    <value>The signature length must be between</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errLocalWordForLengthSubject" xml:space="preserve">
+    <value>The subject length must be between</value>
+  </data>
+  <data name="errLocalWordForTypeItDescription" xml:space="preserve">
+    <value>Type a description.</value>
+  </data>
+  <data name="errLocalWordForTypeItName" xml:space="preserve">
+    <value>Type a name.</value>
+  </data>
+  <data name="errLocalWordForTypeItSignature" xml:space="preserve">
+    <value>Type signature.</value>
+    <comment>not used</comment>
+  </data>
+  <data name="errLocalWordForTypeItSubject" xml:space="preserve">
+    <value>Type a subject.</value>
+  </data>
+  <data name="errMsgCantSendToSelf" xml:space="preserve">
+    <value>You can't send messages to yourself.</value>
+  </data>
+  <data name="errNameLength" xml:space="preserve">
+    <value>Name length must be between</value>
+  </data>
+  <data name="errNameTaken" xml:space="preserve">
+    <value>That name is taken already.</value>
+  </data>
+  <data name="errNewUserPass" xml:space="preserve">
+    <value>Use only alphabetical characters and/or numbers for new user password.</value>
+  </data>
+  <data name="errNoSuchUser" xml:space="preserve">
+    <value>No such user.</value>
+  </data>
+  <data name="errParseToLong" xml:space="preserve">
+    <value>Number must be positive.</value>
+  </data>
+  <data name="errPassCannotContainUsername" xml:space="preserve">
+    <value>Password cannot contain username.</value>
+  </data>
+  <data name="errPassChars" xml:space="preserve">
+    <value>Use alphabetical characters and/or numbers for password.</value>
+  </data>
+  <data name="errPassFieldsDoNotMatch" xml:space="preserve">
+    <value>New user password and repeat password fields do not match.</value>
+  </data>
+  <data name="errPassLength" xml:space="preserve">
+    <value>Password length should be between</value>
+  </data>
+  <data name="errProdNameTaken" xml:space="preserve">
+    <value>That name is taken already. Add the company name in front.</value>
+  </data>
+  <data name="errSiteLength" xml:space="preserve">
+    <value>Website URL is too long.</value>
+  </data>
+  <data name="errTextLength" xml:space="preserve">
+    <value>Text should be between</value>
+  </data>
+  <data name="errTypeCurrPass" xml:space="preserve">
+    <value>Type your password.</value>
+  </data>
+  <data name="errTypeDescr" xml:space="preserve">
+    <value>Type a description!</value>
+  </data>
+  <data name="errTypeMail" xml:space="preserve">
+    <value>Type an email adress.</value>
+  </data>
+  <data name="errTypeName" xml:space="preserve">
+    <value>Type a name!</value>
+  </data>
+  <data name="errTypeNumber" xml:space="preserve">
+    <value>Type a number.</value>
+  </data>
+  <data name="errTypePass" xml:space="preserve">
+    <value>Type a password.</value>
+  </data>
+  <data name="errTypePassForNewUser" xml:space="preserve">
+    <value>Type a password for new user.</value>
+  </data>
+  <data name="errTypeRepPass" xml:space="preserve">
+    <value>Populate the "repeat password" field.</value>
+  </data>
+  <data name="errTypeSite" xml:space="preserve">
+    <value>Type an URL.</value>
+  </data>
+  <data name="errTypeText" xml:space="preserve">
+    <value>Type text.</value>
+  </data>
+  <data name="errTypeUserToSendMsg" xml:space="preserve">
+    <value>Type the user to which you want to send message.</value>
+  </data>
+  <data name="errUserNameTaken" xml:space="preserve">
+    <value>That name is already taken.</value>
+  </data>
+  <data name="errWordsLength" xml:space="preserve">
+    <value>There should not be words longer than</value>
+  </data>
+  <data name="shouldBeBetween" xml:space="preserve">
+    <value>length should be between</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>symbols</value>
+  </data>
+</root>

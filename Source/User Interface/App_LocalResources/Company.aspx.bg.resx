@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accCategories" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="accChars" xml:space="preserve">
+    <value>Характеристики</value>
+  </data>
+  <data name="accGallery" xml:space="preserve">
+    <value>Галерия</value>
+  </data>
+  <data name="accNoCategories" xml:space="preserve">
+    <value>Няма добавени категории</value>
+  </data>
+  <data name="accNoChars" xml:space="preserve">
+    <value>Няма добавени характеристики</value>
+  </data>
+  <data name="accNoGallery" xml:space="preserve">
+    <value>Няма изображения в галерията</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Добави категория</value>
+  </data>
+  <data name="AddCharacteristics" xml:space="preserve">
+    <value>Добави характеристика</value>
+  </data>
+  <data name="AddedBy" xml:space="preserve">
+    <value>Добавен от</value>
+  </data>
+  <data name="AddedOn" xml:space="preserve">
+    <value>на : </value>
+  </data>
+  <data name="AddImage" xml:space="preserve">
+    <value>Добави изображение</value>
+  </data>
+  <data name="allCategories" xml:space="preserve">
+    <value>всички категории</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Категории : </value>
+  </data>
+  <data name="categoriesNoProducts" xml:space="preserve">
+    <value>Показани са категории, в които компанията няма добавени продукти.</value>
+  </data>
+  <data name="categoriesRemoved" xml:space="preserve">
+    <value>Премахнати са категории, в които компанията може да има продукти!</value>
+  </data>
+  <data name="categoriesRemoved2" xml:space="preserve">
+    <value>Премахната е категория, в която компанията може да има продукти!</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Промени</value>
+  </data>
+  <data name="Characteristic" xml:space="preserve">
+    <value>Характеристика : </value>
+  </data>
+  <data name="characters" xml:space="preserve">
+    <value>букви.</value>
+  </data>
+  <data name="charDescrUpdated" xml:space="preserve">
+    <value>Описанието на характеристиката е променено.</value>
+  </data>
+  <data name="charRules" xml:space="preserve">
+    <value>символа. Максимален брой характеристиките 20.</value>
+  </data>
+  <data name="charRules2" xml:space="preserve">
+    <value>Ако не искате да променяте темата на характеристиката, оставете полето празно - аналогично и за описанието.</value>
+  </data>
+  <data name="chooseCategory" xml:space="preserve">
+    <value>Изберете категория от менюто.</value>
+  </data>
+  <data name="chooseFileUpload" xml:space="preserve">
+    <value>Изберете изображение.</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Мнения</value>
+  </data>
+  <data name="compNotif" xml:space="preserve">
+    <value>Добавете категории, за да могат потребителите да въведат продукти в тях.</value>
+  </data>
+  <data name="dateAdded" xml:space="preserve">
+    <value>Добавен на</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Изтрий</value>
+  </data>
+  <data name="DeleteCategories" xml:space="preserve">
+    <value>Изтрий категории</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание : </value>
+  </data>
+  <data name="descrRules" xml:space="preserve">
+    <value>Описанието трябва да е между</value>
+  </data>
+  <data name="DontHaveEditors" xml:space="preserve">
+    <value>няма редактори. Можете да вземете правото за редактиране.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Промени</value>
+  </data>
+  <data name="EditCharacteristics" xml:space="preserve">
+    <value>Промени характеристика</value>
+  </data>
+  <data name="EditDescription" xml:space="preserve">
+    <value>Промени описание</value>
+  </data>
+  <data name="Editors" xml:space="preserve">
+    <value>Редактори</value>
+  </data>
+  <data name="EditSite" xml:space="preserve">
+    <value>Промени сайт</value>
+  </data>
+  <data name="errCantSeeCompany" xml:space="preserve">
+    <value>Тази компания е изтрита.</value>
+  </data>
+  <data name="errChangeDescr" xml:space="preserve">
+    <value>Промени описание.</value>
+  </data>
+  <data name="errIncImageWH" xml:space="preserve">
+    <value>Невалидна широчина/височина на изображението или файлът е с грешки.</value>
+  </data>
+  <data name="errIncParameters" xml:space="preserve">
+    <value>Неправилни параметри за страницата на Компания.</value>
+  </data>
+  <data name="errNoSychCompany" xml:space="preserve">
+    <value>Не съществува такава компания.</value>
+  </data>
+  <data name="errorSite" xml:space="preserve">
+    <value>Посочете нов адрес!</value>
+  </data>
+  <data name="forMoreInfoOnEditing" xml:space="preserve">
+    <value>, за повече информация за редактиране.</value>
+  </data>
+  <data name="imageDeleted" xml:space="preserve">
+    <value>Изображението е изтрито!</value>
+  </data>
+  <data name="imageRules" xml:space="preserve">
+    <value>Максимален размер на изображението е 2мб, минимална широчина/височина :</value>
+  </data>
+  <data name="imageRules2" xml:space="preserve">
+    <value>Позволени типове на изображението : JPG,BMP,PNG.</value>
+  </data>
+  <data name="imageUploaded" xml:space="preserve">
+    <value>Изображението е добавено!</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>Последно модифициран : </value>
+  </data>
+  <data name="lblAddCategory" xml:space="preserve">
+    <value>Категория : </value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Лого</value>
+  </data>
+  <data name="MakerEditors" xml:space="preserve">
+    <value>Редактори</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Име : </value>
+  </data>
+  <data name="nameRules" xml:space="preserve">
+    <value>Името трябва да е между</value>
+  </data>
+  <data name="newSite" xml:space="preserve">
+    <value>Нов сайт : </value>
+  </data>
+  <data name="NoAddedProducts" xml:space="preserve">
+    <value>Няма добавени продукти.</value>
+  </data>
+  <data name="NoEditors" xml:space="preserve">
+    <value>Няма редактори.</value>
+  </data>
+  <data name="noImages" xml:space="preserve">
+    <value>Няма добавени изображения.</value>
+  </data>
+  <data name="noLastCategories" xml:space="preserve">
+    <value>Категорията няма подкатегории, които да се добавят !</value>
+  </data>
+  <data name="NoSite" xml:space="preserve">
+    <value>Сайт : не е посочен</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="selectCategory" xml:space="preserve">
+    <value>Изберете поне една категория.</value>
+  </data>
+  <data name="SendSuggestion" xml:space="preserve">
+    <value>Напиши предложение</value>
+  </data>
+  <data name="SendSuggestionTo" xml:space="preserve">
+    <value>Към :</value>
+  </data>
+  <data name="SignNotifies" xml:space="preserve">
+    <value>Известия</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Сайт : </value>
+  </data>
+  <data name="siteChanged" xml:space="preserve">
+    <value>Сайтът на компанията е променен!</value>
+  </data>
+  <data name="siteRules" xml:space="preserve">
+    <value>Въведете официалният сайт на компанията.</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Сортирай по : </value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="symbols" xml:space="preserve">
+    <value>символа.</value>
+  </data>
+  <data name="TakeRole" xml:space="preserve">
+    <value>Вземи право</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>в wiadvice.com</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип : </value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обнови</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>..потребител..</value>
+  </data>
+  <data name="YouCanEdit" xml:space="preserve">
+    <value>Може да редактирате компанията</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Кликни тук</value>
+  </data>
+  <data name="addCategoryInfo" xml:space="preserve">
+    <value>Ако изберете категория с подкатегории, те ще бъдат добавени.</value>
+  </data>
+  <data name="AddedBy2" xml:space="preserve">
+    <value>Добавена от :</value>
+  </data>
+  <data name="ClickHereSmall" xml:space="preserve">
+    <value>кликни тук</value>
+  </data>
+  <data name="SignNotifiesTooltip" xml:space="preserve">
+    <value>Запишете се за известия при добавяне на нов продукт.</value>
+  </data>
+  <data name="newCategoriesAdded" xml:space="preserve">
+    <value>Добавени са категории, в които компанията може да има продукти.</value>
+  </data>
+  <data name="newCategoryAdded" xml:space="preserve">
+    <value>Добавена е категория, в която компанията може да има продукти.</value>
+  </data>
+  <data name="LastModifiedBy" xml:space="preserve">
+    <value>Последно модифицирана от :</value>
+  </data>
+  <data name="TakeRoleS" xml:space="preserve">
+    <value>вземи право</value>
+  </data>
+  <data name="UploadingImg" xml:space="preserve">
+    <value>Добавяне...</value>
+  </data>
+  <data name="errCantDelCatCusThereAreProducts" xml:space="preserve">
+    <value>Категорията</value>
+  </data>
+  <data name="errCantDelCatCusThereAreProducts2" xml:space="preserve">
+    <value>не може да се изтрие, защото компанията има продукти в нея.</value>
+  </data>
+  <data name="errEditCharTypeNewNameOrDescr" xml:space="preserve">
+    <value>Въведете ново име или описание за характеристиката.</value>
+  </data>
+  <data name="errNoSuchChar" xml:space="preserve">
+    <value>Няма такава характеристика.</value>
+  </data>
+  <data name="errThereIsntSuchCat" xml:space="preserve">
+    <value>Към компанията не е добавена категорията</value>
+  </data>
+  <data name="errThereIsntSuchCat2" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="CharAdded" xml:space="preserve">
+    <value>Характеристиката е добавена!</value>
+  </data>
+  <data name="CharTopic" xml:space="preserve">
+    <value>Тема :</value>
+  </data>
+  <data name="CharTopicChanged" xml:space="preserve">
+    <value>Темата на характеристиката е обновена!</value>
+  </data>
+  <data name="CharTopicRules" xml:space="preserve">
+    <value>Темата на характеристиката трябва да е между</value>
+  </data>
+  <data name="DescrChanged" xml:space="preserve">
+    <value>Описанието на компанията е обновено.</value>
+  </data>
+  <data name="EditCharNewTopic" xml:space="preserve">
+    <value>Обнови тема :</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="errCompanyDeleted" xml:space="preserve">
+    <value>Тази компания е изтрита.</value>
+  </data>
+  <data name="AddAlternativeName" xml:space="preserve">
+    <value>Добави друго име</value>
+  </data>
+  <data name="AlternativeName" xml:space="preserve">
+    <value>Друго име :</value>
+  </data>
+  <data name="AlternativeNameAdded" xml:space="preserve">
+    <value>Добавено е друго име, с което компанията е известна.</value>
+  </data>
+  <data name="AlternativeNameDeleted" xml:space="preserve">
+    <value>Изтрито е другото име, с което компанията е известна.</value>
+  </data>
+  <data name="AlternativeNames" xml:space="preserve">
+    <value>Други имена :</value>
+  </data>
+  <data name="AlternativeNamesDeleted" xml:space="preserve">
+    <value>Изтрито са други имена, с които е известна компанията.</value>
+  </data>
+  <data name="AlternativeNamesInfo" xml:space="preserve">
+    <value>Други имена, с които е известна компанията. Могат да се добавят до</value>
+  </data>
+  <data name="AlternativeNamesInfo2" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="AlternativeNamesInfo3" xml:space="preserve">
+    <value>Пример : продуктът "Sony Playstation 3" е известен и като "PS 3"; компанията "LG" е известна и като "Lucky-Goldstar" и "Lucky".</value>
+  </data>
+  <data name="AlternativeNamesInfo4" xml:space="preserve">
+    <value>Компаниите могат да бъдат открити и по другите им имена.</value>
+  </data>
+  <data name="errAltNameCanntBeSameAsProduct" xml:space="preserve">
+    <value>Другото име не може да съвпада с това на продукта.</value>
+  </data>
+  <data name="errAltNameIsSameAsAnother" xml:space="preserve">
+    <value>Името вече е добавено.</value>
+  </data>
+  <data name="errSelectAltNameToDel" xml:space="preserve">
+    <value>Изберете име.</value>
+  </data>
+  <data name="RemoveAlternativeNames" xml:space="preserve">
+    <value>Изтрии други имена</value>
+  </data>
+  <data name="errEditCharTypeNewDescr" xml:space="preserve">
+    <value>Въведете ново описание за характеристиката.</value>
+  </data>
+  <data name="imageLogoRules" xml:space="preserve">
+    <value>Минимална широчина/височина само за логото :</value>
+  </data>
+  <data name="seeImgMinSize" xml:space="preserve">
+    <value>, за да видиш минималния размер на картинките.</value>
+  </data>
+  <data name="seeLogoMinSize" xml:space="preserve">
+    <value>, за да видиш.</value>
+  </data>
+  <data name="chooseImage" xml:space="preserve">
+    <value>Изображение :</value>
+  </data>
+  <data name="textLength" xml:space="preserve">
+    <value>Дължина на описанието :</value>
+  </data>
+  <data name="errCantDelImage" xml:space="preserve">
+    <value>Грешка при изтриване на изображението! Опитайте пак скоро. Ако проблема продължава, моля, напишете доклад.</value>
+  </data>
+  <data name="charDeleted" xml:space="preserve">
+    <value>Характеристиката е изтрита!</value>
+  </data>
+  <data name="CompNameUpdated" xml:space="preserve">
+    <value>Името на компанията е променено!</value>
+  </data>
+  <data name="EditName" xml:space="preserve">
+    <value>Промени име</value>
+  </data>
+  <data name="NewCompName" xml:space="preserve">
+    <value>Ново име :</value>
+  </data>
+  <data name="changeName" xml:space="preserve">
+    <value>Промени име</value>
+  </data>
+</root>
