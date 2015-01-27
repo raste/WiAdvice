@@ -49,7 +49,18 @@ To run the site you will have to prepare couple of things:
       
       *NOTE:* Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.
 4. Set [Index.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
-5. Run  
+5. Development server or IIS  
+   The web.config file is configured to allow running the application from Visual Studio Development Server. There is one limitation though, it can not use URL Rewrite > the language change links iwll not work.  
+   
+   In order to use URL Rewriting you will have to run the project from the Local IIS Web server, which must have URL Rewrite plugin. You will have to update these configurations in web.config (find the settings and replace their values)
+```
+<add key="UseUrlRewriting" value="true" />
+<add key="UrlRewritingDirectoryLevel" value="1" />
+<add key="UseExternalUrlRewriteModule" value="true" />
+<add key="SiteDomainAdress" value="TYPE IIS SITE ADDRESS " /> 
+
+<add name="RewriteUrlModule" type="UserInterface.RewriteUrl" />
+```
 
 ### Run
 
