@@ -27,6 +27,7 @@ It has:
   * Write suggestions for product/company information update which can be resolved by their editors
   * Send reports (for bad behavior), mark comments as spam
   * Write suggestions for the site
+
 2. Administrative side in which administrators can
   * Modify/Create new categories, in which products can be added and discussed
   * Take actions based on user reports for spam, offensive comments
@@ -41,6 +42,7 @@ It has:
   * Delete comments, topics, topic comments
   * Modify categories/companies/products: change names, move to other category/company, delete, remove/transfer their rights to other users.
   * IP Ban as measure against anonymous users 
+
 3. General funtionality
   * Search for products, categories, users, companies
   * Setting for choosing site width (personal for user)
