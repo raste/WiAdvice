@@ -12,7 +12,8 @@ Soon after that I stopped working on the project and proceed to find job...
 
 This is my first (.NET) and longest project. It is an user driven system, in which users can express opinions and discuss products, with idea to help them gather enough information before making decisions.
 
-It has: 
+It has:  
+
 1. User side in which users can.
   * Register with or without email (limited rights in this case)
   * Ability to add products/companies and update them while they have rights on them (an user who added company/product has rights to modify them, that doesn't include other products in the same company)
@@ -23,7 +24,7 @@ It has:
   * Send private messages to other users
   * Browse user profiles
   * Rate comments and products
-  * Write suggestions for product/company information update > which can be resolved by their editors
+  * Write suggestions for product/company information update which can be resolved by their editors
   * Send reports (for bad behavior), mark comments as spam
   * Write suggestions for the site
 2. Administrative side in which administrators can
@@ -38,7 +39,7 @@ It has:
   * Suspend users
   * Make user change his username on next log in
   * Delete comments, topics, topic comments
-  * Modify categories/companies/products: change names, move to other category/company, delete, remove/transfer their rights to other users...
+  * Modify categories/companies/products: change names, move to other category/company, delete, remove/transfer their rights to other users.
   * IP Ban as measure against anonymous users 
 3. General funtionality
   * Search for products, categories, users, companies
@@ -46,13 +47,13 @@ It has:
   * Multilanguage, with separate databases for each language (meaning that the categories/companies/products..information is different than in the other languages), with common database for the users
   * Contact form for sending suggestions/questions/inquiries..
   * Captcha in registration, comments (for anonymous users)..
-  * Max login tries, forgot password option, restrictions on number of comments/products/companies added for new/anonymous users
+  * Max login tries, forgot password option, restrictions on number of comments/products/companies added for new/anonymous users  
 
 It is huge, in some aspects crude, with ugly interface on places and slow.
 
 ### Technologies
 
-.NET 3.5, Web Forms, C#, Web Services, Entity Framework, log4net, URL Rewrite, AJAX, Javascript,  
+.NET 3.5, Web Forms, C#, Web Services, Entity Framework, log4net, URL Rewrite, AJAX, Javascript
 
 ### Poke/Edit
 
