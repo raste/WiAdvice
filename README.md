@@ -12,8 +12,8 @@ Soon after that I stopped working on the project and proceed to find job...
 
 This is my first (.NET) and longest project. It is an user driven system, in which users can express opinions and discuss products, with idea to help them gather enough information before making decisions.
 
-It has:  
-1. User side in which users can
+It has: 
+1. User side in which users can.
   * Register with or without email (limited rights in this case)
   * Ability to add products/companies and update them while they have rights on them (an user who added company/product has rights to modify them, that doesn't include other products in the same company)
   * Give/or Transfer the rights for company/product to another user (the owner can give rights to more than one user)
@@ -26,9 +26,8 @@ It has:
   * Write suggestions for product/company information update > which can be resolved by their editors
   * Send reports (for bad behavior), mark comments as spam
   * Write suggestions for the site
-  
 2. Administrative side in which administrators can
-  * Modify/Create new categories, in which products can be added and discussed  
+  * Modify/Create new categories, in which products can be added and discussed
   * Take actions based on user reports for spam, offensive comments
   * Send warnings to users based on reports or incorrect behavior. The users are automatically suspended when they receive fixed number of warnings.
   * Control advertisements, which appear next products comments
@@ -40,8 +39,7 @@ It has:
   * Make user change his username on next log in
   * Delete comments, topics, topic comments
   * Modify categories/companies/products: change names, move to other category/company, delete, remove/transfer their rights to other users...
-  * IP Ban as measure against anonymous users
-  
+  * IP Ban as measure against anonymous users 
 3. General funtionality
   * Search for products, categories, users, companies
   * Setting for choosing site width (personal for user)
