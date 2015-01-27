@@ -48,7 +48,23 @@ To run the site you will have to prepare couple of things:
       Replace `D:\Logs\WiAdvice.log` in `<param name="File" value="D:\Logs\WiAdvice.log" />` with the physical path of the logs directory. An log file will be created on first start up if everything is done correctly.
       
       *NOTE:* Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.
-4. Set [Home.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
+4. Emails configuration (again web.config)  
+   Replace `mail@domain.com` in `<add key="SiteGeneralSectionMail" value="mail@domain.com" />` with the address who should receive general questions emails (from About form)  
+   Same in `<add key="SiteSupportSectionMail" value="mail@domain.com" />` for the address who should receive support emails (from About form)  
+   Repeat for `<add key="SiteAdvertisementsSectionMail" value="mail@domain.com" />` for advertisement emails  
+   
+   in
+  ```
+  <mailSettings>
+      <smtp deliveryMethod="Network" from="mail@domain.com">
+        <network host="mail.domain.com" defaultCredentials="false" userName="mail@domain.com" password="mailPass" />
+      </smtp>
+  </mailSettings>
+  ```  
+  Substitute `mail.domain.com` with the mail subdomain from which emails will be semt. Replace `mail@domain.com` in both places with the email address, from which all emails will be sent. Substitute `mailPass` in `password="mailPass"` with the password of the chosen email address.  
+  
+  *NOTE: SMTP must be enabled for the email address, in order to send emails from it.*  
+5. Set [Home.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
 5. Development server or IIS  
    The web.config file is configured to allow running the application from Visual Studio Development Server. There is one limitation though, it can not use URL Rewrite > the language change links will not work.  
    
