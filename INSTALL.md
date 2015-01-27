@@ -4,8 +4,8 @@ In order to modify the code and build the application you will need Visual Studi
 
 To run the site you will have to prepare couple of things:  
 
-1. Database (db)  
-  Microsoft SQL Server 2008 or higher to host the db is needed.  
+1. Databases 
+  Microsoft SQL Server 2008 or higher is needed to host the databases.  
   You will need to create 3 databases, one for users, one for english version and one for the bulgarian version. You can do that by running the scripts or restoring via the backup files in [/DB folder](https://github.com/raste/WiAdvice/tree/master/DB). 
 
    *NOTE: There are stored procedures (in the languages databases), which use the user database. If you name it other than 'wiadvice_userDB' make sure to update the procedures (search in the script files for 'wiadvice_userDB')*
