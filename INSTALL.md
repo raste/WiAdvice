@@ -61,7 +61,7 @@ To run the site you will have to prepare couple of things:
       </smtp>
   </mailSettings>
   ```  
-  Substitute `mail.domain.com` with the mail subdomain from which emails will be semt. Replace `mail@domain.com` in both places with the email address, from which all emails will be sent. Substitute `mailPass` in `password="mailPass"` with the password of the chosen email address.  
+  Substitute `mail.domain.com` with the mail subdomain from which emails will be sent. Replace `mail@domain.com` in both places with the email address, from which all emails will be sent. Substitute `mailPass` in `password="mailPass"` with the password of the chosen email address.  
   
   *NOTE: SMTP must be enabled for the email address, in order to send emails from it.*  
 5. Set [Home.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
