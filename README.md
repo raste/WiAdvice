@@ -14,7 +14,7 @@ This is my first (.NET) and longest project. It is an user driven system, in whi
 
 It has:  
 
-1. User side in which users can.
+1. Client side in which users can.
   * Register with or without email (limited rights in this case)
   * Ability to add products/companies and update them while they have rights on them (an user who added company/product has rights to modify them, that doesn't include other products in the same company)
   * Give/or Transfer the rights for company/product to another user (the owner can give rights to more than one user)
@@ -56,6 +56,8 @@ It is huge, in some aspects crude, with ugly interface on places and slow.
 .NET 3.5, Web Forms, C#, Web Services, Entity Framework, log4net, URL Rewrite, AJAX, Javascript
 
 ### Poke/Edit
+
+Read [INSTALL.md](https://github.com/raste/WiAdvice/blob/master/INSTALL.md)
 
 ### Images
 
