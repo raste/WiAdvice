@@ -48,7 +48,7 @@ To run the site you will have to prepare couple of things:
       Replace `D:\Logs\WiAdvice.log` in `<param name="File" value="D:\Logs\WiAdvice.log" />` with the physical path of the logs directory. An log file will be created on first start up if everything is done correctly.
       
       *NOTE:* Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.
-4. Set [Index.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
+4. Set [Home.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
 5. Development server or IIS  
    The web.config file is configured to allow running the application from Visual Studio Development Server. There is one limitation though, it can not use URL Rewrite > the language change links will not work.  
    
