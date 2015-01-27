@@ -50,17 +50,21 @@ To run the site you will have to prepare couple of things:
       *NOTE:* Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.
 4. Set [Index.aspx](https://github.com/raste/WiAdvice/blob/master/Source/User%20Interface/Home.aspx) as start page in Visual Studio. 
 5. Development server or IIS  
-   The web.config file is configured to allow running the application from Visual Studio Development Server. There is one limitation though, it can not use URL Rewrite > the language change links iwll not work.  
+   The web.config file is configured to allow running the application from Visual Studio Development Server. There is one limitation though, it can not use URL Rewrite > the language change links will not work.  
    
-   In order to use URL Rewriting you will have to run the project from the Local IIS Web server, which must have URL Rewrite plugin. You will have to update these configurations in web.config (find the settings and replace their values)
-```
+   In order to use URL Rewriting you will have to run the project from the Local IIS Web server, which must have URL Rewrite plugin. You will have to update these configurations in web.config (find the settings and replace their values)  
+
+   ```
 <add key="UseUrlRewriting" value="true" />
 <add key="UrlRewritingDirectoryLevel" value="1" />
 <add key="UseExternalUrlRewriteModule" value="true" />
 <add key="SiteDomainAdress" value="TYPE IIS SITE ADDRESS " /> 
 
 <add name="RewriteUrlModule" type="UserInterface.RewriteUrl" />
-```
+   ```  
+   
+6. Other configurations  
+   Varius aspects of the site can be configured with the other settings in `<appSettings>` after `<!-- SITE CONFIGURATION  -->` comment. You will have to figure them by their names.
 
 ### Run
 
@@ -72,4 +76,4 @@ Initial users:
 **If there are problems**:  
   * If you specified valid directory for "log4net", and set everything correct, there should be a log file in the specified directory. Open it and see if there are ERROR entries.  
   * If you haven't configured "log4net" or it isn't writing logs, you can change the following line in Web.config: `<customErrors mode="On" />` with `<customErrors mode="Off" />`. This will enable the application to show the errors in the browser (but this way everyone will be able to see them if they encounter one). After this start the project and see what error it will show.  
-  * Read this file again and see if you didn't miss anything. Most likely the connection string is not configured properly or there is something missing in the database.
+  * Read this file again and see if you didn't miss anything. Most likely the connection strings are not configured properly or there is something missing in the databases.
