@@ -47,7 +47,7 @@ To run the site you will have to prepare couple of things:
       
       Replace `D:\Logs\WiAdvice.log` in `<param name="File" value="D:\Logs\WiAdvice.log" />` with the physical path of the logs directory. An log file will be created on first start up if everything is done correctly.
       
-      *NOTE:* Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.
+      *NOTE: Be sure that the log files cannot be downloaded by clients by typing the address of a log file in a browser.*
 4. Emails configuration (again web.config)  
    Replace `mail@domain.com` in `<add key="SiteGeneralSectionMail" value="mail@domain.com" />` with the address who should receive general questions emails (from About form)  
    Same in `<add key="SiteSupportSectionMail" value="mail@domain.com" />` for the address who should receive support emails (from About form)  
