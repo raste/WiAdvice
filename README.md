@@ -57,7 +57,7 @@ It is huge, over engineered, in some aspects crude, with partially ugly interfac
 
 ### Technologies
 
-.NET 3.5, Web Forms, C#, Web Services, Entity Framework, log4net, URL Rewrite, AJAX, Javascript
+.NET 3.5, Web Forms, C#, Web Services, Entity Framework, [log4net](http://logging.apache.org/log4net/), URL Rewrite, AJAX, Javascript, [WebKBD](http://code.ppetrov.com/webkbd/)
 
 ### Poke/Edit
 
